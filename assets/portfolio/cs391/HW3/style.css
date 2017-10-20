@@ -1,0 +1,186 @@
+div {
+    display: table;
+    border: 3px double black;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+html {
+    text-align: center;
+    background-color: rebeccapurple;
+}
+body {
+    margin: 0 auto;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid black;
+    padding: 3px;
+    text-align: left;
+}
+@media only screen and (min-width:700px) {
+    body {
+	margin-left: 7%;
+	margin-top: 16px;
+	margin-right: 7%;
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    body {
+	margin-top: 16px;
+	padding-bottom: 2%;
+	padding-left:2pt;
+	padding-right:2pt;
+    }
+}
+h1 {
+    display: table;
+    border-bottom: 1px dotted black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr { border: 1px dotted black; }
+
+.flourish {
+    display: table; 
+    margin: 0 auto; 
+    margin-top:5px;
+}
+
+/* input fields */
+select, textarea, input[type="text"], input[type="date"], input[type="button"], input[type="submit"], button {
+    border: 1px double black;
+    margin-bottom: 3px;
+    box-shadow: 2px 2px 0px -1px black;
+}
+
+select:hover, select: focus, textarea:hover, textarea:focus, input[type="text"]:hover, input[type="text"]:focus, input[type="date"]:hover, input[type="date"]:focus, input[type="button"]:hover, input[type="submit"]:hover, button:hover {
+    border-color: blue;
+}
+
+input[type="button"]:active, input[type="submit"]:active, button:active {
+    box-shadow: none;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+/* range */
+input[type=range] { -webkit-appearance: none; }
+input[type=range]:focus { outline: none; }
+input[type=range]::-webkit-slider-runnable-track {
+  height: 8.4px;
+  cursor: pointer;
+  background: blue;
+  border-radius: 0px;
+  border: 0.2px solid black;
+}
+input[type=range]::-webkit-slider-thumb {
+  border: none;
+  border-radius: 0px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+  background: url("img/grippy.gif");
+  width: 12px;
+  height: 16px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track { background: dodgerblue; }
+input[type=range]::-moz-range-track {
+  cursor: pointer;
+  background: blue;
+  border-radius: 0px;
+  border: 0.2px solid black;
+}
+input[type=range]::-moz-range-thumb {
+  border:none;
+  border-radius: 0px;
+  background: white;
+  cursor: pointer;
+  background: url("img/grippy.gif");
+  width: 12px;
+  height: 16px;
+}
+input[type=range]:focus::-moz-range-track {
+  background: dodgerblue;
+}
+input[type=range]::-ms-track {
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: blue;
+  border: 0.2px solid black;
+  border-radius: 0px;
+}
+input[type=range]::-ms-fill-upper {
+  background: blue;
+  border: 0.2px solid black;
+  border-radius: 0px;
+}
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 12px;
+  width: 16px;
+  border-radius: 0px;
+  background: url("img/grippy.gif");
+  background: white;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower { background: dodgerblue; }
+input[type=range]:focus::-ms-fill-upper { background: dodgerblue; }
+
+.myCheckbox, .myRadio { display: inline-block; }
+/* checkbox */
+.myCheckbox input {
+    display: none;
+    // Better than display: none for accessibility reasons
+    position: relative;
+    z-index: -9999;
+}
+
+.myCheckbox span {
+    cursor: pointer;
+    width: 14px;
+    height: 15px;
+    display: block;
+    background: url("img/off.gif");
+}
+
+.myCheckbox input:checked + span { background: url("img/on.gif"); }
+
+.myRadio input {
+    display: none;
+    position: relative;
+    z-index: -9999;
+}
+
+.myRadio span {
+    cursor: pointer;
+    width: 16px;
+    height: 14px;
+    display: block;
+    background: url("img/rad_off.gif");
+}
+
+.myRadio input:checked + span { background: url("img/rad_on.gif"); }
+
+ img, span  {
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+input[type=range]::-ms-thumb { -ms-interpolation-mode: nearest-neighbor; }
+input[type=range]::-moz-range-thumb { image-rendering: -moz-crisp-edges; }
+input[type=range]::-webkit-slider-thumb { image-rendering: pixelated; }

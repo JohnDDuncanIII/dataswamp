@@ -1,0 +1,57 @@
+Active Record is the ORM (Object Relational Mapping)
+
+    Database records are called hashes
+    Create an Articles record
+		bin/rails generate model Article title:string text:text
+	This yields the Active Record model as follows:
+		app/Models/article.rb (this is basically an empty class definition, the fields will be taken from the table in the db)
+		db/migrate/...._create_articles.rb  (this creates the table in the db)
+		
+			class CreateArticles < ActiveRecord::Migration[5.0]
+			  def change
+				create_table :articles do |t|
+				  t.string :title
+				  t.text :content
+
+				  t.timestamps
+				end
+			  end
+			end
+		
+		run the rails db:migrate command, table is created.
+		run rails console to show using this object.
+			rails console
+			rec = Article.new(title: "test", content: "This is a test")
+			rec (prints object)
+			puts rec.title (prints title)
+			rec.to_json (prints article as json object)
+			rec.save
+			Article.all
+			rec = Article.new title: "test1", content: "Test 1 data"
+			rec
+			rec.save
+			Article.all
+			
+			for f in Article.all
+			    puts f.title
+			end
+			
+			for f in Article.all
+			    puts f.to_json
+			end
+			
+			Article.all.each do |f|
+			    puts f.title
+			end
+			
+			Article.all.to_json
+			
+			Article.delete(1)
+			
+			Article.all.each do |f|
+			    f.delete
+			end
+			
+Back to tutorial, Section 5.6
+			
+			

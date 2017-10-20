@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+    <head>
+	    <title>Simple Object Example</title>
+	</head>
+	
+	<body>
+	    <script>
+			
+		    function Person(fname, lname) {
+				this.fname = fname;
+				this.lname = lname;
+			}
+			Person.prototype.age = 59;
+			
+			Person.prototype.debug = function () {
+					console.log(this.fname + " " + this.lname + " " + this.age);
+				};
+	
+			var Chuck = new Person("Chuck", "Kann");
+			var Patty = new Person("Patty", "Jordan"); // age is 59
+			Patty.age = 58;
+			
+			Chuck.debug();
+			Patty.debug();
+			
+
+		</script>
+	
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<!--
+    Name: Basic Form
+    Author: Charles Kann
+    Purpose: Fix the slider control
+    Quick Exercise:  Make the text box 2 way (e.g. the slider changes the text box,
+    now make the text box also change the slider)
+    Modification History
+    12/25/2016 - Initial Release
+  -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assessment Form</title>
+  </head>
+
+  <body>
+    On a scale of 0 to 10, the number 7 is a(n):
+    <input type="range" name="7is" id="7is" min="0" max="10" step="1" value="5"  
+	   list="sliderList"/>
+    <datalist id="sliderList">
+      <option>0</option>
+      <option>2</option>
+      <option>4</option>
+      <option>6</option>
+      <option>8</option>
+      <option>10</option>
+    </datalist>
+    
+    <input type="text" name="sliderText" id="sliderText" size="3" value="5"/>
+    
+    <hr width="75%" />
+    <br />
+    This is the slider after we put a text box to show its value..
+    <script>
+      function changeSliderText() {
+          document.getElementById("sliderText").value = document.getElementById("7is").value;
+      }
+      document.getElementById("7is").onchange = changeSliderText;
+      function changeSliderState() {
+          document.getElementById("7is").value = document.getElementById("sliderText").value;
+      }
+      document.getElementById("sliderText").oninput = changeSliderState;
+    </script>
+  </body>
+</html>

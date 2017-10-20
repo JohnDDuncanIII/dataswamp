@@ -1,0 +1,111 @@
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    text-align: center;
+    vertical-align: middle;
+    display:table-cell;
+    color: white;
+    /*text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  */
+    text-shadow:
+    -1px -1px 0 #3d3d3d,
+    1px -1px 0 #3d3d3d,
+    -1px 1px 0 #3d3d3d,
+    1px 1px 0 #3d3d3d;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    transition:height 0.5s; /* Animation time */
+    -webkit-transition:height 0.5s; /* For Safari */
+}
+
+.type3 {
+    transition: .5s ease-in-out;
+   animation-delay:.5s;
+    width: 100px;
+    height: 100px;
+    /*border: 2px solid black;*/
+    z-index: 0;
+}
+.type3:hover {
+    transform: scale(2);
+    z-index: 99999;
+}
+.type3click {
+    transform: scale(6) !important;
+    z-index: 1;
+    /*font-size: 12px;*/
+    text-shadow: none;
+}
+.green {
+    background: #3ca928;
+}
+
+.blue {
+    background: #0070b9;
+}
+
+.red {
+    background: #e51c13;
+}
+
+.orange {
+    background: #f59300;
+}
+
+.purple {
+    background: #a3205d;
+}
+
+.brown {
+    background: #442a18;
+}
+
+.lightbrown {
+    background: #7f5022;
+}
+
+.darkblue {
+    background: #262f85;
+}
+
+#parentdiv {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-image: url(logo.png);
+}
+
+.div2 {
+    position: absolute;
+    position: relative;
+}
+.divText {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+      */
+    -ms-user-select: none;
+    user-select: none;
+}
+.divTextClick {
+    font-size: 5px;
+    text-shadow: none;
+}

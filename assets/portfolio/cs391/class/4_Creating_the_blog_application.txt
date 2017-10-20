@@ -1,0 +1,55 @@
+1 - Create rails application
+		rails new Blog -d mysql
+2 - Update Coffee Script (Windows) or uncomment theRubyRacer (cs25)
+		Add - gem 'coffee-script-source', '1.8.0' - into gemfile and run bundle update   protect_from_forgery unless: -> { request.format.json? }
+3 - Update application_controller.rb to handle web service (for later)
+		protect_from_forgery unless: -> { request.format.json? }
+4 - Update user and password in config/database.yml
+5 - Create the databases
+		rake db:create
+6 - Create the scaffold for Articles
+		rails generate scaffold Article title:string content:text
+7 - Migrate database changes
+		rake db:migrate
+8 - Bring up rails server and go to localhost:3000/articles and glory in the result.
+9 - Create a second model
+		rails generate scaffold Comment user:string body:text article:references
+10 - Migrate database changes
+11 - Change the Article model so it states there are many comments to an article 
+    using the has_many (Note: Comment already says belongs to).  This allows us to 
+	use Article as the parent, and to enforce referential integrity.
+12 - Note routes.  All comments are from a "comment" link.  However we want some of 
+    them to be using the format "articles/id/comments..."  Let's make both for all 
+	routes, and change the root route by making routes.rb to be the following:
+	
+		Rails.application.routes.draw do
+		  resources :comments
+		  resources :articles do
+			resources :comments, only: [:index, :new, :create]
+		  end
+		  root 'articles#index'
+        end
+13 - Look at comments (localhost:3000/comments).  Put Article.title in view index.
+14 - Add some articles and comments to see what is happening
+15 - Change comment controller for index to handle all comments or comments by article.		
+		  def index
+			article_id = params[:article_id]
+			if (article_id == nil)
+			  @comments = Comment.all
+			else
+			  @comments = Article.find(article_id).comments
+			end
+		  end
+		  
+		Access this by "localhost:3000/comments" for all comments
+		Access this by "localhost:3000/articles/$id/comments" for article comments
+16 - Update Comments controller create method, and articles view show.html.erb to
+    link everything together nicely.  BTW - I tried to put a title on the application 
+	and set some stypes in the application controller, but I could not get it to work.
+17 - Show delete of an article takes out all comments
+
+Note: You do not need all the routes we have, and you do not need all the other
+methods in the controller or views, but leave them there for now.  We will use 
+them for our web services...
+
+	

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+    <head>
+	    <title>Simple Object Example</title>
+	</head>
+	
+	<body>
+	    <script>
+			
+		    function Person(options) {
+			    this.fname="";
+				this.lname="";
+				this.age=undefined;
+				for (var prop in options) {
+				    this[prop] = options[prop];
+				}
+			}
+			Person.prototype.debug = function () {
+					console.log(this.fname + " " + this.lname + " " + this.age);
+				};
+	
+			var Chuck = new Person({fname:"Chuck", lname:"Kann", age: 59});
+			var Patty = new Person({fname:"Patty", lname:"Jordan"});
+		
+			Chuck.debug();
+			Patty.debug();
+		</script>
+	
+	</body>
+</html>

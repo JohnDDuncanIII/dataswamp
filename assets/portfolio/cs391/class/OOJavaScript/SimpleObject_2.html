@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+    <head>
+	    <title>Simple Object Example</title>
+	</head>
+	
+	<body>
+	    <script>
+			
+		    function Person(fname, lname) {
+				this.fname = fname; // Note fname and lname are both 
+									// function scope, but have different "this" references
+				this.lname = lname;
+				this.debug = function () {
+					console.log(this.fname + " " + this.lname);
+				};
+			}
+	
+			var Chuck = new Person("Chuck", "Kann");
+			var Patty = new Person("Patty", "Jordan");
+			
+			Chuck.debug();
+			Patty.debug();
+		</script>
+	
+	</body>
+</html>

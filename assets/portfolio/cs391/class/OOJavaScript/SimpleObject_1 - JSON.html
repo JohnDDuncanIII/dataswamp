@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+    <head>
+	    <title>Simple Object Example</title>
+	</head>
+	
+	<body>
+	    <script>
+		    var Chuck = {
+				fname: "Chuck",
+				lname: "Kann",
+				debug: function() {
+				    console.log(this.fname + " " + this.lname);
+				}
+			}
+			alert(JSON.stringify(Chuck));
+		</script>
+	
+	</body>
+</html>

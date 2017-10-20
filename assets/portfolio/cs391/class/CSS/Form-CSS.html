@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+    <head>
+	    <title>Student Appointment Form</title>
+		<style>
+			.indent-label {
+				 margin-left : 5px;
+				 display : inline-block;
+				 width: 75px;
+				 vertical-align: top;
+			}
+			 
+			.indent-field {
+			     margin-left : 10px;
+				 display: inline-block;
+			}
+			 
+			#Person {
+				display:inline-block;
+				margin:auto;
+				position: relative; 
+				left:0px; 
+				width:300px; 
+				height:300px;
+				border:2px solid #CFCFCF;
+			}
+			
+			p {
+				font-size: 14px;
+			}
+
+			body {
+				background-color: MintCream;
+			} 
+
+			.input-data {
+				display:inline-block; 
+				margin:auto;
+				height:300px; 
+				vertical-align:top; 
+				width:550px; 
+				border:2px solid #CFCFCF;
+			}
+			
+			
+			/* resize:none to get rid of grabber at lower right  of textarea*/
+			textarea {
+			    resize: none;
+			}
+			
+			/* Box sizing for all components */
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			#titleWindow {
+				display:block; 
+				background-color: black;
+				height:100px;
+				margin-bottom: 24px;
+				margin-top: 24px;
+			}
+
+			#appTitle {
+				color: white;	
+				display: inline;
+				width: 400px;
+				left: 100px;
+				float: left;
+				position: absolute;
+			}
+
+			#appMenu {
+				color: white;
+				display: inline;
+				width:400px;
+				right: 100px;
+				float: right;
+				position: absolute;
+				font-size: 20px;
+			}
+		</style>
+		<script>
+		window.onload = function initialize() {
+		    var formType = document.getElementsByName("formType");
+			// Note that the formtype is the array of radio buttons.
+			// The name of each div section is in the value field
+			// for the button.
+			// 
+			// For each radio button attach a listener 
+			for (var i=0, iLen=formType.length; i<iLen; i++) {
+			    // Each button has the same listener.  It hides all of the 
+				// divs, and then displays the selected one.
+			    formType[i].onclick = function() {
+					var fType = document.getElementsByName("formType");			  
+					for (var j = 0, jLen=fType.length; j<jLen; j++) {
+					    document.getElementById(fType[j].value).style="display:none";
+					}
+			    document.getElementById(this.value).style="display:inline-block";
+				};
+			} 
+			// Default, initially show the ContactDiv.
+			document.getElementById("ContactDiv").style="display:inline-block";
+		}
+		</script>
+	</head>
+	
+	<body">
+		<div id="titleWindow">
+			<div id="appTitle">
+				<h1>Student Appointment<br> Form<h1>
+			</div>
+			<div id="appMenu">
+				<br><br>file home
+			</div>
+		</div>
+	
+	    <div id="MyForm" align="center">
+			<div id="Person" align="left">
+				<p>
+				    Student: 
+				    <input type="text" size=30; value="Charles Kann" />
+				</p>
+				<p>
+				    Select the form to display<br>
+					<input type="radio" name="formType" value="ContactDiv" checked /> Contact			
+					<input type="radio" name="formType" value="DemographicDiv" /> Demographic
+					<input type="radio" name="formType" value="NotesDiv" /> Notes
+				</p>
+					
+			</div>
+			<div id="ContactDiv" class="input-data" style="display:none;" align="left">
+			    <h2>Contact Information</h2>
+				
+				<p>
+					<div class="indent-label" >
+						Name:
+					</div>
+					<div class="indent-field">
+						<input type="text" size="50" />
+					</div>
+				</p>
+				
+				<p>
+					<div class="indent-label" >
+						Address:
+					</div>
+					<div class="indent-field">
+						<input type="text" size="50" />
+					</div>
+				</p>
+					
+				<p>
+					<div class="indent-label" >
+						&nbsp
+					</div>
+					<div class="indent-field">
+						<input type="text" size="50" />
+					</div>
+				</p>		
+
+				<p>
+					<div class="indent-label" >
+						State:
+					</div>
+					<div class="indent-field" >
+						<input type="text" size="2" />
+					</div>
+					<div class="indent-label">
+						Zip Code:
+					</div>
+					<div class="indent-field">
+						<input type="text" size="10" />
+					</div>
+				</p>
+					
+				<p>
+					<div class="indent-label" >
+						Phone
+					</div>					
+					<div class="indent-field" >
+						<input type="tel" /> 
+					</div>
+				</p>
+				
+				<p>
+					<div class="indent-label" >					
+						Email:
+					</div>
+					
+					<div class="indent-field" >
+						<td> <input type="email" /></td>
+					</div>
+				</p>
+			</div>
+			<div id="DemographicDiv"  class="input-data" style="display:none;" align="left">
+			    <h2>Demographic Data</h2>
+				
+				<p>
+					<div class="indent-label" >				
+						Age:
+					</div>
+					<div class="indent-field" >				
+						<input type="number" min="0" max="120" step="1" value="20">
+					</div>
+				</p>
+				
+				<p>
+					<div class="indent-label" >
+						Sex: </td>
+					</div>
+					<div class="indent-field" >
+						<input type="radio" name="sex" checked />Male <input type="radio" name="sex" />Female 
+						<input type="radio" name="sex" />Other</td>
+					</div>
+				</p>
+			</div>
+			<div id="NotesDiv"  class="input-data" style="display:none;" align="left">
+			    <h2>Notes</h2>
+				<p>
+					<div class="indent-label" >					
+						Date of contact: 
+					</div>
+					<div class="indent-field" >
+						<input type="date" />
+					</div>
+				</p>
+				
+				<p>
+					<div class="indent-label" >				
+						Notes on meeting
+					</div>
+					<div class="indent-field" >
+						<td> <textarea rows="4" cols="50" > Enter notes here </textarea></td>
+					</div>
+				</p>
+			</div>
+        </div>		
+	</body>
+</html>

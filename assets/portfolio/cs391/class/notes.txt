@@ -1,0 +1,62 @@
+Install mysql if you want to use it and update your environment path.
+
+http://railsinstaller.org/en
+    install Ruby 2.2
+	    components:
+		    Ruby 2.3.3 - The Ruby Lanugage
+			Rails 5.0 - The Rails Framework
+			Bundler - dependency manager
+			GIT - The source code manager
+			Sqlite - The database
+			TinyTDS - An SQL to Ruby datatype translator
+			SQL Server Support - Active Record Database Support
+			DevKit - Converts the Unix environment variables so Rails runs on WINDOWS
+			Puma - Web Server
+			
+
+	gem install rails
+		gem looks for an installs gems (components, like Java Beans) on your system.
+		
+ssh key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKh37kow6g9ULb2Rv13jM/dZWZRyn/VB4xKt85taA1DTI23UPa7EKimFmk9PDiYDZ+Aj3lCqdbeqhYfICOnFTsKaCZ36esQ2Bq3kXr4p4qhv9niJPzHCbC1LJsG7krGB4P0O5SeoPTeNMjnznqUqhaAxbXAdIN+WytjtCj7J5S/itIS6rNBuhKK0WN3Lcq5dSkKqpq1qmmzAfoKCndLfLWR8CPjdDEJ4sKMSYaDyQJQAoKyrx4x2VT/gCNed8eomb4MwTVbyVGotYROoaUE1r9Nw4534XO2knjxJhC4WVNJ7u7tYNwWGEVDLtBq1//6e4sQhlxe9tkiSkqi+6qA2HR Charles W. Kann <ckann@gettysburg.edu>
+http://guides.rubyonrails.org/getting_started.html
+
+FOR WINDOWS:  Make sure to download and install dev kit.
+
+railsinstaller
+install mysql
+gem install mysql2
+rails new blog -d mysql
+edit config/database.yml to add user and password
+rake db:create
+
+    coffee script does not play well on Windows: http://stackoverflow.com/questions/28312460/object-doesnt-support-this-property-or-method-rails-windows-64bit
+	Add - gem 'coffee-script-source', '1.8.0' - into gemfile
+	bundle update coffee-script-source
+	
+Start sever and show web page - Note localhost (127.0.0.0 and post 3000)
+	http://localhost:3000
+	rake routes - No routes defined, so default to index.html
+	
+rails generate controller Welcome index
+
+	rake routes - See /Welcome/index
+	http://localhost:3000/Welcome/index
+Check out log file...
+
+Make this the default (root) routing
+
+Add default routing and show via rake routes
+
+ADDING a RESOURCE
+	modify the routes.db fle to add articles
+		note - ":" means a symbol in Ruby
+			http://rubylearning.com/satishtalim/ruby_symbols.html
+			http://www.randomhacks.net/2007/01/20/13-ways-of-looking-at-a-ruby-symbol/
+	rake routes, and show the multiple routes, and how they do not yet have a controller.
+
+Explain why server is so slow (has to recompile code, check for changes in dev and test). This goes away in production.
+
+
+
+https://medium.com/@kitsched/starting-a-ruby-on-rails-project-from-existing-data-7dda5044c85f#.wkeqxcmai
+rake db:schema:dump ###-> writes to db/schema.rb

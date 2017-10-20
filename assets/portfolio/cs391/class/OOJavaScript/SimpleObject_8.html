@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+		    /* 
+				Person definition
+			*/
+			
+			function Person(options) {
+				var state = {
+					instanceType : "Person",
+					 fname : "",
+					 lname : "",
+					 age : undefined
+				}
+				
+				for (var prop in options) {
+				   if (!state.hasOwnProperty(prop))
+					    console.log("Property " + prop + " not recognized in object " + state.instanceType);
+				    state[prop] = options[prop];
+				}
+				
+				this.printFirstName = function () {
+				    console.log("First name = " + state.fname);
+				}
+				
+				this.printLaastName = function() {
+				    console.log("Last name = " + state.lname);
+				}
+				
+				this.printAge = function() {
+				    console.log("Age = " + state.age);
+				}
+				
+				this.toJSON = function() {
+				    return JSON.stringify(state);
+				}
+				
+				return this;  // Just to be explicit
+			}
+		
+		</script>
+	</head>
+	
+	<body>
+		<script>
+		    // create a person object, and show that the printFirstName function is accessible.
+			chuck = new Person({fname: "Chuck", lname: "Kann", age: 59});
+			patty = new Person({fname: "Patty", lname: "Jordan", age: 58});
+
+			// But we can get to the object to stringify it.
+			jsonObj = chuck.toJSON();
+			localStorage.setItem("chuck", jsonObj);
+			jsonObj = patty.toJSON();
+			localStorage.setItem("patty", jsonObj);
+
+			patty1 = new Person(JSON.parse(localStorage.getItem("patty")));
+			patty1.printFirstName();			
+			chuck1 = new Person(JSON.parse(localStorage.getItem("chuck")));
+			chuck1.printFirstName();
+
+		</script>
+	</body>
+</html>

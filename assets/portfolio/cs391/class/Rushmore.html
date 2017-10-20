@@ -1,0 +1,66 @@
+<HTML>
+  <HEAD>
+    <TITLE>Rushmore Image Map</TITLE>
+	
+	<meta charset="utf-8">
+    <title>jQuery maphilight documentation</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./libs/jquery.maphilight.js"></script>
+	<script>
+	    $(function() {
+	        $('.map').maphilight({groupBy:"date"});
+		});
+	</script>
+  </HEAD>
+
+
+  <BODY BGCOLOR="beige">
+    <CENTER>
+      <B>Simple image map example</B>
+      <BR><BR>
+
+  <!-- 
+    Place the image (rushmore.jpg) on the page and use the image map
+    called rushmore_map 
+  --> 
+
+    <IMG SRC="Rushmore.jpg" NAME="rushmore" BORDER="0"
+     USEMAP="#rushmore_map" class="map">
+ 
+    </CENTER>
+    <BR>
+
+<!-- image map information --> 
+
+    <MAP NAME="rushmore_map"> 
+      <AREA SHAPE="circle" COORDS="32,36,30"
+         HREF="http://chuckkann.com" ALT="George Washington" 
+	     TITLE="George Washington" TARGET="infoFrame"
+       date="today"  
+           
+       data-maphilight='{"strokeColor":"ff0000","strokeWidth":2,"fillColor":"0000ff","fillOpacity":0.3,"alwaysOn":true}' --> 
+       
+      <AREA SHAPE="poly" COORDS="97,86,110,68,103,34,86,26,71,25,65,51,71,75"
+         HREF="http://www.whitehouse.gov/history/presidents/tj3.html" ALT="Thomas Jefferson"
+         TITLE="Thomas Jefferson" TARGET="infoFrame">
+      <AREA SHAPE="poly" COORDS="117,88,117,111,143,113,149,96,154,68,137,54,116,52" 
+         HREF="http://www.whitehouse.gov/history/presidents/tr26.html" ALT="Theodore Roosevelt"	
+         date="today" 
+         TITLE="Theodore Roosevelt" TARGET="infoFrame" >
+		 <!--
+         data-maphilight='{"strokeColor":"ff0000","strokeWidth":2,"fillColor":"0000ff","fillOpacity":0.3, "alwaysOn":true}'
+		 -->
+      <AREA SHAPE="rect" COORDS="166,43,216,115" 
+         HREF="http://www.whitehouse.gov/history/presidents/al16.html" ALT="Abraham Lincoln" 
+         TITLE="Abraham Lincoln" TARGET="infoFrame">
+    </MAP>
+
+<!-- end of image map information -->
+
+   <BR><BR>
+   <CENTER>
+   <p>Move the mouse over a presidents face and click to see information abou the president</p>
+   <p>To see the code for this page, select <B>Source</B> from the View menu.</p>
+   </CENTER>
+</BODY>
+</HTML>

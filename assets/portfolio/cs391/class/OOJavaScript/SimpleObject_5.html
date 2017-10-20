@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+		    /* Person definition
+			*/
+			
+			function Person(options) {
+				this.instanceType = "Person";
+				this.fname = "";
+				this.lname = "";
+				this.age = undefined;
+				
+				for (var prop in options) {
+				    if (!this.hasOwnProperty(prop))
+					    console.log("Property " + prop + " not recognized in object " + this.instanceType);
+				    this[prop] = options[prop];
+				}
+				
+				this.printFirstName = function () {
+				    console.log("First name = " + this.fname);
+				}
+			}
+		
+			/*
+			    This function reads the object parsed from JSON.  Since JSON does not
+				maintain the obj.constructor property, I create an instance of the 
+				specific object type (stored in instanceType) and copy the fields
+				into this new object.  This "effectively" casts the object to the correct
+				type.
+			*/
+		    function getObjectFromJSON(string) {
+			    parsedObject = JSON.parse(string);
+				objType = parsedObject.instanceType;
+				return new window[objType](parsedObject);
+			}
+		
+		</script>
+	</head>
+	
+	<body>
+		<script>
+		    // create a person object, and show that the printFirstName function is accessible.
+			chuck = new Person({fname: "Chuck", lname: "Kann", age: 59});
+			chuck.printFirstName();
+			
+			// Note that there is no encapsulation
+			chuck.fname="Anything else";
+			chuck.printFirstName();
+			
+			// make the object a JSON string, and then parse the string.
+			// the obj.constructor is set by the getObjectFromJSON call.
+			jsonObj = JSON.stringify(chuck);
+			newChuck = getObjectFromJSON(jsonObj);
+			
+			// Show that this gets the correct object by calling the method of the object.
+			newChuck.printFirstName();
+		</script>
+	</body>
+</html>

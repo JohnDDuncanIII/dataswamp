@@ -1,0 +1,116 @@
+html {
+  background-color: #FDC;
+}
+
+body {
+  background-color: white;
+  border: 1px solid black;
+  font-family:Arial,Verdana,Helvetica,Serif
+}
+@media only screen and (min-width:700px) {
+  body {
+    margin-left: 7%;
+    margin-top: 16px;
+    margin-right: 7%;
+    padding-top: 2em;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 2%;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  body {
+    margin-top: 16px;
+    padding-top: 2em;
+    padding-bottom: 2%;
+    padding-left:2pt;
+    padding-right:2pt;
+  }
+}
+
+a:target {
+    border: 1px dotted black;
+}
+
+hr {
+    border:1px dotted #1b1b1b;
+}
+
+ul {
+    list-style-image: url("../images/about/bullet.gif");
+}
+
+h1 {
+  text-align: center;
+  background-color: #FEB;
+  padding-bottom: 0.2em;
+  padding-top: 0.1em;
+}
+
+h2 {
+  background-color: #EFC;
+  padding-left: 0.5em;
+  border-bottom:1px dashed #888;
+}
+h3 {
+  background-color: #FFC;
+  padding-left: 0.5em;
+}
+h4 {
+  background-color: #FFE;
+  padding-left: 0.5em;
+}
+
+blockquote {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-style: italic;
+  background-color: #FFFAF0;
+}
+
+li {
+  padding-top: 0.3em;
+}
+
+div.lastedit {
+  font-size:70%;
+  font-family:arial,sans-serif
+}
+
+div.deeper { padding-left:0.5em }
+
+.nonmail { visibility:hidden;position:absolute; top:0px;left:0px }
+.ismail { font-weight:normal }
+
+img.embed { border:0px }
+img.embedleft { border:0px; float:left }
+img.embedright { border:0px; float:right; }
+img.extlink { border:0px; width:10px; height:10px }
+p.clear { clear:both }
+
+.diggbutton {
+ font-size:13px; height:4em; width:44px; border:2px outset #555; background:#66E;
+ padding:3px; text-align:center
+}
+.diggbutton a:visited, .diggbutton a:link { color:#FF5 }
+
+.source_snippet,code,tt {
+  font-family:
+    "Bitstream Vera Sans Mono",
+    "Lucida Console",
+    console,system,terminal,
+    "Courier New",
+    monospace }
+
+.source_snippet {
+  font-size:92%;
+  background:#FFF; color:#000;
+  border:1px dashed #888;
+  border:4px solid #DDD;
+  padding:3px
+}
+@media screen {
+  .source_snippet { overflow:auto }
+}
+code,tt { background:#F7F7F7 }

@@ -1,0 +1,94 @@
+<!doctype html>
+<!--
+    Name: Basic Form
+    Author: Charles Kann / John Duncan
+    Purpose: To show a basic form in html
+
+    Modification History
+    12/25/2016 - Initial Release
+    3/20/2017 - Add localstorage and JSONobject functionality
+  -->
+<head>
+    <title>Attributes Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<h1>Personal Attributes Form</h1>
+<div style="text-align: center">
+    <select id="select"></select>
+    <br><br>
+    <input id="new" type="button" value="New">
+    <input id="remove" type="button" value="Remove">
+</div>
+
+<div>
+    <span id="hide_name" class="raised" onclick="hide_div(this)">Hide</span>
+    <div id="name">
+	<label for="firstName">First Name</label>
+	<input type="text" size="30" id="firstName">
+	<br>
+	<label for="lastName">Last Name</label>
+	<input type="text" size="30" id="lastName">
+	<br>
+
+	Sex:
+	<label class="myRadio">
+	    <input type="radio" name = "gender" id="male" value="male" checked>
+	    <span></span>
+	</label>
+	<label for="male">Male</label>
+	<label class="myRadio">
+	    <input type="radio" name = "gender" id="female" value="female">
+	    <span></span>
+	</label>
+	<label for="female">Female</label>
+	<label class="myRadio">
+	    <input type="radio" name = "gender" id="other" value="other">
+	    <span></span>
+	</label>
+	<label for="other">Other</label>
+	<br>
+
+	<label for="age">Age</label>
+	<input type="text" size="5" id="age">
+    </div>
+</div>
+
+<div>
+    <span id="hide_attr" class="raised" onclick="hide_div(this)">Hide</span>
+    <div id="attr">
+	Attributes (I would say I am):<br>
+	<label for="c1"> Interesting </label>
+	<label class="myCheckbox">
+	    <input type="checkbox" name="c1" id="c1" value="Interesting">
+	    <span></span>
+	</label><br>
+
+	<label for="c2"> Intelligent </label>
+	<label class="myCheckbox">
+	    <input type="checkbox" name="c2" id="c2" value="Intelligent">
+	    <span></span>
+	</label><br>
+
+	<label for="c3"> Handsome </label>
+	<label class="myCheckbox">
+	    <input type="checkbox" name="c3" id="c3" value="Handsome">
+	    <span></span>
+	</label><br>
+
+	<label for="c4"> Unobjectionable </label>
+	<label class="myCheckbox">
+	    <input type="checkbox" name="c4" id="c4" value="Unobjectionable">
+	    <span></span>
+	</label>
+    </div>
+</div>
+<br><br>
+<input type="button" name="save" value="Save" id="save" style="margin: 0 auto">
+
+<hr width="75%">
+<br>
+Right now, this page reads data from localstorage (using a CRUD interface), and allows a user to modify the values stored in the array (which is then written back as a JSONobject). There should be three users populated in the select statement by default. Values are automatically modified in the array when you modify/(enable/disable/check) them. Records are listed automatically in the select element in the left-most div. Records can be created through the "New" button. The record selected in the select element can be deleted through the "Remove" button. The modifications that are made to the form can be saved to localstorage (in order to have a persistent session across reloads.
+<br><img class="flourish" src="img/weave.gif">
+<script src="js/users.js"></script>

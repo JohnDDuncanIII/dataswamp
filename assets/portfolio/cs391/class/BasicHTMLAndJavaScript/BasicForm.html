@@ -1,0 +1,72 @@
+<!doctype html>
+<!--
+    Name:		Basic Form
+	Author:		Charles Kann
+	Purpose:	To show a basic form in html
+	
+	Modification History
+	12/25/2016 - Initial Release
+-->
+<html>
+	<head>
+		<title>Assessment Form</title>
+	</head>
+
+	<body>
+	    <label for="assessmentDate">Date of assessment</label>
+		<input type="date" id="assessmentDate"/> <br />
+		<label for="firstName">First Name</label>
+		<input type="text" size="30"id="firstName"/>
+		<label for="lastName">Last Name</label>
+		<input type="text" size="30" id="lastName" />
+		<br />
+		
+		Sex:
+		<input type="radio" name = "gender" id="male" value="male" checked />
+		<label for="male">Male</label>
+		<input type="radio" name = "gender" id="female" value="female" />
+		<label for="female">Female</label>
+		<input type="radio" name = "gender" id="other" value="other" />
+		<label for="other">Other</label>
+		<br />
+		
+		Age:
+		<input type="radio" name="age" id="18-25" value="18-25" checked />
+		<label for="18-25"> 18-25 </label>
+		<input type="radio" name="age" id="26-35" value="26-35" checked />
+		<label for="26-35"> 26-35 </label>
+		<input type="radio" name="age" id="36-45" value="36-45" checked />
+		<label for="36-45"> 36-45 </label>	</body>
+		<input type="radio" name="age" id="over45" value="over 45" checked />
+		<label for="over45"> over 45 </label></html>
+		<br /> <br />
+		
+		Attributes:	I would say I am:<br />
+		<input type="checkbox" name="c1" id="c1" value="Interesting" />
+		<label for="c1"> Interesting </label><br />
+		<input type="checkbox" name="c2" id="c2" value="Intelligent" />
+		<label for="c2"> Intelligent </label><br />	
+		<input type="checkbox" name="c3" id="c3" value="Sexy" />
+		<label for="c3"> Sexy </label><br />	
+		<input type="checkbox" name="c4" id="c4" value="Unobjectionable" />
+		<label for="c3"> Unobjectionable </label><br />	
+		<br />
+		
+		On a scale of 0 to 10, the number 7 is a(n):
+		<input type="range" name="7is" id="7is" min="0" max="10" step="2" value="5"  list="sliderList"/>
+		<datalist id="sliderList">
+			<option>0</option>
+			<option>2</option>
+			<option>4</option>
+			<option>6</option>
+			<option>8</option>
+			<option>10</option>
+		</datalist>
+		
+		<br /><br />
+		<input type="button" name="save" value="Save" id="save" />	
+
+		<hr width="75%" />
+		<br />
+		This is an example page.  It does nothing right now... We will add actions later when we cover events.
+	</body>

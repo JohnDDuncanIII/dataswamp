@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>MessageFaces</title>
+  <meta name="keywords" content="mozilla, thunderbird, extension,
+				 x-face, face header, gravatar, x-image-url">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<div id="content">
+  <h1>MessageFaces</h1>
+  <p id="nav"> [ <a href="index.html">Home</a> | <a href="createface.html">Creating a Face image</a> | <a href="faq.html">Frequently Asked Questions</a> | <a href="history.html">Release History</a> ] </p>
+  <p> This extension lets Mozilla Thunderbird display 'face' images
+    in the message header section of e-mails and newsgroup messages.
+    These face images are intended to represent the sender, in the
+    form of photos, cartoons, logos and so on. MessageFaces supports
+    the following Face types: </p>
+  <center>
+    <table cellspacing="4">
+      <thead> <tr>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Supported</th>
+        </tr>
+      </thead> <tbody>
+        <tr>
+          <th>Face header</th>
+          <td> Color PNG file embedded in the mail itself (<a href="http://quimby.gnus.org/circus/face/">specification</a>)
+          </td>
+          <td>Display &amp; Set</td>
+        </tr>
+        <tr>
+          <th>X-Face header</th>
+          <td> <a href="http://www.dairiki.org/xface/">Black-and-white image</a> embedded in the mail itself. </td>
+          <td>Display only; optional</td>
+        </tr>
+        <tr>
+          <th>gravatar.com</th>
+          <td> 'Globally recognized avatar' retrieved online from a
+            <a href="http://www.gravatar.com/">central service</a>.
+          </td>
+          <td>Display only; optional</td>
+        </tr>
+        <tr>
+          <th>Local images</th>
+          <td> Any image in a directory of your choice. </td>
+          <td>Display only; optional</td>
+        </tr>
+        <tr>
+          <th>Face URLs</th>
+          <td> An image loaded from a <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=20417">web
+              address</a> specified in the mail (possible privacy
+            and security risk!) </td>
+          <td>Display only; optional</td>
+        </tr>
+        <tr>
+          <th>Picons</th>
+          <td> Short for <a href="http://kinzler.com/ftp/faces/picons/">'personal
+              icons.'</a> Images used to represent users and domains
+            on the net. <br>
+          </td>
+          <td>Display only; optional</td>
+        </tr>
+        <tr>
+          <th>Contact Photo</th>
+          <td> Displays the contact photo for the sender (contained
+            in the address book) <br>
+          </td>
+          <td>Display only; optional</td>
+        </tr>
+	<tr>
+          <th>Google+ Photo</th>
+          <td> Displays the Google+ photo for the sender (requires <a href="https://addons.mozilla.org/en-US/thunderbird/addon/gcontactsync/">gContactSync </a> extension) <br>
+          </td>
+          <td>Display only; optional</td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  <h2><a name="download">Download / Installation</a></h2>
+  <p> <a href="download/messagefaces1_3.xpi">Download
+      MessageFaces 1.3</a> for Thunderbird 1.5 to 39.* and
+    SeaMonkey 2.0 to 2.40 (released 2017-10-20)<br>
+    <b>Installation:</b> Save the XPI file somewhere on your hard
+    drive. Then, go to Tools-&gt;Extensions, click the "Install"
+    button, and select the <tt>messagefaces1_3.xpi</tt> file.<br>
+    On modern versions of Mozilla, you can just drag the .xpi into
+    the browser window.<br>
+  </p>
+  <center>
+    <img src="img/header.png" alt="A screenshot of the Thunderbird message header pane with a face image on the right side"><br>
+    <img src="img/newscheck.png" alt="newscheck window"><br>
+    <img src="img/mailcheck.png" alt="mailcheck window"><br>
+    <img src="img/mom.gif" alt=""><br>
+    <img src="img/me_work.png" alt=""><br>
+    <img src="img/flags.png" alt=""><br>
+  </center>
+  <a href="http://validator.w3.org/check?uri=referer"> <img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01!" class="validate" height="31" width="88"> </a>
+  <p id="footer"> Last updated: 2016-04-25<br>
+    Author: Jens Bannmann (jens dot b at web dot de)<br>
+    Author: John D. Duncan, III (duncanjdiii at gmail dot com)<br>
+  </p>
+</div>
+

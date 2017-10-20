@@ -1,0 +1,21 @@
+/* applies to GIF and PNG images; avoids blurry edges */
+
+img[src$=".gif"], img[src$=".png"] {
+    image-rendering: optimizeSpeed;             /* speed  */
+    image-rendering: -moz-crisp-edges;          /* Firefox */
+    image-rendering: -o-crisp-edges;            /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
+    image-rendering: crisp-edges; /* ? */
+}
+* {
+    font-size: 18px;
+}
+hr {
+    background-image: url('hr.gif');
+    display:block;
+    border:0px;
+    height:2px;
+}

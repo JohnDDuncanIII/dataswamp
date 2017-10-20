@@ -1,0 +1,6 @@
+<script>
+	for ( var i = 0, len = localStorage.length; i < len; ++i ) {
+	  console.log( localStorage.getItem( localStorage.key( 0 ) ) );
+	  localStorage.removeItem(localStorage.key(0));
+	}
+</script>

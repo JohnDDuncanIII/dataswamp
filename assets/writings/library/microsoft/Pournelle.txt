@@ -1,0 +1,685 @@
+Jerry Pournelle wrote on his "Current View" webpage on 5 Janary 2002
+(http://www.pournelle.com) the following:
+
+"And
+
+[this web page]
+
+states the case against Microsoft in fairly extreme terms. I can't say I
+agree with much of his view of the early history: I was there and this isn't
+what I saw. Hindsight is wonderful, of course."
+
+I have asked Mr. Pournelle to elaborate on this and to put me straight on
+the facts that I may have gotten wrong, not having been there myself at the
+time. What follows is our dialogue in chronological order. To save space I
+have deleted signature blocks and the fully quoted original messages that
+Mr. Pournelle left at the bottom of his replies, but otherwise the text has
+of course been left unmodified.
+
+----------[ cut ]----------
+
+From: Frank van Wensveen [mailto:xxx@xxxxxx.nl]
+Date: Sat, 05 Jan 2002 11:35:34 +0100
+To: jerryp@jerrypournelle.com
+Subject: About your comments to my anti-MS page
+
+Dear Mr. Pournelle,
+
+One of your readers told me that you had put a link to my anti-Microsoft
+page on your website. Thank you! However, about the link you wrote:
+>  I can't say I agree with much of his view of the early history: 
+> I was there and this isn't what I saw. Hindsight is wonderful, 
+> of course.
+
+Well... I wasn't there, all I have to go by is what I find in literature
+about the history of Microsoft and of modern computing, and reports from
+people who claim to have been in the business at the time. But I'm always
+open to suggestions and corrections whenever someone has better information
+than I have.
+
+So you were there - what did you see? Would you mind telling me what you
+find wrong with what I've written? I'd really appreciate to hear your points
+of view. (And yes, I know the quote about Bill saying that 640k should be
+enough for everyone is apocryphal.)
+
+----------[ cut ]----------
+
+To: "Frank van Wensveen" <xxx@xxxxxx.nl>
+Subject: RE: About your comments to my anti-MS page
+From: "Jerry Pournelle" <jerryp@jerrypournelle.com>
+Date: Sat, 5 Jan 2002 10:36:13 -0800
+
+Well start with that since you don't say it's apocryphal.
+
+IBM shot itself in the foot having declared war on Microsoft over OS/2 vs.
+Windows. It would not commit the resources to actually win the war it
+started.
+
+And Gates's most important comment is never dealt with:
+
+"In 1989 I went to every application developer I could find and asked them
+to write applications for Microsoft Windows.  But they wouldn't do it. So I
+went to the Microsoft Applications Group and they didn't have that option."
+
+>From that came the Office Suite is which is far more of a key to Microsoft
+presence than Windows.
+
+IBM wouldn't even ship computers with OS/2 preinstalled, wouldn't pay
+Microsoft licensing fees to let Office run on OS/2 systems, and wouldn't
+develop its own applications: and charged a lot of money for both Software
+Developer Kits and Drivers Developer Kits for OS/2.  And took forever to put
+networking into OS/2 long after Windows for Workgroups in partnership with
+Intel made that trivial for Microsoft users.
+
+You want to show that Microsoft never did anything right and the others did
+little wrong, and that is simply not true.
+
+As to the very early days, IBM went to Digital Research for an OS for their
+upcoming PC, but Gary Killdall wasn't in Pebble Beach the day they arrived
+for their appointment, and Dottie, who was in charge, was a lawyer and
+wouldn't sign the NDA.  From than came IBM's visit to Microsoft. Microsoft
+bought their first DOS from Seattle Engineering, which had pirated CP/M and
+turned some of the interface code around and put COPY in THe OS (as opposed
+to the CP/M PIP external program). Microsoft bought it outright for $20,000
+cash. When the people at Seattle Engineering saw how much money Microsoft
+was making and they got none of it at all they went to Killdall, and
+Killdall went to IBM and showed his copyright was still embedded in the DOS
+code. The resulting settlement let Killdall do what he wanted, which was to
+divorce Dottie and get people to write Pascal and Logo and other languages,
+and later to do some CDROM development.
+
+Microsoft went on to develop stuff for everyone. Gates saw the computer as
+for every literate person. IBM saw it as a professional tool for
+professionals, and called the PC part of the company the "Entry Systems
+Division" - which ought to tell you a very great deal.
+
+Enough.
+
+----------[ cut ]----------
+
+To: "Jerry Pournelle" <jerryp@jerrypournelle.com>
+Subject: Re: About your comments to my anti-MS page
+From: Frank van Wensveen <xxx@xxxxxx.nl>
+Date: Sun, 06 Jan 2002 14:08:04 +0100
+
+Dear Mr. Pournelle,
+Thank you for responding. I appreciate it.
+
+On Sat, 5 Jan 2002 10:36:13 -0800, you wrote:
+
+> Well start with that since you don't say it's apocryphal.
+The 640k-quote you mean? That's one of the 'popular apocryphal' kind -
+sort of like the "Beam me up, Scotty" that everyone uses while that
+exact phrase has never been actually used on the Star Trek shows. :-)
+While not fully accurate, it's become almost proverbial.
+
+But on to the important bits:
+
+> IBM shot itself in the foot having declared war on Microsoft over OS/2 vs.
+> Windows. It would not commit the resources to actually win the war it
+> started.
+True. IBM blundered. They botched OS/2 rather badly with some of the
+worst marketing in the history of the industry, something that
+Microsoft cannot really be blamed for. I should probably mention that.
+
+> And Gates's most important comment is never dealt with:
+Most important? Why?
+
+> "In 1989 I went to every application developer I could find and asked them
+> to write applications for Microsoft Windows.  But they wouldn't do it. So I
+> went to the Microsoft Applications Group and they didn't have that option."
+This proves what, exactly? That developers outside Microsoft who had a
+free choice didn't want anything with Windows and/or Microsoft at the
+time? That, I take it, is not the point you're trying to make... or is
+it?
+
+In 1989 Windows was something for which I wouldn't have liked to have
+to develop application software for, either. 
+You know the history. Microsoft had been collaborating with IBM on
+OS/2 1.x at the time. This collaboration sprung from the insight that
+with the advent of the 80286 CPU and Intel's plans for the 386, DOS
+had become obsolete. IBM worked mainly on the kernel , which in its
+first incarnation was basically a 16-bit successor to DOS with a
+command line interface,  and Microsoft concentrated on the GUI.
+Then MS went and dropped IBM and OS/2 entirely. They cried
+"innovation" and went back to DOS in spite of having admitted it to be
+obsolete. They released the GUI part of what should have become OS/2
+as a separate DOS product which they called Windows 3. 
+
+So when Gates went shopping for Windows applications, the official
+idea was (or had been) that DOS was obsolete. Few expected a graphic
+shell to really change this - Microsoft's recent mucking about with
+GEM had been far from impressive. It was unclear at the time if a
+DOS/GUI hybrid had any future at all, and if so what it would look
+like. Besides, Microsoft had just dropped OS/2 after having touted it
+for two years as the future of desktop computing, and they'd just
+given IBM (their primary strategic business partner at the time) the
+finger.
+So Microsoft's stragegy was rather muddy right then, IBM was preparing
+lawsuits against MS because the new Windows code was full of
+technology that IBM felt MS had stolen, and few third parties felt
+there was any percentage in partnerships-- nobody knew what kind of a
+life cycle a partnership and the products resulting therefrom would
+have, and how it would end.
+All that *was* clear to application developers, in 1989, was that 90%
+of their existing DOS application code would have to be rewritten
+entirely. Bottom line: developing apps for Windows meant a *huge*
+investment with doubtful returns. Two years later this picture had
+changed entirely --Windows was still hard to adapt your code to but
+nobody doubted it was the only way to go-- but that was later. Gates
+has admitted since that Windows was a long shot at the time, and that
+he'd staked the entire future of Microsoft on the gamble that Windows
+would take off the way it did.
+
+So I'm not surprised that Gates eventually had to to to his own
+Application Group. *They* knew what was coming in terms of application
+code requirements... The rest of the software development community
+didn't, and wasn't willing to gamble the way Gated did.
+Even a year after the release of Windows 3.0 many application
+developers (facing a fait accompli) were still struggling to adapt
+their application code to Windows, and some never quite made it at
+all.
+And so Gates discovered the immense power of product bundling, and
+also learned a lot about the care and feeding of third party
+developers. He inspired trust by stating a total commitment to Windows
+(and, it must be said, by having put his money where his mouth was)
+and long before the first Windows 95 beta became available, developers
+had been working with freely available SDK's in order to have their
+new application code ready by the time Windows 95 hit the market.
+
+> >From that came the Office Suite
+Correct. They took the early incarnation of Word, bought the rest,
+rewrote and recoded it.
+
+> which is far more of a key to Microsoft
+> presence than Windows.
+Excuse me?
+You can buy an A-brand PC without Office but not without Windows. You
+can do without Office but you need Windows for practically every other
+major business application.
+And last but not least, Office and Windows cannot be regarded
+separately. Office requires Windows and is designed to do so, even
+more so with the .Net approach (where Office will be reduced to a
+bunch of services to be accessed with the client software that MS
+promises to embed in Windows) 
+
+> IBM wouldn't even ship computers with OS/2 preinstalled, wouldn't pay
+> Microsoft licensing fees to let Office run on OS/2 systems, and wouldn't
+> develop its own applications: and charged a lot of money for both Software
+> Developer Kits and Drivers Developer Kits for OS/2.  And took forever to put
+> networking into OS/2 long after Windows for Workgroups in partnership with
+> Intel made that trivial for Microsoft users.
+As I said, IBM blundered. Big time. Eventually they made partnerships
+with hardware vendors to preload OS/2 3.0, but that was far too late,
+and Warp needed bigger hardware than it was shipped with, was
+practically impossible to configure for the average end user, and
+lacked driver support in a really bad way. In fact it was not
+market-ready.
+Bottom line: IBM botched what could have been a viable OS. In spite of
+having created the original PC, IBM never really understood the
+desktop market. I should probably mention that as well.
+ 
+> You want to show that Microsoft never did anything right and the others did
+> little wrong, and that is simply not true.
+IBM created OS/2 which was basically a better OS architecture, but
+then they went and blew it by taking too long to finish it, releasing
+it half-baked, and they did some of the worst marketing in history, as
+I said above.
+
+> As to the very early days, IBM went to Digital Research for an OS for their
+> upcoming PC, but Gary Killdall wasn't in Pebble Beach the day they arrived
+> for their appointment, and Dottie, who was in charge, was a lawyer and
+> wouldn't sign the NDA.  From than came IBM's visit to Microsoft.
+True. That's the stuff of legend. I know the story, but I haven't
+included it in my article because it's not really relevant there.
+
+> Microsoft bought their first DOS from Seattle Engineering, 
+Which operated under the name Seattle Computer Products (SCP) at the
+time.
+
+> which had pirated CP/M 
+> and turned some of the interface code around and put COPY in the OS (as opposed
+> to the CP/M PIP external program). 
+And they named the resulting product (rip-off if you like) QDOS.
+
+> Microsoft bought it outright for $20,000 cash. 
+OK... (The price is irrelevant, though.)
+
+Now, in my artile I wrote:
+"That first version of PC-DOS (later MS-DOS) was little more than a
+revamped version of QDOS (AKA DOS-86), the code of which Microsoft
+purchased from SCP, along with a few ideas that were "borrowed" from
+CP/M. (QDOS, which stands for "Quick & Dirty Operating System, was a
+derivative from CP/M as well.) "
+
+So far I still don't see where I have been wrong... Except perhaps for
+the "borrowed from CP/M" bit which suggests that MS added CP/M code to
+QDOS, which they didn't. I should probably rephrase that.
+
+> When the people at Seattle Engineering saw how much money Microsoft
+> was making and they got none of it at all they went to Killdall, and
+> Killdall went to IBM and showed his copyright was still embedded in the DOS
+> code. The resulting settlement let Killdall do what he wanted, which was to
+> divorce Dottie and get people to write Pascal and Logo and other languages,
+> and later to do some CDROM development.
+Which may be true, but is IMO again irrelevant to the subject of my
+article. Killdall will be remembered as having made the most capital
+business blunder in modern history, but that's beside the point.
+
+> Microsoft went on to develop stuff for everyone. Gates saw the computer as
+> for every literate person. IBM saw it as a professional tool for
+> professionals, and called the PC part of the company the "Entry Systems
+> Division" - which ought to tell you a very great deal.
+It tells me that IBM has never understood the desktop market and
+approached it in the same way as they approached the market for mini
+and midrange systems.
+The bottom line is that many companies make good stuff but ruin it
+through terrible marketing (not only IBM's OS/2 debacle comes to mind,
+Novell for example is rapidly making itself extinct through exactly
+the same practices) while Microsoft releases IMO bad quality products
+but use brilliant marketing tactics and thrive as a result. I have
+already made that point in my article.
+
+To summarize: 
+Your primary concern with my article seems to be that I don't mention
+how IBM disappointed friend and foe with the way they botched OS/2. I
+shall add a passage about the MS/IBM breakup and how IBM was largely
+responsible for the demise of their version of OS/2. 
+
+Apart from that I'm not quite sure how your comments correct what I
+wrote about the early history. Unless I've completely misunderstood
+you, of course. Feel free to point out to me what I've missed here,
+though.
+
+> Enough.
+Quite. :-)
+
+----------[ cut ]----------
+
+To: "Frank van Wensveen" <xxx@xxxxxx.nl>
+Subject: RE: About your comments to my anti-MS page
+From: "Jerry Pournelle" <jerryp@jerrypournelle.com>
+Date: Sun, 6 Jan 2002 22:06:03 -0800
+
+It is his most important comment because it is the key to Microsoft
+Dominance.
+
+Gates bet the company that he could market an OS with applications that
+people would buy in preference to the "better" ones like UNIX and OS/2 and
+others. He understood that people just wanted to USE their machines, not
+become experts.
+
+The interesting part is that he was so successful that most of the experts
+ended up using Microsoft applications. It is the applications that won
+people, not Windows itselt.
+
+Many of those apps were written for the Apple Macintosh, and had Apple had a
+saner marketing strategy, Microsoft would be best known for its Macintosh
+Applications like Word and Excel...
+
+When Word Perfect wouldn't do Windows, and Lotus wouldn't do Windows, and
+Novel tried to avoid doing windows....  Microsoft Applications Group turned
+out stuff that sort of worked, the hardware got faster and it did work, and
+the Number One word processor and #2 and #3 for that matter vanished. Word
+took over, Excel took over, Power Point - all three applications first
+marketed for the Mac - won people over.  Simple as that, and no one pays
+attention.
+
+And Microsoft didn't drop OS/2, IBM declared war on a confused Bill Gates. I
+was there. At the time IBM was a much larger company.
+They started a war then forgot to fight.
+
+Thanks for the inputs. I have deadlines, and while I enjoy dialogues I
+seldom have enough time to do it right.
+
+Best regard
+
+J
+
+----------[ cut ]----------
+
+To: "Jerry Pournelle" <jerryp@jerrypournelle.com>
+Subject: Re: About your comments to my anti-MS page
+From: Frank van Wensveen <xxx@xxxxxx.nl>
+Date: Mon, 07 Jan 2002 20:24:40 +0100
+
+Dear Mr. Pournelle,
+Thank you for responding.
+On Sun, 6 Jan 2002 22:07:15 -0800, you wrote:
+
+[Gates' comment about unwilling application developers]
+> It is his most important comment because it is the key to Microsoft
+> Dominance.
+I disagree. IMO the key to Microsoft's dominance is marketing based on
+platform dependency and proprietary technology. It's easy to develop
+for Windows because there are low-threshold development tools in
+abundance. As soon as developers start to make software for Windows,
+they're stuck with it.
+Microsoft's commercial strategy has always been brilliant, and Gates
+is a commercial genius. That is the key. And I believe I have said so,
+in words to that effect, in my article.
+
+> Gates bet the company that he could market an OS with applications that
+> people would buy in preference to the "better" ones like UNIX and OS/2 and
+> others. He understood that people just wanted to USE their machines, not
+> become experts.
+True. I don't deny that (and I never have) but I only wish he would
+have done that with good quality products instead of with sloppy
+hacks, and without contracts that force hardware vendors to ship
+nothing without Windows in order to be allowed to ship Windows at all.
+ 
+> The interesting part is that he was so successful that most of the experts
+> ended up using Microsoft applications. It is the applications that won
+> people, not Windows itselt.
+That's because Microsoft applications work better under Windows (this
+was especially true with earlier versions of Windows) than competing
+products, and were released sooner.
+
+> Many of those apps were written for the Apple Macintosh, and had Apple had a
+> saner marketing strategy, Microsoft would be best known for its Macintosh
+> Applications like Word and Excel...
+Let it go on record that I am very much impressed with Apple. Not with
+their marketing strategy, but by the fact that they still exist in
+spite of it.
+
+> When Word Perfect wouldn't do Windows, 
+Correction: Word Perfect *couldn't* do Windows. Granted, they tried to
+stick their heads in the sand but Windows just wouldn't go away, and
+eventually they faced up to the fact that they had no choice.
+But then it became obvious that they were in serious trouble because
+of all major DOS applications, theirs was one of the least portable.
+The DOS versions of WP had no choice but to rely on their own CRT,
+font and printer support routines because DOS didn't offer any support
+for that at all, and in WP the bulk of the code consisted of low-level
+routines that had to do with device support. In order to port WP to
+Windows a major rewrite was in order, and the above parts of the code
+that WP had traditionally concentrated on had to be redesigned from
+scratch.
+WP struggled for a time, and then announced that their Windows release
+would incorporate its own printer support in spite of the fact that
+printer support now belonged in the OS rather than in the application,
+which illustrates how deep they were in it. Reactions to that idea
+eventually convinced them that it would bring disaster, and they
+struggled on. Finally after many months (I forget exactly how long)
+the first version of WP for Windows was released and proved to be
+dreadfully slow, both in screen and printer output, and instable to
+boot. Later versions weren't up to standards either.
+Microsoft on the other hand had been shipping Word in a bundle with
+Windows from day one.
+And that was the end of WP.
+
+> and Lotus wouldn't do Windows, 
+Lotus was full of non-portable low-level code as well (although for
+less obvious reasons). 
+
+> and Novel tried to avoid doing windows....  
+Eh? How should Novell have "done Windows"?
+Novell offered a perfectly good DOS client that ran under Windows 3,
+and provided clients for later versions (that MS shipped with Novell
+clients as well). Novell had to compete with Windows Server products,
+which is not the same as developing application software for it) and
+failed to do so, mainly because of the mess that Ray Noorda left when
+he resigned. Since then their strategy has drifted into all directions
+at once and gotten nowhere, and Microsoft may have scared them into
+that but Novell's failure to respond to the first real competition
+they ever faced is inexcusable. Novell dug its own grave and now
+they're about to fall into it.
+But I digress.
+
+More to the point: a major weapon (quite possibly unintended)  in
+killing off competing application vendors may have been Windows'
+backward capability with DOS. Users could exit Windows to DOS (so they
+still had DOS, in a way) and Windows had its own DOS box. This may
+have given many DOS application developers the impression that porting
+DOS applications to Windows wasn't all that urgent. By the time they
+knew that to be a fatal mistake, it was too late for many of them.
+
+> Microsoft Applications Group turned out stuff that sort of worked, 
+Because everyeone else at the time had major problems with porting
+their DOS code to Windows! And Microsoft released that stuff that sort
+of worked several months ahead of the competition. *That* is the point
+here.
+
+> the hardware got faster and it did work, and
+> the Number One word processor and #2 and #3 for that matter vanished. Word
+> took over, Excel took over, Power Point - all three applications first
+> marketed for the Mac - won people over.  Simple as that, and no one pays
+> attention.
+Perhaps because no one sees it that way?
+
+> And Microsoft didn't drop OS/2, IBM declared war on a confused Bill Gates. I
+> was there. 
+Interesting. So you saw it from the inside. How, and for how long,
+were you involved with MS and/or IBM before, during and after the
+breakup? And what *exactly* happened then and there, and what were the
+circumstances? I'm curious.
+
+I wasn't there, so I saw it from the outsside and what I saw at the
+time is this:
+IBM used Presentation Manager in OS/2, but its API was incompatible
+with that used by Windows. (For example PM had it's own ideas about
+positioning coordinates, e.g. 0,0 was bottom left which went, and
+goes, among most conventions).
+The code developed by IBM and Microsoft continued to diverge, and
+release dates began to slip. The media reported that tensions began to
+develop in their relationship. And suddenly Windows 3.0 hit the market
+which relieved much of the need for OS/2 for a couple of years, and
+IBM and MS broke up. Shortly thereafter MS announced that they would
+develop Windows NT which they considered to be competitive with OS/2.
+
+Now from where I sit this doesn't look like it was all IBM's idea.
+
+> At the time IBM was a much larger company.
+Granted, but I fail to see why that implies that they initiated the
+breakup. Microsoft was smaller than IBM but Gates doesn't lack the
+guts (and never did) to do what he considers best for Microsoft.
+
+> They started a war then forgot to fight.
+MS was a young, dynamic and aggressive company, while IBM was a
+lumbering giant. Developments at MS had, and have, always been much
+faster than at IBM. IBM didn't forget to fight, they just didn't get
+around to it until it was far too late.
+Personally I don't doubt for a second that Gates recognized the fact
+that he could operate faster without IBM than with them. And IBM's
+track record in the desktop software market at the time had not been
+exactly impressive either; they have never been known for lean&mean
+desktop software.
+Gates' strategy never involved major fights with IBM - he knew he
+could pick up his marbles (and according to IBM, a few of theirs as
+well) and outrun them. And that's exactly what he did.
+
+Again, this is what it looks like from where I sit. From a different
+perspective, things often look different.
+
+> Thanks for the inputs. I have deadlines,
+> and while I enjoy dialogues I seldom have enough time to do it right.
+I understand. I enjoy dialogues as well (especially the comparing of
+different points of view) and I appreciate the time you spend on this.
+
+----------[ cut ]----------
+
+To: "Frank van Wensveen" <xxx@xxxxxx.nl>
+Subject: RE: About your comments to my anti-MS page
+From: "Jerry Pournelle" <jerryp@jerrypournelle.com>
+Date: Mon, 7 Jan 2002 11:53:06 -0800
+
+If you have not figured out that what you are saying is almost precisely
+what I said, except that you have an attitude about it, then you should
+think on the subject.
+
+What in the world were people supposed to do?  No one would write
+applications for Windows, because Windows was so awful to write applications
+for, only the applications Microsoft wrote for Windows worked better under
+Windows than the applications others wrote for non-Windows so...
+
+Ye gods, you contradict yourself at every turn because you just don't like
+Microsoft. So be it, but I haven't time to be in a religious debate.
+Microsoft discount policies were pretty rugged but don't tell me that IBM
+couldn't ship machines with OS/2. They chose not to, and they chose not to
+get anyone else to do it either. But what, other than OS/2, was the
+alternative to Windows?  CP/M?  Overpriced Apple with hardware obsolete
+about the time the machines went on sale?  Buy a Lisa to develop Macintosh
+applications with? Buy a Mac and then go buy an external fan because Apple
+refused to put a fan in their case?
+
+The fact is that hardware companies were stuck: IBM "entry systems" didn't
+take the PC market seriously, but to the extent that they did they would
+rather sell hardware than software.
+
+Just what was the alternative to Windows?  But no one would write
+applications for Windows so Microsoft had to do that. As to Word Perfect,
+getting it to run on Windows wouldn't have been that hard if they had tried,
+but they didn't try until late because they were smug in their dominance.
+
+The world didn't have to go the way it did, but all the potential
+competitors to Microsoft enjoyed being rich like playboys until it was too
+late and then they went to courts.  Oh well
+
+Tell me, sir, what should people have done back in those days?  Wait for
+"good" programs?  OF COURSE Microsoft rushed stuff out into the market with
+the hopes that better hardware would bail them out. As opposed to waiting
+until "it was right" at which point it would be obsolete because of Moore's
+Law. The hardware was getting better and writing software at the edge of
+what you could do with existing hardware was a very good bet.
+
+But think as you like.
+
+----------[ cut ]----------
+
+To: "Jerry Pournelle" <jerryp@jerrypournelle.com>
+Subject: Re: About your comments to my anti-MS page
+From: Frank van Wensveen <xxx@xxxxxx.nl>
+Date: Tue, 08 Jan 2002 12:54:56 +0100
+
+Dear Mr. Pournelle,
+On Mon, 7 Jan 2002 11:53:06 -0800, you wrote:
+
+> If you have not figured out that what you are saying is almost precisely
+> what I said, except that you have an attitude about it, then you should
+> think on the subject.
+
+We started this discussion when you said you disagreed with my version
+of Microsoft's early history and I asked you to correct me on it.
+In a nutshell, you gave me an account of how MS came to supply DOS,
+which matched what I wrote in my article almost literally. You spoke
+about OS/2 which I had neglected to mention, and emphasized how IBM
+blundered with OS/2. About Windows applications you quoted Gates who
+said that he was forced to make his own applications because nobody
+else would develop WinApps, and you added comments to the effect that
+the whole history of Windows and WinApps was as much the fault of
+Microsoft's competitors as it was Microsofts.
+In response I pointed out that I had my facts right on the history of
+DOS, that IMO the OS/2 collaboration wasn't all that relevant but that
+indeed IBM had botched OS/2, that Microsoft's competitors weren't
+ready for Windows but only Microsoft's Application Group was, and that
+therefore neither competitors nor consumers had a choice, which is the
+gist of my article.
+
+Now you say that I agree with you and that I contradict myself at
+every turn, and we're suddenly discussing the hardware market instead
+of Microsoft's early history.
+If you feel this to be a religious debate, perhaps this discussion has
+passed the point of usefulness. Indeed a dialogue along the lines of
+"You'd see that I'm right if you'd only think about it" is rapidly
+becoming a waste of time.
+
+To address your comments one last time:
+
+> What in the world were people supposed to do?  
+Indeed. They had no choice, which is exactly what I've been saying all
+the time. However Gates' quote  implies that they did have a choice
+but weren't interested, which is simply not true.
+
+> No one would write
+> applications for Windows, because Windows was so awful to write applications
+> for, only the applications Microsoft wrote for Windows worked better under
+> Windows than the applications others wrote for non-Windows so...
+So Microsoft developed Windows while the IBM/MS breakup over OS/2 was
+in the air, which muddied the water and scared everyone off. Then they
+wrote apps for their own OS and bundled them with it, months before
+their competitors were able to catch up. Which is what I wrote in my
+article, albeit in less detail. It also makes Gates' statement that he
+was forced to do what he did because the competition wouldn't, sound a
+bit hypocritical at best.
+
+> Microsoft discount policies were pretty rugged
+Yes, but that's irrelevant. There's nothing wrong with discounts,
+that's just a way of doing business and boosting sales. But MS's later
+policies where hardware vendors were forced to ship Windows and
+nothing else with each PC, regardless whether or not the customer
+wanted it, are something else entirely. And *that* is what I'm
+addressing in my article.
+
+>  but don't tell me that IBM
+> couldn't ship machines with OS/2. They chose not to, and they chose not to
+> get anyone else to do it either. But what, other than OS/2, was the
+> alternative to Windows? 
+At the time there wasn't, and I have never blamed Microsoft for that
+fact. What I do blame them for is the bad quality of the only product
+available, and the way it's deliberately designed to remain the one
+and only option available to the users.
+
+> The world didn't have to go the way it did, but all the potential
+> competitors to Microsoft enjoyed being rich like playboys
+> until it was too late and then they went to courts.  Oh well
+If that's the way you want to see it, be my guest.
+
+> Tell me, sir, what should people have done back in those days?  Wait for
+> "good" programs?
+Most of the "good" programs at the time were killed off when Microsoft
+released an OS that only their own Applications Group was ready for
+and bundled their own applications with Windows, whereupon they became
+impossible to unhorse. This is what I write in my article.
+
+>  OF COURSE Microsoft rushed stuff out into the market with
+> the hopes that better hardware would bail them out. As opposed to waiting
+> until "it was right" at which point it would be obsolete because of Moore's
+> Law. The hardware was getting better and writing software at the edge of
+> what you could do with existing hardware was a very good bet.
+Which is both true and completely beside the point since that's what
+all cutting edge developers do. But at this point I no longer believe
+we're discussing how I was wrong about my account of the "early
+history" of the whole Microsoft issue.
+
+> But think as you like.
+As do we all.
+
+Thank you for your time.
+
+----------[ cut ]----------
+
+To: "Frank van Wensveen" <xxx@xxxxxx.nl>
+Subject: RE: About your comments to my anti-MS page
+From: "Jerry Pournelle" <jerryp@jerrypournelle.com>
+Date: Tue, 8 Jan 2002 08:29:00 -0800
+
+I am sure you're right.
+
+This is a deadline day for a column.
+
+---[ End Of Thread ]---
+
+======================================================================
+
+Another reader contributed the following:
+
+"I was a consultant to IBM during the development of the PC, having 
+fomented much of the early microprocessor industry between 1971 and 1979 
+(when the PC project was started at IBM).
+Some comments in your dialog with Jerry Pournelle: IBM did NOT see the 
+IBM PC as a "professional tool." One of the reasons the original PC has 
+an audio I/O port was for cassette tape storage, because they thought that 
+consumers might not add more storage. Remember, the original IBM PC was 
+marketed through the Sears retail chain (Sears merchandisers actually gave 
+IBM the idea of printing the image of the computer on the box), so IBM 
+wasn't sure who'd really buy it. The professional market won out in the 
+short term, which is way we got the IBM PC XT, with a 10 MB (huge!) hard 
+disk. IBM's major concern was to protect the sales of their low-end word 
+processor (model 5170, I think...although I could research it; the 
+original PC was model 5150), selling for north of $5,000 in the 
+professional market, which is why they bundled the FORTH-based word 
+processor written by an ex-felon (John Draper, aka "Cap'n Crunch" and a 
+colleague who was free-basing a gram-and-a-half oc cocaine a day at the 
+time...I got that project back on delivery schedule, averting a 
+three-month delay in the PC launch)."
+

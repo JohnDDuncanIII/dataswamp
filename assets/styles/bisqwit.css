@@ -1,0 +1,94 @@
+/* generic defs */
+BODY{margin:0px;background:white;color:black}
+
+A:link{text-decoration:none;color:#2A3BC0}
+A:visited{text-decoration:none;color:#82B}
+A:active{text-decoration:underline;color:#004060;background:#CDF}
+A:hover{text-decoration:underline}
+
+CODE{font-family:lucida console,monospace;color:#150}
+SMALL{font-size:70%}
+
+/* page cell */
+TD.pagecell{background:white;color:black}
+
+/* whole page */
+TABLE.body{width:100%;height:100%}
+
+TD.titlecell{width:100%;background:#EEE;border-bottom:1px solid #DD6}
+TD.titlecell H1{margin:0; text-align:center}
+TD.footercell {}
+
+/* TD.mblink {background-image:url("/fliers/menusca.gif")} */
+/* TD.mblink IMG{border:1px solid #7C7F80;height:3px;width:13px;margin-right:2px} */
+
+TD.menucell{
+    padding:2px;
+    background:#DDDDD5 url("fliers/bg.jpg") 0px 360px no-repeat;
+    border-right: 2px solid #556;
+    border-top:   1px solid #554;
+    border-bottom:1px solid #554;
+    font-family:verdana,arial,sans-serif
+}
+TD.menucell DIV {margin:0px;padding:0px}
+TD.menucell A:link,
+TD.menucell A:visited{text-decoration:none;color:#206}
+TD.menucell A:active {color:#046;background:#008}
+TD.menucell A:hover{text-decoration:underline}
+
+/* Menu title */
+.menutitle{font-size:80%;font-weight:bold;background:#DC8;color:black}
+/* Menu option */
+.menuopt  {font-size:75%}
+/* Selected menu item */
+.menusel  {font-size:75%;color:#060}
+/* Style of the &gt; in selected menu item */
+SPAN.menuarrow{color:red;font-size:60%}
+
+/* user defs */
+PRE.smallerpre{font-family:lucida console,monospace;
+               font-size:80%;color:#501;margin-left:30px}
+
+SPAN.designnote{font-family:arial,serif;font-size:75%}
+SPAN.copyrightnote{font-family:arial,serif;font-size:75%}
+.c3{background:#68C088;color:white;font-weight:bold}
+.c2{background:#A0E0F4}
+.c1{background:#407080;color:white;font-weight:bold;border-top:2px solid black;border-bottom:1px solid #80B0C0}
+TD.listrow{border-bottom:1px solid #A0E0A4}
+.cmdSearch{border:1px solid black;background:#C0C0D0}
+.inputText{border:1px solid black;padding:2px}
+HR.invisiblehr {visibility:hidden;position:absolute;left:0px;top:0px}
+
+.diarytext {
+    white-space:pre;
+    font-family:monospace;
+}
+
+input.magic { font-size:8px; background:#228; color:#FFF; font-family:monospace }
+input.magic2 { font-size:11px; width:10em;background:#AAC; color:#FFF; font-family:ancient,serif; margin-top:1em }
+
+.nonmail { visibility:hidden;position:absolute; top:0px;left:0px }
+.ismail { font-weight:normal }
+
+H2,H3,H4,H5,H6 {
+    background:#E0E8FF;
+    border-bottom:1px dashed gray;
+    border-top:1px dashed gray;
+    font-weight:bold
+}
+H1       {font-size:250%} .level1 {text-align:center}
+H2       {font-size:140%} .level2 {margin-left:1%}
+H3       {font-size:115%} .level3 {margin-left:2%}
+H4       {font-size:110%} .level4 {margin-left:3%}
+H5       {font-size:107%} .level5 {margin-left:4%}
+H6       {font-size:103%} .level6 {margin-left:5%}
+
+TABLE.toc {border:0px}
+TD.toc   {font-size:80%; font-family:Tahoma; text-align:left}
+H1       {font-size:250%; font-weight:bold} .level1 {text-align:center}
+H2       {font-size:200%; font-weight:bold} .level2 {margin-left:1%}
+H3       {font-size:160%; font-weight:bold} .level3 {margin-left:2%}
+H4       {font-size:145%; font-weight:bold} .level4 {margin-left:3%}
+H5       {font-size:130%; font-weight:bold} .level5 {margin-left:4%}
+H6       {font-size:110%; font-weight:bold} .level6 {margin-left:5%}
+BODY     {font-family:Arial,Verdana,Helvetica }

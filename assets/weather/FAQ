@@ -1,0 +1,451 @@
+Picons Frequently Asked Questions
+
+   Steve Kinzler <steve@kinzler.com>
+   27 Nov 2005
+   An HTML version of this document is available at
+   <URL:http://kinzler.com/picons/ftp/faq.html>.
+
+    1. What are picons?
+    2. Where can I get the picons databases and how are they licensed?
+    3. What is the structure of the picons databases?
+    4. What are the constraints on individual picons?
+    5. How are picons looked up in the databases?
+    6. What software and services are available that use picons?
+    7. What software is available to help create picons?
+    8. How can I submit picons to the databases?
+    9. Is there a mailing list about picons?
+   10. Who has contributed to picons?
+     __________________________________________________________________
+
+1. What are picons?
+
+   "picons" is short for "personal icons". They're small, constrained
+   images used to represent users and domains on the net, organized into
+   databases so that the appropriate image for a given e-mail address can
+   be found. Besides users and domains, there are picons databases for
+   Usenet newsgroups and weather forecasts. The picons are in either or
+   both monochrome XBM and color XPM formats, plus a GIF format.
+
+   These databases have been compiled in hopes of helping make cyberspace
+   a more personable place. With them, software and services can be
+   developed to identify persons on the net by face (or, at least, by
+   institution logo) instead of by a cryptic e-mail address. Although this
+   software is still more potential than actual, much already exists (see
+   6.). The picons databases themselves, of course, are only a first step
+   toward this goal.
+
+   The picons databases have been built from the submissions of hundreds
+   of contributors across the net, and, as such, their accuracy and
+   appropriateness has not been extensively verified. Contributions and
+   corrections are welcome and encouraged (see 8.).
+
+   The picons databases that currently are available are:
+
+     * domains, logos for Internet domains
+     * misc, picons for common accounts and miscellany
+     * news, icons for Usenet newsgroups
+     * unknown, default picons for very high-level Internet domains
+     * usenix, face images of Usenix conference attendees
+     * users, picons for individual accounts (often face images)
+     * weather, icons for displaying weather forecasts
+
+   The picons databases have previously been referred to as "faces"
+   collections or databases, because they were originally compiled for use
+   with the "faces" software. Since they're now used for more than this
+   and include more than actual face images, they're referred to as the
+   picons databases to make the distinction and to avoid overloading the
+   term "faces".
+     __________________________________________________________________
+
+2. Where can I get the picons databases and how are they licensed?
+
+   The picons databases are available via WWW in the Picons Archive at
+   <URL:http://kinzler.com/picons/ftp/>. This archive also includes
+   sources for picons application scripts and icon utilities and a set of
+   demo window dumps of some picons applications. An interactive random
+   picons sampler and a picons database search facility are also available
+   via WWW here.
+
+   The databases are also mirrored in the UUNET archives in
+   ftp.uu.net:/published/usenix/faces/bundled/picons/, where they're
+   available via FTP or UUCP.
+
+   The databases are updated in these archives each day they change so the
+   most current version is always available. Since many of the databases
+   are constantly growing, you may want to update your local copy of them
+   periodically.
+
+   The databases are also available as packages for Debian GNU/Linux at
+   ftp://sunsite.unc.edu/pub/Linux/distributions/debian/, though these are
+   updated much less frequently.
+
+   Most of the databases have a license that places some conditions on
+   their use and distribution. Generally, this is just to ensure that the
+   volunteer efforts put into the databases are recognized and protected.
+   Otherwise, they're essentially freely usable, but see the LICENSE
+   section of the README file in the top directory of each database for
+   details.
+     __________________________________________________________________
+
+3. What is the structure of the picons databases?
+
+   Each database is structured as a directory tree. Each directory deeper
+   into a database more specifically references a picon. The databases for
+   users and domains are organized by reversed Internet domainname
+   components followed by the username. For example, my XPM picon is
+   located in the "users" database under my most general e-mail address,
+   kinzler@indiana.edu, in the file
+        users/edu/indiana/kinzler/face.xpm
+
+   The picon files themselves are always named face.xbm, face.xpm or
+   face.gif. The face.gif file will be the same image as the face.xpm file
+   if it exists, otherwise as the face.xbm file. If the picon applies to
+   the domain as a whole and no user in particular, the username "unknown"
+   is used. These picons are typically in the "domains" or "unknown"
+   databases, for example
+        domains/edu/indiana/cs/unknown/face.xpm
+
+   If the picon applies to a specific user in any domain (usually standard
+   system accounts), the domain "MISC" is used. These picons are typically
+   in the "misc" or "unknown" databases, for example
+        misc/MISC/postmaster/face.xpm
+
+   Note that, with the exception of the special MISC domain, all parts of
+   the path are in lower-case.
+
+   The "news" database is organized by Usenet newsgroup name components
+   with an "unknown" username. For example, the XPM picon for
+   rec.humor.oracle is in
+        news/rec/humor/oracle/unknown/face.xpm
+     __________________________________________________________________
+
+4. What are the constraints on individual picons?
+
+   Each final directory in a database may contain one or both of a
+   face.xbm file and a face.xpm file, plus a face.gif file. Picons in all
+   formats are constrained to be 48 by 48 pixels in size. (An exception is
+   the weather database which has picons 64 by 64 pixels). Furthermore,
+   XPM picons are in the version 3 format of XPM and must use only colors
+   in one of two limited subsets of common colors. This restriction
+   minimizes the competition for colormap space for many users and usually
+   allows applications displaying picons to do so with the standard
+   colormap. GIF picons are equivalent to their XPM counterparts with the
+   XPM/XBM "none" color converted to "grey75" (rgb:BF/BF/BF) and marked as
+   transparent.
+
+   The first color set is that used in the AIcons collection, version 1.6.
+   See <URL:http://www.cit.gu.edu.au/~anthony/icons/docs/> for more about
+   the history and rationale of this color set. The colors in the set are
+   (by hexadecimal RGB triplets and X11 color names)
+    00 00 00 black              EE 82 EE violet
+    2F 4F 4F dark slate grey    FF 00 FF magenta
+    70 80 90 slate grey         A0 20 F0 purple
+    BE BE BE grey               00 FF FF cyan
+    DC DC DC gainsboro          A0 52 2D sienna
+    FF FF FF white              CD 85 3F peru
+    00 00 80 navy               FF A5 00 orange
+    00 00 FF blue               FF D7 00 gold
+    1E 90 FF dodger blue        FF FF 00 yellow
+    87 CE EB sky blue           D2 B4 8C tan
+    E6 E6 FA lavender           F5 DE B3 wheat
+    2E 8B 57 sea green          FF FA CD lemon chiffon
+    32 CD 32 lime green         B2 22 22 firebrick
+    00 FF 00 green              FF 00 00 red
+    98 FB 98 pale green         FF 63 47 tomato
+
+     [Colors Image]
+
+   The second color set is a greyscale set for use with photographic-type
+   icons when the first color set isn't satisfactory. Its colors by
+   hexadecimal RGB triplets and X11 color names are
+    00 00 00 black              87 87 87 grey53
+    12 12 12 grey7              99 99 99 grey60
+    21 21 21 grey13             AB AB AB grey67
+    33 33 33 grey20             BA BA BA grey73
+    45 45 45 grey27             CC CC CC grey80
+    54 54 54 grey33             DE DE DE grey87
+    66 66 66 grey40             ED ED ED grey93
+    78 78 78 grey47             FF FF FF white
+
+     [Greys Image]
+
+   The transparent or "none" color can be used with both color sets. In
+   fact, its use is encouraged as the background color.
+     __________________________________________________________________
+
+5. How are picons looked up in the databases?
+
+   With most applications, databases are searched sequentially according
+   to an order specified by a search path. The definition of this path
+   will vary from application to application depending on the nature of
+   the application and the databases available and desired.
+
+   The recommended order of the picons databases for a search path for
+   Internet e-mail addresses is:
+
+    1. your personal database, if any
+    2. your local site database, if any
+    3. users
+    4. usenix
+    5. misc (MISC default picons)
+    6. domains
+    7. unknown ("smoking spy" catch-all default picons)
+
+   Any of these databases are optional, of course, and may be excluded for
+   efficiency or because of lack of usefulness. As special purpose
+   databases, the news and weather databases are usually used alone or
+   with just personal and local additions.
+
+   Each database is searched for a matching picon from most specific to
+   least specific. The search typically stops with the first match. Each
+   database is searched entirely before continuing with the next one. For
+   example, a lookup for the picon for kinzler@cs.indiana.edu would
+   proceed with this sequence of checks occuring within each database in
+   the search path. The picon used would be in the first of these
+   directories containing a suitable one:
+
+    1. edu/indiana/cs/kinzler
+    2. edu/indiana/kinzler
+    3. edu/kinzler
+    4. MISC/kinzler
+    5. edu/indiana/cs/unknown
+    6. edu/indiana/unknown
+    7. edu/unknown
+    8. MISC/unknown
+     __________________________________________________________________
+
+6. What software and services are available that use picons?
+
+   There's a number of programs available that use picons to monitor
+   incoming e-mail or represent an e-mail message. Applications are also
+   available to monitor print queues, unread news, system mail queues,
+   weather forecasts, given addresses and newsgroups, and so on.
+
+   All such software can be found in the Faces Archive available via WWW
+   at <URL:http://kinzler.com/ftp/faces/>.
+
+   The Faces Archive is also mirrored in the UUNET archives in
+   ftp.uu.net:/published/usenix/faces/bundled/, where they're available
+   via FTP or UUCP.
+
+   The Picons Search engine at <URL:http://kinzler.com/picons/search.html>
+   searches the picons databases for requested picon sets and displays the
+   found picons. As such, it can serve as an icon lookup service for
+   Internet users and domains and Usenet newsgroups.
+
+   The Picons Card Game at <URL:http://kinzler.com/cardgame> lets you play
+   a card game in JavaScript with any number of players, any number of
+   cards, and any set of Web images, including many pre-defined subsets of
+   picons to randomly select from. It's a fun and challenging game for all
+   ages.
+
+   The Picons Sonification page at
+   <URL:http://kinzler.com/picons/javoice/> uses the vOICe Java applet to
+   compute and play auditory representations of images, including GIF
+   picons, intended as a step towards a vision substitution device for the
+   blind.
+
+   The WWW-Finger Gateway with Faces at
+   <URL:http://www.cs.indiana.edu/finger/gateway> displays picon sequences
+   for the users and hosts it fingers.
+
+   Anthony's Icon Library (AIcons) at
+   <URL:http://www.sct.gu.edu.au/~anthony/icons/> includes some picons
+   among its various icon sections, which are organized for programming,
+   application and Web usage. In particular, the library highlights the
+   country flag domain picons and the Olympic event logo picons.
+
+   The Indiana University Computer Science Personnel Directory at
+   <URL:http://www.cs.indiana.edu/people/> uses picons of users in indices
+   of its personnel information pages.
+
+   The Gmane mailing list archive at <URL:http://www.gmane.org/> displays
+   picons with the messages displayed on its website.
+     __________________________________________________________________
+
+7. What software is available to help create picons?
+
+   There's a cornucopia of software available on all computing platforms
+   for creating and manipulating images which can be useful towards
+   creating picons. Images can be created by hand or scanned in with a
+   scanner. Also, one can scrounge around existing image collections or
+   browse the World-Wide Web for images that can be converted and scaled
+   to a picon.
+
+   The MailFaces documentation at
+   <URL:http://members.cruzio.com/~jthomas/mailfaces/picons.html> provides
+   advice on creating picons under Windows 95 and OS/2 environments. If
+   you can put your image on the Web, then you can use the PIconCreate
+   service at
+   <URL:http://members.cruzio.com/~jthomas/mailfaces/picons.html#piconcrea
+   te> or <URL:http://kinzler.com/cgi/piconcreate.cgi> to process and
+   submit it as a picon.
+
+   Below are some software packages I commonly use for creating picons
+   under a Unix/X11 environment. The Iconolog site at
+   <URL:http://www.ozemail.com.au/~afactor/tools/iconTools.html>
+   references many icon tools for other environments.
+
+   XPM, koala.inria.fr:/pub/xpm/
+          A library needed by most other software with XPM support.
+   NetPBM
+          A very broad suite of image filters and tools, particularly
+          useful for format conversions.
+   picons bits, <URL:http://kinzler.com/ftp/faces/picons/>
+          Special supplements to NetPBM, xbmbrowser and GIMP for picons.
+   xbmbrowser, ftp.x.org:/contrib/utilities/
+          Great for viewing and managing picons databases and working on
+          sets of picons.
+   AIcons support environment, ftp.cs.indiana.edu:/pub/AIcons/
+          This greatly extends xbmbrowser and other software listed here
+          as picons support tools.
+   bitmap, X11 archives
+          A standard X11 tool for editting XBM bitmaps; the X11R5 and
+          later versions are recommended.
+   pixmap, avahi.inria.fr:/pub/pixmap/
+          An X11 tool for editting XPM pixmaps.
+   xv, ftp.cis.upenn.edu:/pub/xv/
+          A powerful image processing and conversion tool; shareware
+          versions 3 and later support XPM.
+   xpaint, <URL:http://www.danbbs.dk/~torsten/xpaint/>
+          A paint program for X11.
+   xgrabsc/xgrab, ftp.x.org:/contrib/applications/
+          Handy tools for grabbing an image from your display.
+   xfontsel, X11 archives
+          A standard X11 tool for displaying a text string in various
+          fonts.
+   xmag, X11 archives
+          A standard X11 tool for magnifying a portion of your display.
+     __________________________________________________________________
+
+8. How can I submit picons to the databases?
+
+   If you use the PIconCreate service at
+   <URL:http://members.cruzio.com/~jthomas/mailfaces/picons.html#piconcrea
+   te> or <URL:http://kinzler.com/cgi/piconcreate.cgi> to process your Web
+   image into a picon, then you can submit it to the databases with the
+   service, too. Otherwise, you can use e-mail to submit your picons.
+   Large sets of picons can be packaged and submitted with prior
+   arrangement with <picons-admin@kinzler.com>. For individual picons or
+   small sets of picons, it's preferable to submit them (or their URLs)
+   via e-mail.
+
+   To submit a new or revised picon to a database, mail its XBM, XPM or
+   ASCII PNM (ASCII PBM, ASCII PGM or ASCII PPM) file to one of these
+   addresses
+
+     * picons-users@kinzler.com
+     * picons-domains@kinzler.com
+     * picons-news@kinzler.com
+
+   as appropriate. Alternately, you may mail in, alone in the body of the
+   message, a URL referencing the image file.
+
+   In any case, the subject line should contain only the e-mail address
+   (in user@dom.ain format) the users picon is for (eg,
+   "kinzler@indiana.edu"), the domain address or hierarchy the domains
+   picon is for (eg, "sei.cmu.edu" or "cmu.edu"), or the newsgroup or
+   newsgroup hierarchy the news picon is for (eg, "comp.unix.shell" or
+   "comp"). Please submit each picon in a separate mailing.
+
+   For picons contributed to the users database, the domain specified in
+   the subject should be the most general at which the given username is
+   uniquely applicable, even if such a domain isn't valid as a mailing
+   address. For example, if "kinzler" is the same user in every subdomain
+   of "indiana.edu", his picon would be submitted as "kinzler@indiana.edu"
+   even if that's not a valid mailing address.
+
+   The body of mailed files should contain only the picon, preferably
+   already within the standard picons constraints (see 4.) and preferably
+   as an XBM, XPM or ASCII PNM picon unpackaged in plain text. A GIF
+   version of a picon need not be mailed in if its corresponding XPM or
+   ASCII PNM version is submitted. But, if you do mail in a GIF, or other
+   non-ASCII format image, you'll need to package it somehow for mail
+   transfer. You may mail in images (or URLs for images) with other sizes,
+   formats and color sets, but they may not be able to be successfully
+   processed and added to the databases.
+
+   See 7. for pointers to software and advice to aid in creating picons.
+   Any extra comments about the submitted picons can be mailed separately
+   to <picons-admin@kinzler.com>.
+
+   After being processed, submissions are deleted from the picons incoming
+   directory <URL:http://kinzler.com/ftp/faces/picons/incoming/>. They
+   will then appear in the distributed databases within the next 24 hours.
+     __________________________________________________________________
+
+9. Is there a mailing list about picons?
+
+   A mailing list is available for announcements and discussion related to
+   the faces and xfaces software and the picons databases. See 6. about
+   accessing the Faces Archives for these, as well as archives of the
+   mailing list.
+
+   Mail sent to faces@kinzler.com is mailed to everyone on the mailing
+   list. Mail faces-request@kinzler.com with your requests to subscribe to
+   or unsubsribe from the mailing list.
+
+   2004: PLEASE NOTE, THIS MAILING LIST HAS BEEN DECOMMISSIONED AND IS NO
+   LONGER OPERATIONAL. Its archives are still available.
+     __________________________________________________________________
+
+10. Who has contributed to picons?
+
+   Steve Kinzler <steve@kinzler.com> is the creator and primary developer
+   of the picons databases, application scripts, and online services. He
+   began around 1990 after installing faces and finding its potential
+   limited by the lack of a substantial collection of domain icons. He's
+   created or adapted a good share of the picons and reviewed, installed
+   and tweaked most all the rest.
+
+   Daniel Glazman <Daniel.Glazman@der.edf.fr>, Iain Sinclair
+   <axolotl@socs.uts.edu.au>, Dirk Craeynest
+   <Dirk.Craeynest@cs.kuleuven.ac.be>, Dougal Scott <dwagon@aaii.oz.au>,
+   Yuval Kfir <ykfir@geocities.com>, Johan Fredriksson <e93_jof@e.kth.se>
+   and Juhapekka Tolvanen <juhtolv@st.jyu.fi> have contributed a
+   substantial number of picons themselves and some of the picons have
+   been adapted from Jeff Poskanzer's <jef@netcom.com> bitmap collection.
+   Rich Burridge <Richard.Burridge@eng.sun.com> compiled early versions of
+   a combined users and misc database. Hundreds of others around the net
+   have contributed some number of picons to the databases. Under the
+   Usenix FaceSaver project, Dave Yost, Lou Katz, Barb Dijker
+   <barb.dijker@labyrinth.com> and David C Lawrence <tale@uunet.uu.net>
+   have compiled and made available thousands of face images of Usenix
+   conference attendees which form the basis for the usenix picons
+   database.
+
+   John Thomas <jthomas@cruzio.com> developed the PIconCreate service for
+   the processing and submission of Web images as picons. Hakan Ardo
+   <hakan@debian.org> prepares Debian package versions of the picons
+   databases. Daniel V Klein <dvk@lonewolf.com> included the Picons and
+   Faces Archives on the 1997 Usenix Technical Conference CD-ROM.
+
+   These fine folks are acknowledged for their development work with
+   applications which use picons: Rich Burridge
+   <Richard.Burridge@eng.sun.com> (faces), Chris Liebman
+   <liebman@zod.clark.net> (xfaces), John Thomas <jthomas@cruzio.com>
+   (MailFaces), Brian Redman (MailGlance), Daniel Glazman
+   <Daniel.Glazman@der.edf.fr> (MEUF), Brent Welch <welch@acm.org> and
+   John LoVerso <loverso@osf.org> (exmh), Ido Hardonag
+   <ido@netmanage.co.il> (Chameleon), Marc VanHeyningen
+   <mvanheyn@cs.indiana.edu> (WWW-Finger Gateway with Faces), James Ashton
+   <James.Ashton@anu.edu.au> (compface), Rob Kooper <kooper@cc.gatech.edu>
+   (libfaces), Simon Richter <richtesi@fs.tum.de> (xfacedb), and Axel
+   Belinfante <Axel.Belinfante@cs.utwente.nl> (ircfaces). faces, the
+   software which started it all, was itself inspired by seminal work by
+   Rob Pike <rob@bell-labs.com> and Dave Presotto <presotto@plan9.att.com>
+   with their vismon program for Bell Labs Version 8 Unix described in
+   Face the Nation ( *).
+
+   And these folks are acknowledged for developing software which has been
+   especially important in the creation of the picons databases: Davor
+   Matic (bitmap), Lionel Mallet (pixmap), Anthony Thyssens
+   <anthony@cit.gu.edu.au> and Ashley Roll <ash@cit.gu.edu.au> (AIcons &
+   xbmbrowser), and Jeff Poskanzer <jef@netcom.com> and the NetPBM
+   developers (PBMPlus/NetPBM).
+
+   Plus others I'm sure I've neglected to mention.
+
+
+    <steve@kinzler.com>, a Kinzler.com offering
+    © 2005 Kinzler.com

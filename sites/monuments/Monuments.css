@@ -1,0 +1,84 @@
+/* applies to GIF and PNG images; avoids blurry edges */
+
+img[src$=".gif"], img[src$=".png"] {
+	image-rendering: -moz-crisp-edges !important;         /* Firefox */
+	image-rendering: -o-crisp-edges;         /* Opera */
+	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+.chooseState {
+	/*display: inline-block;
+	position: static;
+	width: 200px !important;
+	max-width: 200px !important;
+	padding-bottom: 2px;
+	*/
+	border: 2px solid #CFCFCF;
+	padding: 2px;
+}
+
+.chooseType {
+	/*display: inline-block;
+	position: static;
+	width: 200px !important;
+	max-width: 200px !important;
+	text-align: left;
+	*/
+	border: 2px solid #CFCFCF;
+	padding: 2px;
+}
+
+.chooseMapInner {
+	border: 2px solid #CFCFCF;
+	padding: 2px;
+}
+
+.optionPane, .showOptions {
+	text-align: center !important;
+}
+
+#map {
+	height: 85% !important;
+	max-height: 85% !important;
+	margin: auto;
+	position: relative !important;
+}
+/* Smartphone portrait */
+@media only screen and (max-height:320px) {
+	#map {
+		width: 200px !important;
+	}
+}
+
+/* Smartphone vertical */
+@media only screen and (min-height:321px) and (max-height:480px) {
+	#map {
+		height: 350px !important;
+	}
+}
+
+/* Tablet portrait */
+@media only screen and (min-height:481px) and (max-height:768px) {
+	#map {
+		height: 500px !important;
+	}
+}
+
+/* Tablet landscape */
+@media only screen and (min-height:769px) and (max-height:1024px) {
+	#map {
+		height: 600px !important;
+	}
+}
+
+/* Standard layout */
+@media only screen and (min-height:1025px) {
+	#map {
+		height: 800px !important;
+	}
+	.optionPane, .showOptions {
+		text-align: center !important;
+	}
+}

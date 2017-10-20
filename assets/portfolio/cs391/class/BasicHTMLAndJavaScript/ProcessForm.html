@@ -1,0 +1,108 @@
+<!doctype html>
+<!--
+    Name:		Basic Form
+	Author:		Charles Kann
+	Purpose:	To show a basic form in html
+	
+	Modification History
+	12/25/2016 - Initial Release
+-->
+<html>
+	<head>
+		<title>Assessment Form</title>
+		
+		<script>
+		    function processForm() {
+			    console.log("Assessment Date: " + document.getElementById("assessmentDate").value);
+				console.log("First Name:" + document.getElementById("firstName").value);
+				console.log("Last Name:" + document.getElementById("lastName").value);
+				
+				gender = document.getElementsByName("gender");
+				for(var i = 0; i < gender.length; i++) {
+				    if (gender[i].checked) {
+					    console.log("Gender is: " + gender[i].value);
+					}
+				}
+				
+				age = document.getElementsByName("age");
+				for(var i = 0; i < age.length; i++) {
+				    if (age[i].checked) {
+					    console.log("Age is: " + age[i].value);
+					}
+				}
+
+				var s = "I would describe myself as"
+				if (document.getElementById("c1").checked)
+				    s = s + " " + document.getElementById("c1").value;
+				if (document.getElementById("c2").checked)
+				    s = s + " " + document.getElementById("c2").value;
+				if (document.getElementById("c3").checked)
+				    s = s + " " + document.getElementById("c3").value;
+				if (document.getElementById("c4").checked)
+				    s = s + " " + document.getElementById("c4").value;	
+				console.log(s);
+				
+				console.log("The number 7 is a " + document.getElementById("7is").value);
+			}
+		</script>
+	</head>
+
+	<body>
+	    <label for="assessmentDate">Date of assessment</label>
+		<input type="date" id="assessmentDate"/> <br />
+		<label for="firstName">First Name</label>
+		<input type="text" size="30"id="firstName"/>
+		<label for="lastName">Last Name</label>
+		<input type="text" size="30" id="lastName" />
+		<br />
+		
+		Sex:
+		<input type="radio" name = "gender" id="male" value="male" checked />
+		<label for="male">Male</label>
+		<input type="radio" name = "gender" id="female" value="female" />
+		<label for="female">Female</label>
+		<input type="radio" name = "gender" id="other" value="other" />
+		<label for="other">Other</label>
+		<br />
+		
+		Age:
+		<input type="radio" name="age" id="18-25" value="18-25" checked />
+		<label for="18-25"> 18-25 </label>
+		<input type="radio" name="age" id="26-35" value="26-35" checked />
+		<label for="26-35"> 26-35 </label>
+		<input type="radio" name="age" id="36-45" value="36-45" checked />
+		<label for="36-45"> 36-45 </label>	</body>
+		<input type="radio" name="age" id="over45" value="over 45" checked />
+		<label for="over45"> over 45 </label></html>
+		<br /> <br />
+		
+		Attributes:	I would say I am:<br />
+		<input type="checkbox" name="c1" id="c1" value="Interesting" />
+		<label for="c1"> Interesting </label><br />
+		<input type="checkbox" name="c2" id="c2" value="Intelligent" />
+		<label for="c2"> Intelligent </label><br />	
+		<input type="checkbox" name="c3" id="c3" value="Sexy" />
+		<label for="c3"> Sexy </label><br />	
+		<input type="checkbox" name="c4" id="c4" value="Unobjectionable" />
+		<label for="c3"> Unobjectionable </label><br />	
+		<br />
+		
+		On a scale of 0 to 10, the number 7 is a(n):
+		<input type="range" name="7is" id="7is" min="0" max="10" step="1" value="5"  list="sliderList"/>
+		<datalist id="sliderList">
+			<option>0</option>
+			<option>2</option>
+			<option>4</option>
+			<option>6</option>
+			<option>8</option>
+			<option>10</option>
+		</datalist>
+		
+		<br /><br />
+		<!-- We will change how to attach the event listener later -->
+		<input type="button" name="save" value="Save" id="save" onClick="processForm();" />	
+
+		<hr width="75%" />
+		<br />
+		This example form is now being processed.  We will do something with it later.
+	</body>

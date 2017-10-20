@@ -1,0 +1,72 @@
+/* applies to GIF and PNG images; avoids blurry edges */
+img[src$=".gif"], img[src$=".png"] {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    image-rendering: crisp-edges;
+}
+
+body {
+  background-color: #9090b5;
+}
+
+#content {
+  background-color: white;
+  margin: 1em 1.2em;
+  padding: 0.5em 2em;
+  -moz-border-radius: 1em;
+}
+
+#nav {
+  text-align: center;
+}
+
+#footer {
+  font-size: x-small;
+  text-align: right;
+}
+
+img.validate {
+  float: left;
+  border: 0;
+}
+
+code {
+  background-color: #d0d0e5;
+  padding: 1px 4px;
+}
+
+ol li {
+  margin-bottom: 1em;
+}
+
+
+dd { margin-bottom: 1em; }
+dt { font-weight: bold; }
+
+table {
+  border: 1px solid black;
+}
+
+td, th {
+  padding: 5px;
+}
+
+tbody td {
+  background-color: #f0f0f0;
+}
+
+tbody th {
+  text-align: left;
+  padding-right: 2em;
+  color: white;
+  background-color: #7070b5;
+}
+
+a:target {
+  background-color: #e0e0f5;
+}

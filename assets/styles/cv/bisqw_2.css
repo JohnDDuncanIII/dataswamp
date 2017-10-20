@@ -1,0 +1,104 @@
+HTML {
+    background-color: #44C;
+}
+
+BODY {
+    /*background-color: white;*/
+    background-color: white;
+    border: 1px solid black;
+    font-family:Arial,Verdana,Helvetica,Serif
+}
+
+@media only screen and (min-width:700px) {
+    body {
+        margin-left: 7%;
+        margin-top: 16px;
+        margin-right: 7%;
+        padding-top: 2em;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    body {
+        margin-top: 16px;
+        padding-top: 2em;
+        padding-bottom: 2%;
+        padding-left:2pt;
+        padding-right:2pt;
+    }
+}
+
+a:target {
+    border: 1px dotted black;
+}
+
+hr {
+    border:1px dotted #1b1b1b;
+}
+
+ul {
+    list-style-image: url("../images/about/bullet.gif");
+}
+
+H1 {
+    text-align: center;
+    /*background-color: #679;*/
+    background-color: #4471cc;
+    color: #FFF;
+    padding-bottom: 0.2em;
+    padding-top: 0.1em;
+}
+
+H2 {
+    /*background-color: #CCF;*/
+    background-color: #e8e8f9;
+    padding-left: 0.5em;
+    border-bottom:1px dashed #888;
+}
+H3
+{
+    background-color: #DCC;
+    padding-left: 0.5em;
+}
+H4 {
+    background-color: #DDD;
+    padding-left: 0.5em;
+}
+
+BLOCKQUOTE {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-style: italic;
+    background-color: #FFFAF0;
+}
+
+LI {
+    padding-top: 0.3em;
+}
+
+DIV.lastedit {
+    font-size:70%;
+    font-family:arial,sans-serif
+}
+
+DIV.deeper { padding-left:0.5em }
+
+.nonmail { visibility:hidden;position:absolute; top:0px;left:0px }
+.ismail { font-weight:normal }
+
+IMG.embed { border:0px }
+IMG.embedleft { border:0px; float:left }
+IMG.embedright { border:0px; float:right }
+IMG.extlink { border:0px; width:10px; height:10px }
+P.clear { clear:both }
+
+.source_snippet,code,tt { font-family:"courier new",monospace }
+.source_snippet {
+    font-size:92%;
+    background:#FFF; color:#000; border:1px dashed #888
+}
+
+EM { text-decoration: underline }

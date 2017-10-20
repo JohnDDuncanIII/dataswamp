@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+/*/
+
+# But not these files...
+!.gitignore
+!favicon.ico
+!homepage.go
+!index.html
+!/assets/
+!/sites/

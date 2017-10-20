@@ -1,0 +1,44 @@
+div {
+    display: table;
+    border: 3px double black;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+html {
+    text-align: center;
+    background-color: #FDC;
+}
+body {
+    margin: 0 auto;
+    margin-top: 
+    display: inline-block;
+    background-color: white;
+    border: 2px solid black;
+    padding: 3px;
+}
+@media only screen and (min-width:700px) {
+    body {
+	margin-left: 7%;
+	margin-top: 16px;
+	margin-right: 7%;
+	padding-top: 2em;
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    body {
+	margin-top: 16px;
+	padding-top: 2em;
+	padding-bottom: 2%;
+	padding-left:2pt;
+	padding-right:2pt;
+    }
+}
+h1 {
+    border-bottom: 1px dotted black;
+    display: inline-table;
+}

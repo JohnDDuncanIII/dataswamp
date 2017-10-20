@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+    <head>
+	    <title>Student Appointment Form</title>
+		<style>
+			 #Person {
+				display:inline-block;
+				margin:auto;
+				position: relative; 
+				left:0px; 
+				width:300px; 
+				height:300px;
+				border:2px solid #CFCFCF;
+			}
+			
+			p {
+			  font-size: 12px;
+			}
+
+			body {
+				background-color: MintCream;
+			} 
+
+			.input-data {
+				display:inline-block; 
+				margin:auto;
+				height:300px; 
+				vertical-align:top; 
+				width:500px; 
+				border:2px solid #CFCFCF;
+			}
+			
+			/* Box sizing for all components */
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			#titleWindow {
+				display:block; 
+				background-color: black;
+				height:100px;
+				margin-bottom: 24px;
+				margin-top: 24px;
+			}
+
+			#appTitle {
+				color: white;	
+				display: inline;
+				width: 400px;
+				left: 100px;
+				float: left;
+				position: absolute;
+			}
+
+			#appMenu {
+				color: white;
+				display: inline;
+				width:400px;
+				right: 100px;
+				float: right;
+				position: absolute;
+				font-size: 20px;
+			}
+		</style>
+		<script>
+		window.onload = function initialize() {
+		    var formType = document.getElementsByName("formType");
+			for (var i=0, iLen=formType.length; i<iLen; i++) {
+			    formType[i].onclick = function() {
+					var fType = document.getElementsByName("formType");			  
+					for (var j = 0, jLen=fType.length; j<jLen; j++) {
+					    document.getElementById(fType[j].value).style="display:none";
+					}
+			    document.getElementById(this.value).style="display:inline-block";
+				};
+			} 
+			document.getElementById("ContactDiv").style="display:inline-block";
+		}
+		</script>
+	</head>
+	
+	<body">
+		<div id="titleWindow">
+			<div id="appTitle">
+				<h1>Student Appointment<br> Form<h1>
+			</div>
+			<div id="appMenu">
+				<br><br>file home
+			</div>
+		</div>
+	
+	    <div>
+			<div id="Person">
+				<p>
+				<input type="text" size=30; value="Charles Kann" />
+				</p>
+				<p>
+				Select the form to display<br>
+					<input type="radio" name="formType" value="ContactDiv" checked /> Contact			
+					<input type="radio" name="formType" value="DemographicDiv" /> Demographic
+					<input type="radio" name="formType" value="NotesDiv" /> Notes
+				</p>
+					
+			</div>
+			<div id="ContactDiv" class="input-data" style="display:none;">
+			    <h2>Contact Information</h2>
+				<table>
+				    <td>Name: </td>
+					<td><input type="text" size="50" /></td>
+					<tr />
+					
+				    <td>Address: </td>
+					<td><input type="text" size="50" /><br><input type="text" size="50" />
+					<tr />
+					
+					<td>Phone: </td>
+					<td> <input type="tel" /> </td>
+					<tr />
+					
+					<td>Email: </td>
+					<td> <input type="email" /></td>
+					<tr>
+				</table>
+			</div>
+			<div id="DemographicDiv"  class="input-data" style="display:none;">
+			    <h2>Demographic Data</h2>
+				<table>
+				    <td>Age:</td>
+					<td><input type="number" min="0" max="120" step="1" value="20"></td>
+					<tr />
+					
+					<td>Sex: </td>
+					<td><input type="radio" name="sex" checked />Male <input type="radio" name="sex" />Female 
+					    <input type="radio" name="sex" />Other</td>
+					<tr />
+				</table>
+			</div>
+			<div id="NotesDiv"  class="input-data" style="display:none;">
+			    <h2>Notes</h2>
+				<table>
+					<td>Date of contact: </td>
+					<td> <input type="date" /> </td>
+					<tr>
+					
+					<td>Notes on meeting</td>
+					<!--resize:none to get rid of grabber at lower right -->
+					<td> <textarea rows="4" cols="50" style="resize:none" > Enter notes here </textarea></td>
+					<tr>
+				</table>
+			</div>
+        </div>		
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Transcript Form</title>
+  </head>
+  <body text="black" bgcolor="aliceblue">
+    <center>
+      <h1><u>Grade Transcript</u></h1>
+      <font size="+1">
+	(Grade Point Equivalents:  A = 4, B = 3, C = 2, D = 1, F = 0)
+	<p>
+	</p>
+	<form name="transcript">
+	  Student Name <input name="student" size="40" type="text">
+    </form></font></center>
+    <font size="+1">
+      <br>
+      <table>
+	<tbody><tr width="90%">
+	    <th width="70%" align="left"><b><u>COURSE</u></b></th>
+	    <th width="10%"><b><u>CREDITS</u></b></th>
+	    <th width="10%"><b><u>GRADES</u></b></th>
+	    <th width="10%"><b><u>QPs</u></b></th>
+	  </tr>
+	  <tr>
+	    <td><input size="80" name="course1" type="text"></td>
+	    <td><input size="10" name="credit1" value="0" type="text"></td>
+	    <td><input size="10" name="grade1" type="text"></td>
+	    <td><input size="10" name="QPA1" readonly="readonly" type="text"></td>
+	  </tr>
+
+	  <tr>
+	    <td><input size="80" name="course2" type="text"></td>
+	    <td><input size="10" name="credit2" value="0" type="text"></td>
+	    <td><input size="10" name="grade2" type="text"></td>
+	    <td><input size="10" name="QPA2" readonly="readonly" type="text"></td>
+	  </tr>
+
+	  <tr>
+	    <td><input size="80" name="course3" type="text"></td>
+	    <td><input size="10" name="credit3" value="0" type="text"></td>
+	    <td><input size="10" name="grade3" type="text"></td>
+	    <td><input size="10" name="QPA3" readonly="readonly" type="text"></td>
+	  </tr>
+      </tbody></table>
+      <br><br>
+      <input value="Compute QPA" name="QPAButton" type="button">
+      Quality Point Average: <input size="10" name="QPA" readonly="readonly" type="text">
+      <p></p>
+    </font>
+    <script src="functions.js"></script>
+  </body>
+</html>

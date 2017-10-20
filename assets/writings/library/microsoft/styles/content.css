@@ -1,0 +1,151 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 3:19:30 Aug 8, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:42:44 Sep 21, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* Content window styles go here */
+
+HTML {
+  border-left: 1px solid #6682bf;
+  border-right: 1px solid #6682bf;
+  overflow-x: hidden;           /* Overflow and padding-right are       */
+  padding-right: 10px;          /* workarounds for the IE scrollbar bug */
+  overflow-y: auto;
+}
+
+BODY {
+  margin-left: 2%;
+  margin-right: 4%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-top: 1px solid #6682bf;
+  color: #000033;
+  text-align: justify;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: url(/web/20140808031930/http://www.vanwensveen.nl/backgrounds/SinkBG.jpg)
+}
+
+P {
+  font-weight: normal;
+  margin-right: 20px;
+}
+
+P.first {
+  padding-top: 5px;
+}
+
+P.first:first-letter {
+  float: left;
+  padding: 0em .1em 0em 0em;
+  margin: -.2em -.06em -.2em;
+  font-size: 3.2em;
+  line-height: .7em;
+  font-family: Times, "Times New Roman", serif;
+  color: #ccccee;
+}
+
+IMG {
+  margin-left: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 20px;
+}
+
+/* Special class for webcounter images */
+IMG.webcounter {
+  margin-left: 0px;
+  margin-right: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+IMG.logo {
+  position: relative;
+  margin-top: -1px;
+  margin-left: -5px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  padding-left: 5px;
+}
+
+UL {
+  list-style: outside circle;
+}
+
+BLOCKQUOTE {
+  text-align: left;
+}
+
+A {
+  color: #441111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+A:hover {
+  color : #333366;
+  background-color: #f2cb30;
+}
+
+TABLE.fancy{
+  background: #000033;
+  border: 1px solid #000033;
+}
+
+TR.blue {
+  background-color: #eeeeff;
+}
+
+TR.header{
+  background-color: #ccccff;
+  color: #000033;
+  font-weight: bold;
+}
+
+TD.left {
+  text-align: left;
+}
+
+TD.center {
+  text-align: center;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.verysmall {
+  font-size: 0.6em;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+ float: right;
+}
+
+.box {
+  background-color: #cad5ed;
+  border-color: #333399;
+  border-width: 1px;
+  border-style: solid; 
+  color: #000033;
+  width: 80%;
+  padding: 5px;
+}
+
+INPUT, TEXTAREA {
+  color: #330000;
+  background-color: #ccddff;
+}

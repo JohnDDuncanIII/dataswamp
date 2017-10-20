@@ -1,0 +1,158 @@
+Air Quality: http://sirocco.accuweather.com/adc_images2/english/forecast/air_pollen/640x480/us__todairq.gif
+Air Quality legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/air_quality_210x40.gif
+Air Quality legend (new): http://vortex.accuweather.com/adc2010/images/keys/airquality-325.png
+Precip amount: http://sirocco.accuweather.com/adc_images2/english/forecast/liq/640x480/us__0024liq.gif
+Precip amount legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/liq_210x40.gif 
+Precip amount legend (new): http://vortex.accuweather.com/adc2010/images/keys/precipamtf.png
+Precip prob: http://sirocco.accuweather.com/adc_images2/english/forecast/polp/640x480/us__todpolp.gif
+Precip prob legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/probability_of_precip_210x40.gif 
+Precip prob legend (new): http://vortex.accuweather.com/adc2010/images/keys/precipprob.png
+24-hr precip radar: http://sirocco.accuweather.com/nx_mosaic_640x480c/24hr/inm24hrus_.gif
+24-hr precip radar legend: http://vortex.accuweather.com/adc2010/images/keys/radar24hrf.png
+Flight Delays: http://sirocco.accuweather.com/adc_images2/english/forecast/flight/640x480/us__todflightdelay.gif
+Flight Delays legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/flight_delay_210x40.gif
+Flight Delays legend new: http://vortex.accuweather.com/adc2010/images/keys/flightdelays-325.png
+Ice amount: http://sirocco.accuweather.com/adc_images2/english/forecast/ice/640x480/US__0024ice.gif
+Ice amount legend: http://vortex.accuweather.com/adc2010/images/keys/iceamtf.png
+Jet stream (today): http://sirocco.accuweather.com/adc_images2/english/forecast/jet/640x480/us__todjet.jpg
+Jet stream (tomorrow): http://sirocco.accuweather.com/adc_images2/english/forecast/jet/640x480/us__tomjet.jpg
+Lightning Strikes: http://sirocco.accuweather.com/adc_images/lightning/us_60_640x480.gif
+Lightning Strikes legend: http://vortex.accuweather.com/adc2004/common/images/keys/400x40/severe_lightning.gif
+Weather (fronts): http://sirocco.accuweather.com/adc_images2/english/forecast/sfc/640x480/us__todsfc.gif
+Weather (fronts) 48hr: http://sirocco.accuweather.com/adc_images2/english/forecast/sfc/640x480/us__48hrsfc.gif
+Pollen: http://sirocco.accuweather.com/adc_images2/english/forecast/air_pollen/640x480/us__todoverall.gif
+Pollen (tree): http://sirocco.accuweather.com/adc_images2/english/forecast/air_pollen/640x480/us__todtree.gif
+Pollen (grass): http://sirocco.accuweather.com/adc_images2/english/forecast/air_pollen/640x480/us__todgrass.gif
+Pollen (weed): http://sirocco.accuweather.com/adc_images2/english/forecast/air_pollen/640x480/us__todragweed.gif
+Pollen legend: http://vortex.accuweather.com/adc2010/images/keys/pollen-325.png
+Snow: http://sirocco.accuweather.com/adc_images2/english/forecast/snow/640x480/US__0024snow.gif
+Snow legend: http://vortex.accuweather.com/adc2010/images/keys/snowamtf.png
+Surface map today: http://vortex.accuweather.com/publicgfx/ussu0000.jpg
+Surface map tomorrow am: http://vortex.accuweather.com/publicgfx/ussu0030.jpg
+Surface map tomorrow pm: http://vortex.accuweather.com/publicgfx/ussu0060.jpg
+Surface map two-day am: http://vortex.accuweather.com/publicgfx/ussu0090.jpg
+Surface map two-day pm: http://vortex.accuweather.com/publicgfx/ussu0119.jpg
+Temp (high): http://sirocco.accuweather.com/adc_images2/english/forecast/fhgh/640x480/us__todhigh.gif
+Temp (high) legend: http://vortex.accuweather.com/phoenix2/images/common/keys/temp_fah_400x40.gif
+Temp (low): http://sirocco.accuweather.com/adc_images2/english/forecast/flow/640x480/us__tonlow.gif
+Temp (low) legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/temp_fah_210x40.gif
+Temp (low) legend new: http://vortex.accuweather.com/adc2004/common/images/keys/400x40/temp_predicted.gif
+Thunderstorm Prob: http://sirocco.accuweather.com/adc_images2/english/forecast/tstmp/640x480/us__todtstmp.gif
+Thunderstorm Prob legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/prob_tstorms_210x40.gif
+Thunderstorm Prob legend: http://vortex.accuweather.com/adc2010/images/keys/precipprob-325.png
+UV Index: http://sirocco.accuweather.com/adc_images2/english/forecast/uvi/640x480/us__toduvi.gif
+UV Index legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/uv_210x40.gif
+UV Index legend (new): http://vortex.accuweather.com/adc2010/images/keys/uv.png
+Watches & Warnings 1: http://sirocco.accuweather.com/adc_images/svrwx/640x480us_/isvrwxus_.gif
+Watches & Warnings 2: http://sirocco.accuweather.com/adc_images2/english/current/svrwx/640x480/isvrwxus_.gif
+Watches & Warnings legend: http://sirocco.accuweather.com/web_images/svrwx/key/swskeys.gif
+Wind Gust: http://sirocco.accuweather.com/adc_images2/english/forecast/gus/640x480/us__todgus.gif
+Wind Gust legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/wind_gust_210x40.gif
+Wind Speed: http://sirocco.accuweather.com/adc_images2/english/forecast/wsp/640x480/us__todwsp.gif
+Wind Speed legend: http://wwwa.accuweather.com/phoenix2/images/common/keys/wind_speed_210x40.gif
+wind legend: http://vortex.accuweather.com/adc2010/images/keys/windf.png
+Wind chill: http://sirocco.accuweather.com/adc_images2/english/forecast/wch/640x480/us__todwch.gif
+heat index: http://sirocco.accuweather.com/adc_images2/english/forecast/apt/640x480/us__todapt.gif
+heat index/wind chill legend: http://vortex.accuweather.com/adc2004/common/images/keys/400x40/temp_predicted.gif
+
+travel weather today: http://sirocco.accuweather.com/adc_images2/english/forecast/travel/640x480/us__todtravel.gif
+travel weather tonight: http://sirocco.accuweather.com/adc_images2/english/forecast/travel/640x480/us__tomtravel.gif
+tavel weather legend: http://vortex.accuweather.com/adc2010/images/keys/travel-summerf-325.png
+severe weather risk: http://sirocco.accuweather.com/adc_images2/english/forecast/svrwx/640x480/US__todsvrwxrisk.gif
+severe weather risk legend: http://vortex.accuweather.com/adc2010/images/keys/severerisk-325.png
+
+accuweather note: 640x480 and 400x300 can be used interchangeably 
+some links for scraping urls:
+http://web.archive.org/web/20040610195134/http://wwwa.accuweather.com/adcbin/public/maps_menu.asp
+regional stuff I still need to do:
+http://www.accuweather.com/en/us/national/weather-radar
+http://www.accuweather.com/en/us/national/weather-radar-24hr
+http://www.accuweather.com/en/us/national/weather-forecast-maps
+http://web.archive.org/web/20070225111924/http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&type=apt
+
+Radar
+Alaska: http://sirocco.accuweather.com/nx_mosaic_640x480c/re/inmareak_.gif
+Hawaii: http://sirocco.accuweather.com/nx_mosaic_640x480c/re/inmarehi_.gif
+US: http://sirocco.accuweather.com/nx_mosaic_640x480_public/sir/inmasirus_.gif
+small: http://sirocco.accuweather.com/adc_nxmos_400x300c/sir/inmsirun_293x214.gif
+legend: http://vortex.accuweather.com/phoenix2/images/common/keys/home_radar_key_138x39.gif
+legend: http://vortex.accuweather.com/phoenix2/images/common/keys/radar_sir_400x40.gif
+
+Satellite
+enhanced: http://sirocco.accuweather.com/sat_mosaic_640x480_public/ei/isaeun.gif
+enhanced legend: http://vortex.accuweather.com/adc2010/images/keys/sateif.png
+standard: http://sirocco.accuweather.com/sat_mosaic_640x480_public/ir/isaun.gif
+standard legend: http://vortex.accuweather.com/adc2010/images/keys/satirf.png
+visible: http://sirocco.accuweather.com/sat_mosaic_640x480_public/vis/isavun.gif
+visible legend: http://vortex.accuweather.com/adc2010/images/keys/satvisf.png
+colored water vapor: http://sirocco.accuweather.com/sat_mosaic_640x480_public/wv/isawvcun.gif
+colored water vapor legend: http://vortex.accuweather.com/adc2010/images/keys/satwvf.png
+visible infrared (west): http://sirocco.accuweather.com/sat_mosaic_640x480_public/vr/isvrwest.jpg
+visible infrared (east): http://sirocco.accuweather.com/sat_mosaic_640x480_public/vr/isvreast.jpg
+
+Radar & Satellite: 
+US: http://sirocco.accuweather.com/sat_mosaic_640x480_public/rs/isarun.gif
+Alaska: http://sirocco.accuweather.com/sat_mosaic_640x480_public/rs/isarak_.gif
+Hawaii: http://sirocco.accuweather.com/sat_mosaic_640x480_public/rs/isarhi_.gif
+legend: http://vortex.accuweather.com/adc2010/images/keys/radarrsf.png
+
+Wunderground:
+US dew point: http://www.wunderground.com/data/images/us_dp.gif
+http://maps.wunderground.com/data/640x480/2xus_dp_anim.gif
+US temp:  http://www.wunderground.com/data/images/us_st.gif
+http://maps.wunderground.com/data/640x480/2xus_st_anim.gif
+US radar: http://www.wunderground.com/data/images/us_rd.gif
+http://maps.wunderground.com/data/640x480/2xus_rd_anim.gif
+US radar: https://icons.wxug.com/data/weather-maps/radar/united-states/united-states-current-radar-animation.gif
+US humidity: http://www.wunderground.com/data/images/us_rh.gif
+http://maps.wunderground.com/data/640x480/2xus_rh_anim.gif
+US wind chill: http://www.wunderground.com/data/images/us_wc.gif
+http://maps.wunderground.com/data/640x480/2xus_wc_anim.gif
+US heat index: http://wunderground.com/data/images/us_hi.gif
+http://maps.wunderground.com/data/640x480/2xus_hi_anim.gif
+US wind: http://www.wunderground.com/data/images/us_ws.gif
+http://maps.wunderground.com/data/640x480/2xus_ws_anim.gif
+US visibility: http://www.wunderground.com/data/images/us_vs.gif
+http://maps.wunderground.com/data/640x480/2xus_vs_anim.gif
+US visibility satellite: http://maps.wunderground.com/data/images/us_vi.gif
+http://maps.wunderground.com/data/640x480/2xus_vi_anim.gif
+US satellite map: http://maps.wunderground.com/data/images/us_ir.gif
+http://maps.wunderground.com/data/640x480/2xus_ir_anim.gif
+US fronts: http://icons.wunderground.com/data/images/us_sf.gif
+http://maps.wunderground.com/data/640x480/2xus_sf_anim.gif
+http://maps.wunderground.com/data/images/us_snow.gif
+http://icons.wunderground.com/data/640x480/2xus_snow_anim.gif
+US precip: http://icons.wunderground.com/data/images/us_nws_precip.gif
+http://maps.wunderground.com/data/images/us_nws_precip.gif
+US jet stream: https://maps.wunderground.com/data/images/us_jt.gif
+http://icons.wunderground.com/data/640x480/2xus_jt_anim.gif
+US UV: http://maps.wunderground.com/data/images/us_uv_anim.gif
+US flu: http://maps.wunderground.com/data/640x480/2xus_flu.gif
+US air quality: http://maps.wunderground.com/data/640x480/2xus_ozone.gif
+US flight rules: http://maps.wunderground.com/data/images/us_flight.gif
+http://icons.wunderground.com/data/640x480/2xus_flight_anim.gif
+US regional: http://icons.wunderground.com/data/640x480/us_nids_mixedmosaic.gif
+http://icons-pe.wxug.com/graphics/RadarLegendMixed.gif
+US NEXRAD: http://icons-sf.wunderground.com/data/nids/USNIDSMap_current.gif
+
+Models:
+https://maps.wunderground.com/data/models/NAM/US/NAM_US_SURPRE_0.gif
+(add 3 for each successive gif; continue until NAM SUPRE reaches 84)
+
+Air observations:
+http://www.wunderground.com/data/640x480/pilot/us_stnplt_25.gif
+(increase by 25 until altitude reaches 450
+
+wunderground note: anything named us_*.gif can be copied into 640x480/2xus_*_(animated).gif to show an animated version. “_animated” is optional
+Links:
+http://web.archive.org/web/20080626073646/http://www.wunderground.com/US/Region/US/2xTemperature.html
+http://web.archive.org/web/20070225111924/http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&type=apt
+
+
+
+AK dew point: http://www.wunderground.com/data/images/ak_dp.gif
+
+http://www.newalbanyweather.com/
+http://realitycheck.no-ip.info/weather_center.html
+http://geo.cbs.umn.edu/~phil/wx.html
+

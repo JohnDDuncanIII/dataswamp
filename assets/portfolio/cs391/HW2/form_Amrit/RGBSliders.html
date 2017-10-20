@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CS 391 Project | RGB Sliders</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">RGB Sliders</h1>
+    <br>
+    <div style="text-align: center">
+      <table align="center">
+	<tr>
+	  <td colspan="3" align="center">
+	    <div id="preview" style="background-color: firebrick; width: 100px; height: 100px; alignment: center"></div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <label for="redSlider">Red</label>
+	  </td>
+	  <td>
+	    <input type="range" id="redSlider" min="0" max="255" step="1" value="178">
+	  </td>
+	  <td>
+	    <input id="redTextBox" type="text" value="178">
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <label for="greenSlider">Green</label>
+	  </td>
+	  <td>
+	    <input type="range" id="greenSlider" min="0" max="255" step="1" value="34">
+	  </td>
+	  <td>
+	    <input id="greenTextBox" type="text" value="34">
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <label for="blueSlider">Blue</label>
+	  </td>
+	  <td>
+	    <input type="range" id="blueSlider" min="0" max="255" step="1" value="34">
+	  </td>
+	  <td>
+	    <input id="blueTextBox" type="text" value="34">
+	  </td>
+	</tr>
+      </table>
+    </div>
+    <script src="functions.js"></script>
+  </body>
+</html>

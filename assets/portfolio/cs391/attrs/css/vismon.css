@@ -1,0 +1,38 @@
+div {
+    border: none;
+    max-width: none;
+    padding: 0;
+}
+
+div:not(:first-of-type) {
+    margin: 0;
+}
+
+#vismon {
+    border: 3px solid black;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 2px;
+}
+
+.faces {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+}
+
+.face {
+    display: block;
+}
+
+.bar {
+    width: 348px;
+    border: 2px solid black;
+    padding: 0px;
+}
+
+pre {
+    margin: 0;
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+	    <title>Center Text</title>
+		<style>
+		    /* Center all heading text */
+		    h1 {
+			    text-align : center;
+			}
+			
+			/* normal paragraphs align left (default) */
+			p {
+			    text-align : left;
+			}
+			
+			/* set up a paragraph class to center text */
+			p.center {
+			    text-align : center;
+			}
+			
+			/* center a specific line of text */
+			#c1 {
+				text-align : center;
+			}
+
+		</style>
+	</head>
+	
+	<body>
+	<h1> Center aligned text</h1>
+	<p>This is a paragraph of  text that is aligned to the left. </p>
+	<p class="center">This is a paragraph of  text that is centered using the paragraph class attribute. </p>
+	<p>Another line of text aligned left.</p>
+    <p id="c1">Another line of centered text, using an id (note id is unique). </p>
+	<p style="text-align : center;">Centered using the style tag </p>
+	</body>
+</html>

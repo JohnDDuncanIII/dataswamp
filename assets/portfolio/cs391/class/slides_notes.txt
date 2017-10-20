@@ -1,0 +1,7 @@
+http://cs.gettysburg.edu/~duncjo01/assets/writings/slides/darkmatter/0.html
+
+http://cs.gettysburg.edu/~duncjo01/DarkMatter/
+
+https://twitter.com/rob_pike/status/812069714352427008?lang=en
+
+https://swtch.com/~rsc/regexp/regexp1.html

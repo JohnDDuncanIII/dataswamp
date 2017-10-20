@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML Form 1</title>
+		<script>
+			function mph(distance, time) {
+			    var speed = distance / time;
+				return speed;
+			}
+		</script>
+	</head>
+	
+	<body>
+		 <input type="text" name="inHTMLScope" value="Set"/>
+         <script>
+			var miles = prompt("Enter miles, -1 to end");				
+	 
+			while (miles != -1) {
+				var hours = prompt("Enter time in hours");			 
+			    alert("mph = " + mph(miles, hours));
+				miles = prompt("Enter miles, -1 to end");				
+			}		
+
+			alert(document.getElementsByName("inHTMLScope")[0].value);
+		 </script>
+		 
+		 <!-- Just to show html scoping -->
+	</body>
+</html>

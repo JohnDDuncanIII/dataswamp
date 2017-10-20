@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MessageFaces</title>
+    <meta name="keywords" content="mozilla, thunderbird, extension,
+      x-face, face header, gravatar, x-image-url">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="content">
+      <h1>MessageFaces</h1>
+      <p id="nav"> [ <a href="index.html">Home</a> | <a
+          href="createface.html">Creating a Face image</a> | <a
+          href="faq.html">Frequently Asked Questions</a> | <a
+          href="history.html">Release History</a> ] </p>
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li><a href="#howtouse">How do I use it?</a></li>
+        <li><a href="#725bytes">Why can't I use files larger than 725
+            bytes?</a></li>
+        <li><a href="#gravatar-optional">Why is Gravatar support
+            optional? Should I enable it?</a></li>
+        <li><a href="#maxsize">How can I make the Face images larger,
+            e.g. Gravatar?</a></li>
+        <li><a href="#xface-optional">Why is X-Face header support
+            optional?</a></li>
+        <li><a href="#customheaders">How can I set my own X-Face/Face
+            URL?</a></li>
+        <li><a href="#faceURLs">What are Face URLs?</a></li>
+        <li><a href="#picons">Are picons supported?</a></li>
+        <li><a href="#favatars">Are favatars supported?</a></li>
+        <li><a href="#otherclients">What other mail/news clients support
+            the Face header?</a></li>
+        <li><a href="#translate">Can I translate MessageFaces into
+            another language?</a></li>
+      </ul>
+      <dl>
+        <dt><a name="howtouse">How do I use it?</a></dt>
+        <dd> After installing the extension and restarting Thunderbird,
+          open Tools -&gt; Extensions and double click MessageFaces. On
+          the first tab of the settings window, you can choose the Face
+          image for each identity. On the other tabs, you can enable
+          support for the additional face types listed above. </dd>
+        <dt><a name="725bytes">Why can't I use files larger than 725
+            bytes?</a></dt>
+        <dd> <a href="http://quimby.gnus.org/circus/face/">The Face
+            header specification</a> dictates this to ensure your email
+          can be properly processed by all mail servers (and you <i>do</i>
+          want servers to transport your mail to the addressee, don't
+          you?) Besides, not putting any limit on the image size
+          needlessly bloats the message size. </dd>
+        <dt><a name="gravatar-optional">Why is Gravatar support
+            optional? Should I enable it?</a></dt>
+        <dd> It is optional because it requires an active internet
+          connection, and many people read their mail offline. If you do
+          not, you should definitely enable it: Gravatars are displayed
+          by an increasing number of weblogs next to the comment
+          postings, so many people who don't even use Thunderbird or
+          MessageFaces have their own Gravatar. </dd>
+        <dt><a name="maxsize">How can I make the Face images larger,
+            e.g. Gravatar?</a></dt>
+        <dd> You can change the default maximum face size of 48 Pixels
+          by changing a hidden preference. Install the <a
+            href="http://aboutconfig.mozdev.org/">about:config extension
+            (2016 edit: this is not built into the browser)</a>, then
+          open Tools -&gt; about:config. Type <code>faces</code> into
+          the filter field, then double click on the <code>extensions.messagefaces.maxsize</code>
+          pref and enter a new size. Note that this setting will only
+          enlarge Gravatar images and set the maximum size of local face
+          images and Face URLs. Face header, picons, and X-Face images
+          are unaffected, as their specification uses a fixed size of 48
+          x 48 pixels. </dd>
+        <dt><a name="xface-optional">Why is X-Face header support
+            optional?</a></dt>
+        <dd> The technique used by MessageFaces to decode the image data
+          is not very fast. While you won't notice this on modern
+          systems (e.g. PCs with 2 GHz and more), it can seriously
+          affect older computers. If there is enough demand, I might
+          decide to implement a new method of decoding (using C++ code
+          instead of JavaScript), which will be much faster.<br>
+          Ironically, the color Face Header is easier to process,
+          because MessageFaces can let core Mozilla components do the
+          main work. </dd>
+        <dt><a name="customheaders">How can I set my own X-Face/Face
+            URL?</a></dt>
+        <dd> MessageFaces does not include a user interface for these
+          tasks. However, you can <a href="customheaders.html">manually
+            set these headers</a>. </dd>
+        <dt><a name="faceURLs">What are Face URLs?</a></dt>
+        <dd> Recently, the idea of putting a link to a photo of the
+          sender into the mail has been made popular by Apple Computer's
+          <a href="http://www.mac.com/">.Mac mail accounts</a>. It works
+          by inserting a special header named "X-Image-URL" into the
+          message, containing the http:// address of a picture that
+          should be displayed. MessageFaces also supports the rare
+          headers "X-Face-URL" and "Face-URL", which serve the same
+          purpose. Note that you should read the security/privacy
+          warning displayed in the MessageFaces settings window before
+          activating this feature. </dd>
+        <dt><a name="picons">Are picons supported?</a></dt>
+        <dd> Yes. This feature was added in MessageFaces 1.2. Local
+          picon searches were added in MessageFaces 1.2.1.<br>
+        </dd>
+        <dt><a name="favatars">Are favatars supported?</a></dt>
+        <dd> No, and I will most certainly not add it. Favatars are
+          meant to be added to weblog posts where the commenter entered
+          the URI of his home page, which is then used to retrieve the
+          favicon. As e-mails don't have a web page address in them,
+          MessageFaces would have to use the sender's e-mail address
+          instead. However, no one guarantees there <i>is</i> a web
+          server behind that domain name, and even if there is, it's not
+          very likely that the user has control over the top level
+          directory (e.g. www.hotmail.com/). Additionally, a user's home
+          page is often at an entirely different server than his e-mail
+          address (perhaps because it's a hosting company, and his
+          e-mail address is handled by his ISP). So unless people e-mail
+          me and convince me that it's worth the effort, I'm not going
+          to implement it - users have better options for online face
+          images (e.g. <a href="http://www.gravatar.com/">gravatar.com</a>).
+
+
+
+        </dd>
+        <dt><a name="otherclients">What other mail/news clients support
+            the Face header?</a></dt>
+        <dd> Lars Magne Ingebrigtsen, the creator of the Face header,
+          maintains a list of software that has Face support at <a
+            href="http://quimby.gnus.org/circus/face/">http://quimby.gnus.org/circus/face/</a>
+          (at the bottom of the page). The list is not very long, so it
+          might be a good idea to convince your e-mail contacts to use
+          Thunderbird (and MessageFaces) if they want to see your Face
+          image ;-) </dd>
+        <dt><a name="translate">Can I translate MessageFaces into
+            another language?</a></dt>
+        <dd> Translations are always welcome - please contact me (the
+          maintainer) via the address given on the bottom of this page.
+          I only ask for two things: first, send me your locale files,
+          so I can incorporate them into the next release. Second,
+          expect that I contact you asking to update your translation
+          for new releases. </dd>
+      </dl>
+      <a href="http://validator.w3.org/check?uri=referer"> <img
+          src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML
+          4.01!" class="validate" height="31" width="88"> </a>
+      <p id="footer"> Last updated: 2016-04-11<br>
+        Author: Jens Bannmann (jens dot b at web dot de)<br>
+        Maintainer: John D. Duncan, III (duncanjdiii at gmail dot com)<br>
+      </p>
+    </div>
+  </body>
+</html>

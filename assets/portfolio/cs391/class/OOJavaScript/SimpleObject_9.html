@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+		    /* 
+				Person definition
+			*/
+			
+			function Person(options) {
+				var state = {
+					instanceType : "Person",
+					fname : "",
+					lname : "",
+					age : undefined
+				}
+				
+				for (var prop in options) {
+				    if (!state.hasOwnProperty(prop))
+					    console.log("Property " + prop + " not recognized in object " + state.instanceType);
+				    state[prop] = options[prop];
+				}
+				
+				this.printFirstName = function () {
+				    console.log("First name = " + state.fname);
+				}
+				
+				this.printLaastName = function() {
+				    console.log("Last name = " + state.lname);
+				}
+				
+				this.printAge = function() {
+				    console.log("Age = " + state.age);
+				}
+				
+				this.toJSON = function() {
+				    return JSON.stringify(state);
+				}
+				
+				return this;  // Just to be explicit
+			}
+		
+		</script>
+	</head>
+	
+	<body>
+		<script>
+		    // create a person object, and show that the printFirstName function is accessible.
+			chuck = new Person({fname: "Chuck", lname: "Kann", age: 59});
+			patty = new Person({fname: "Patty", lname: "Jordan", age: 58});
+
+			// Let's create an array, but I am going to cheat so I don't have to format 
+			// a string...
+			var people = new Array();
+			people.push(JSON.parse(chuck.toJSON()));
+			people.push(JSON.parse(patty.toJSON()));
+			localStorage.setItem("PeopleData", JSON.stringify(people));
+			
+			// get the array from local storage, and make it into a array
+			// of people again...
+			people_1 = JSON.parse(localStorage.getItem("PeopleData"));
+			for (var i = 0; i < people_1.length; i++) {
+			    people_1[i] = new Person(people_1[i]);
+			}
+			people_1[0].printFirstName();
+			people_1[1].printFirstName();
+			
+
+		</script>
+	</body>
+</html>

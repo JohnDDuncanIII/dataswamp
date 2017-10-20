@@ -1,0 +1,115 @@
+<!doctype html>
+<!--
+    Name:		Basic Form
+    Author:		Charles Kann
+    Purpose:	To show a basic form in html
+    
+    Modification History
+    12/25/2016 - Initial Release
+  -->
+<html>
+  <head>
+    <title>Assessment Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Form</h1>
+    <label for="assessmentDate">Date of assessment</label>
+    <input type="date" id="assessmentDate"> <br>
+    <label for="firstName">First Name</label>
+    <input type="text" size="30" id="firstName">
+    <label for="lastName">Last Name</label>
+    <input type="text" size="30" id="lastName">
+    <br />
+    
+    Sex:
+    <label class="myRadio">
+      <input type="radio" name = "gender" id="male" value="male" checked>
+      <span></span>
+    </label>
+    <label for="male">Male</label>
+    <label class="myRadio">
+      <input type="radio" name = "gender" id="female" value="female">
+      <span></span>
+    </label>
+    <label for="female">Female</label>
+    <label class="myRadio">
+      <input type="radio" name = "gender" id="other" value="other">
+      <span></span>
+    </label>
+    <label for="other">Other</label>
+    <br />
+    
+    Age:
+    <label class="myRadio">
+      <input type="radio" name="age" id="18-25" value="18-25">
+      <span></span>
+    </label>
+    <label for="18-25"> 18-25 </label>
+
+    <label class="myRadio">
+      <input type="radio" name="age" id="26-35" value="26-35">
+      <span></span>
+    </label>
+    <label for="26-35"> 26-35 </label>
+
+    <label class="myRadio">
+      <input type="radio" name="age" id="36-45" value="36-45">
+      <span></span>
+    </label>
+    <label for="36-45"> 36-45 </label>
+
+    <label class="myRadio">
+      <input type="radio" name="age" id="over45" value="over 45" checked>
+      <span></span>
+    </label>
+    <label for="over45"> over 45 </label>
+    <br /> <br />
+    
+    Attributes:	I would say I am:<br>
+    <label for="c1"> Interesting </label>
+    <label class="myCheckbox">
+      <input type="checkbox" name="c1" id="c1" value="Interesting">
+      <span></span>
+    </label><br>
+    
+    <label for="c2"> Intelligent </label>	
+    <label class="myCheckbox">
+      <input type="checkbox" name="c2" id="c2" value="Intelligent">
+      <span></span>
+    </label><br>
+    
+    <label for="c3"> Sexy </label>
+    <label class="myCheckbox">
+      <input type="checkbox" name="c3" id="c3" value="Sexy">
+      <span></span>
+    </label><br>
+    
+    <label for="c4"> Unobjectionable </label>
+    <label class="myCheckbox">
+      <input type="checkbox" name="c4" id="c4" value="Unobjectionable">
+      <span></span>
+    </label>
+    <br />
+    On a scale of 0 to 10, the number 7 is a(n):
+    <input type="range" name="7is" id="7is" min="0" max="10" step="2" value="5"  list="sliderList">
+    <datalist id="sliderList">
+      <option>0</option>
+      <option>2</option>
+      <option>4</option>
+      <option>6</option>
+      <option>8</option>
+      <option>10</option>
+    </datalist>
+    
+    <br><br>
+    <input type="button" name="save" value="Save" id="save">	
+
+    <hr width="75%">
+    <br>
+    This is an example page.  It does nothing right now... We will add actions later when we cover events.
+    <br><img class="flourish" src="img/weave.gif">
+  </body>
+</html>

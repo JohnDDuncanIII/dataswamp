@@ -1,0 +1,12 @@
+h1 { text-align: center; display:block !important; }
+.head {
+    text-align: left; color: black;
+    /*background-image:  url(../images/about/hdrbg.png);*/
+    background-color: ghostwhite;
+    font-size: 11pt; padding: 0.2em 4.3em; margin: 1.5em 0;
+    text-transform: uppercase;
+}
+dt { float: left; font-style: italic; }
+dd { margin: 0 0 1em 4em; }
+.dl2 dd { margin-bottom: 0.3em; }
+.life-events { width:750px; margin:0 auto; }

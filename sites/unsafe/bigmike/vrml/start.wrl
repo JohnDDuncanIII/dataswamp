@@ -1,0 +1,247 @@
+#VRML V2.0 utf8
+
+NavigationInfo {
+  type  [ "EXAMINE", "ANY" ]
+}
+
+Background {
+             skyColor [ 0.000 0.400 0.000 ]
+             groundColor []
+             frontUrl ""
+}
+
+Transform {
+	children [
+		Viewpoint {
+			position  4.520 0.000 11.240
+			orientation 0.000 0.000 1.000 0.000
+			fieldOfView  0.785
+		}
+		DirectionalLight {
+			intensity  0.0
+			ambientIntensity  1.000
+			color  1.000 1.000 1.000
+			direction  1.000 1.000 -1.000
+		}
+		Transform {
+			children [
+				Anchor {
+					url  "futurist.wrl"
+					description  "Futurist Principles"
+
+
+					children [
+						Transform {
+							scale  0.100 0.100 0.100
+							rotation  0.027 -0.257 -0.050 0.533
+							translation  3.097 -0.503 2.952
+
+							children [
+								Shape {
+									appearance Appearance {
+											material  Material {
+													ambientIntensity 0.200
+													diffuseColor  0.800 0.800 0.800
+													shininess  0.000
+											         }
+									           }
+									geometry Text { 
+										string [ "Futurist Principles", ]
+										fontStyle  FontStyle {
+												size  10.000
+												justify [ "BEGIN" ]
+												spacing 1.000
+										           }
+										length [ 0.000, ]
+									         }
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			children [
+				Anchor {
+					url  "moral.wrl"
+					description  "Moral Principles"
+
+
+					children [
+						Transform {
+							scale  0.100 0.100 0.100
+							rotation  0.090 0.506 0.023 1.080
+							translation  2.763 -0.404 1.261
+
+							children [
+								Shape {
+									appearance Appearance {
+											material  Material {
+													ambientIntensity 0.200
+													diffuseColor  0.800 0.800 0.800
+													shininess  0.000
+											         }
+									           }
+									geometry Text { 
+										string [ "Moral Principles", ]
+										fontStyle  FontStyle {
+												size  10.000
+												justify [ "BEGIN" ]
+												spacing 1.000
+										           }
+										length [ 0.000, ]
+									         }
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			children [
+				Anchor {
+					url  "political.wrl"
+					description  "Political Principles"
+
+
+					children [
+						Transform {
+							scale  0.100 0.100 0.100
+							rotation  0.042 0.862 0.062 2.091
+							translation  2.943 -0.366 2.925
+
+							children [
+								Shape {
+									appearance Appearance {
+											material  Material {
+													ambientIntensity 0.200
+													diffuseColor  0.800 0.800 0.800
+													shininess  0.000
+											         }
+									           }
+									geometry Text { 
+										string [ "Political Principles", ]
+										fontStyle  FontStyle {
+												size  10.000
+												justify [ "BEGIN" ]
+												spacing 1.000
+										           }
+										length [ 0.000, ]
+									         }
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			children [
+				Anchor {
+					url  "avant.wrl"
+					description  "Principles of the Avant-technogarde"
+
+
+					children [
+						Transform {
+							scale  0.100 0.100 0.100
+							rotation  0.075 0.980 0.047 2.784
+							translation  3.025 -0.453 4.438
+
+							children [
+								Shape {
+									appearance Appearance {
+											material  Material {
+													ambientIntensity 0.200
+													diffuseColor  0.800 0.800 0.800
+													shininess  0.000
+											         }
+									           }
+									geometry Text { 
+										string [ "Principles of the Avant-technogarde", ]
+										fontStyle  FontStyle {
+												size  10.000
+												justify [ "BEGIN" ]
+												spacing 1.000
+										           }
+										length [ 0.000, ]
+									         }
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			children [
+				Anchor {
+					url  "research.wrl"
+					description  "Research Principles"
+
+
+					children [
+						Transform {
+							scale  0.100 0.100 0.100
+							rotation  -0.055 0.665 0.019 4.823
+							translation  3.349 -0.495 3.963
+
+							children [
+								Shape {
+									appearance Appearance {
+											material  Material {
+													ambientIntensity 0.200
+													diffuseColor  0.800 0.800 0.800
+													shininess  0.000
+											         }
+									           }
+									geometry Text { 
+										string [ "Research Principles", ]
+										fontStyle  FontStyle {
+												size  10.000
+												justify [ "BEGIN" ]
+												spacing 1.000
+										           }
+										length [ 0.000, ]
+									         }
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			children [
+				Transform {
+					scale  0.100 0.060 0.090
+					rotation  -0.158 0.297 0.069 0.700
+					translation  1.797 0.419 6.585
+
+					children [
+						Shape {
+							appearance Appearance {
+									material  Material {
+											ambientIntensity 0.200
+											diffuseColor  0.800 0.800 0.800
+											shininess  0.000
+									         }
+							           }
+							geometry Text { 
+								string [ "Viridian Principles", ]
+								fontStyle  FontStyle {
+										size  10.000
+										justify [ "BEGIN" ]
+										spacing 1.000
+								           }
+								length [ 0.000, ]
+							         }
+						}
+					]
+				}
+			]
+		}
+	]
+}

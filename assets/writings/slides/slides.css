@@ -1,0 +1,16 @@
+#next {
+    border: 1px solid; margin: auto; padding: 1em; background: #FF6;
+    max-width: 32em;
+    position:fixed;
+    bottom:5px;
+    right:5px;
+}
+#prev {
+    border: 1px solid; margin: auto; padding: 1em; background: #FF6;
+    max-width: 32em;
+    position:fixed;
+    bottom:5px;
+    left:5px;
+}
+p, li { font-size:30px; }
+li { border: 1px dotted black; }

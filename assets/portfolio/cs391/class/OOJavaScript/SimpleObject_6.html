@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+		    /* 
+				Person definition
+			*/
+			
+			function Person(options) {
+				var instanceType = "Person";
+			    var fname="";
+				var lname="";
+				var age=undefined;
+				
+				for (var prop in options) {
+				    if (prop == "fname")
+					    fname = options[prop];
+					else if (prop == "lname")
+					    lname = options[prop];
+					else if (prop == "age")
+					    age = options[prop];
+					else
+						this[prop] = options[prop];
+				}
+				
+				this.printFirstName = function () {
+				    console.log("First name = " + fname);
+				}
+				
+				this.printLaastName = function() {
+				    console.log("Last name = " + lname);
+				}
+				
+				this.printAge = function() {
+				    console.log("Age = " + age);
+				}
+				
+				return this;  // Just to be explicit
+			}
+		
+		</script>
+	</head>
+	
+	<body>
+		<script>
+		    // create a person object, and show that the printFirstName function is accessible.
+			chuck = new Person({fname: "Chuck", lname: "Kann", age: 59});
+			chuck.printFirstName();
+			
+			patty = new Person({fname: "Patty", lname: "Jordan", age: 58});
+			chuck.printFirstName();
+			
+			// Note that now there is encapsulation
+			patty.printFirstName();   // works
+			chuck.printFirstName();   // works thanks to closure
+			patty.printAge();
+			chuck.printAge();
+
+			console.log(chuck.fname); // does not work
+
+			
+			// But what you have is no longer the object.  It is functions that have accessible
+			// to object fields through closure...
+			jsonObj = JSON.stringify(chuck);
+			alert(jsonObj);
+
+		</script>
+	</body>
+</html>

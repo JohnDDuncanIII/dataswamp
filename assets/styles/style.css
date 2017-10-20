@@ -1,0 +1,162 @@
+@media only screen and (min-width:700px) {
+    html {
+	padding: 40px 50px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    html {
+	padding: 2% 2pt;
+    }
+    .content {
+	padding-right: 15px;
+	padding-left: 15px;
+    }
+}
+
+html {
+    background-attachment: fixed;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: crisp-edges;
+    cursor: url(cursors/pointer.png), default;
+    margin: 0 auto;
+    text-align: center;
+}
+body {
+    display: inline-block;
+    position: relative;
+    /*background-image: url(data:image/gif;base64,R0lGODdhAwADAIACAPn5+f39/SwAAAAAAwADAAACA0RuWAA7);*/
+    /*background-image: url(data:image/gif;base64,R0lGODdhAwADAIABAPv7+////ywAAAAAAwADAAACA0RuWAA7);*/
+    /*background-repeat: repeat;*/
+    background-color: white;
+    border: 5px solid black;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: url(cursors/cursor.png), default;
+    text-align: left;
+}
+
+.content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+::selection { /* WebKit/Blink Browsers */
+    background: blue;
+    color: white;
+}
+::-moz-selection { /* Gecko Browsers */
+    background: blue;
+    color: white;
+}
+
+img {
+    /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+}
+
+a:link:active, a:link:active > img { cursor: url(cursors/pointer_active.png), pointer; }
+a:link, a:link > img { cursor: url(cursors/pointer.png), pointer; }
+img { cursor: url(cursors/cursor.png), default; }
+input, p, blockquote, h1, h2, h3, h4, h5, h6, td, dt, dd, li, date { cursor: url(cursors/text.png), text; }
+
+a:target {
+    border: 1px dotted black;
+}
+
+h1 {
+    display:table;
+    border-bottom: 1px dotted black;
+}
+
+hr {
+    /*border:1px dotted black;*/
+    background-image: url('hr.gif');
+    display:block;
+    border:0px;
+    height:2px;
+
+}
+
+blockquote {
+    border: 1px solid; margin: auto; padding: 1em; background: lime;
+    max-width: 32em;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    margin: 0 auto;
+}
+
+pre, code {
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+aside {
+    border: 1px solid; margin: auto; padding: 1em; background: Yellow;
+    max-width: 32em;
+}
+
+cite {
+    text-align:right;
+}
+
+ul {
+    list-style-image: url("bullets/bullet.gif");
+}
+
+ul ul {
+    list-style-image: url("bullets/genechip.gif");
+}
+
+ul ul ul{
+    list-style-image: url("bullets/gem.gif");
+}
+
+ul ul ul ul {
+    list-style-image: url("bullets/bullet_s.gif");
+}
+
+ul ul ul ul ul {
+    list-style-image: url("bullets/bullet_ss.gif");
+}
+
+ul ul ul ul ul ul {
+    list-style-image: url("bullets/bullet_sss.gif");
+}
+
+ul ul ul ul ul ul ul {
+    list-style-image: url("bullets/bullet_ssss.gif");
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: upper-roman;
+}
+
+footer {
+    text-align: center;
+    bottom: 5px;
+    width:100%;
+    z-index:0;
+    padding-bottom: 5px;
+}

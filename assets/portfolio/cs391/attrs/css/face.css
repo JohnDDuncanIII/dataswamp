@@ -1,0 +1,16 @@
+.xface {
+    color: black;
+    background-color: white;
+    display: inline-block;
+}
+.face {
+    border-right: 1px solid black;
+    padding: 1px;
+    display: inline-block;
+}
+.face:last-child { border-right: none; }
+.facesBox {
+    line-height: 0;
+    float: right;
+    padding: 0;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DARKMATTER - 1</title>
+    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <link rel="stylesheet" href="../slides.css">
+    <script src="../../../scripts/border.js"></script>
+    <script>
+      document.onkeydown = checkKey;
+      function checkKey(e) {
+      e = e || window.event;
+      if (e.keyCode == '38') {}
+      else if (e.keyCode == '40') {}
+      else if (e.keyCode == '37') { document.location.href = "0.html"; }
+      else if (e.keyCode == '39') { document.location.href = "2.html"; }
+      }
+    </script>
+    <style>
+      #content img {
+      display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content" class="written-content">
+      <a id="prev" href="0.html">prev</a>
+      <a id="next" href="2.html">next</a>
+      <center>
+	<h1><b>Greymatter</b></h1>
+      </center>
+      <article>
+	<ul>
+	  <li> flat-file content generation (No database/SQL/etc.)
+	  <li> static generation of web pages (generate individual html pages for each post from standard template)
+	  <li> only requirements to run is Perl support (no external Perl libraries required, either!), and a webserver that supports running CGI scripts (literally all of them; yes, even <a href="https://2ton.com.au/rwasa/">RWASA</a>)<ul><li> Perl comes as a standard install on most, if not all UNIX-based systems (yes, even <a href="http://9front.org/">9Front</a>/Plan9)</ul>
+	  <li> NO bloated frameworks; NO jquery/js libraries
+	  <li> Pure Perl on the backend, valid HTML5/CSS3/ECMAscript 6 on the frontend
+	</ul>
+      </article>
+  </body>
+</html>
+

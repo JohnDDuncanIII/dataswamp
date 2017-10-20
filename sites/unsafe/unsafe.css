@@ -1,0 +1,56 @@
+body {
+color: #000000;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+}
+TH{
+color: #000000;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+}
+a:link {
+color: #cc3333;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+text-decoration: none;
+}
+a:visited {
+color: #993300;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+text-decoration: none;
+}
+a:active {
+color: #FFFFFF;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+text-decoration: underline;
+}
+a:hover {
+color: #ff6600;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+text-decoration: underline;
+}
+select {
+color: #000000;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+}
+input {
+color: #000000;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+}
+textarea {
+color: #000000;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+}
+TD { 
+color: #000000;
+font-size: 10px;
+font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+ } 
+
+.articletitle {  font-family: Georgia, "Times New Roman", Times, serif; font-size: 12pt; font-weight: bold}

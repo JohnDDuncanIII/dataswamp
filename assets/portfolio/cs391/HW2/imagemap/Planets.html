@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <TITLE>Planets Image Map</TITLE>
+    <meta charset="utf-8">
+  </HEAD>
+
+  <BODY BGCOLOR="aliceblue">
+    <CENTER>
+      <B>Simple image map example</B>
+      <BR><BR>
+
+      <IMG SRC="planets.jpg" NAME="planets" BORDER="0"
+	   USEMAP="#planets_map" class="map">
+    </CENTER>
+    <BR>
+
+    <!-- image map information --> 
+
+    <MAP NAME="planets_map"> 
+      <AREA SHAPE="circle" COORDS="78,83,69"
+            HREF="http://solarsystem.nasa.gov/planets/jupiter" ALT="Jupiter" 
+	    TITLE="Jupiter" TARGET="infoFrame"
+	    date="today">
+      
+      <AREA SHAPE="circle" COORDS="268, 83, 54"
+            HREF="http://solarsystem.nasa.gov/planets/saturn" ALT="Saturn" 
+	    TITLE="Saturn" TARGET="infoFrame"
+	    date="today">
+      <AREA SHAPE="circle" COORDS="391, 83, 23"
+            HREF="http://solarsystem.nasa.gov/planets/uranus" ALT="Uranus" 
+	    TITLE="Uranus" TARGET="infoFrame"
+	    date="today">
+      <AREA SHAPE="circle" COORDS="476, 83, 22"
+            HREF="http://solarsystem.nasa.gov/planets/neptune" ALT="Neptune" 
+	    TITLE="Neptune" TARGET="infoFrame"
+	    date="today">
+    </MAP>
+
+    <!-- end of image map information -->
+
+    <BR><BR>
+    <CENTER>
+      <p>Move the mouse over a planet and click to see information abou that planet</p>
+      <p>To see the code for this page, select <B>Source</B> from the View menu.</p>
+    </CENTER>
+  </BODY>
+</HTML>

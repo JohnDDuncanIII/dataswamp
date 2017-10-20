@@ -1,0 +1,11 @@
+table { margin: 0 auto; }
+html {
+    background-image:url('../images/pat.gif');
+    background-attachment: fixed; }
+main {
+    background-image:url('../images/bg.png');
+    border: 3px solid white;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}

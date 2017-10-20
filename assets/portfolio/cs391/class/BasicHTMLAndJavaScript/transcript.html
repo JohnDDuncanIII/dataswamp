@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Transcript Form</title>
+
+		<script language = "JavaScript">
+
+			/* Functions to be implemented using non-intrusive JavaScript.
+
+			/* 
+				Implement an onchange event handler to calculate the QP's for a class if 
+				the grade or the number of credits changes.
+			*/
+
+			/*
+				Implement a function to calculate the overall QPA for the students.
+			*/
+
+		</script>
+	</head>
+
+	<body bgcolor="orange" text="darkblue">
+
+		<center>
+			<h1><u>Grade Transcript</u></h1>
+
+			<font size = "+1">
+			(Grade Point Equivalents:  A = 4, B = 3, C = 2, D = 1, F = 0)
+
+			<p>
+
+			<form name = "transcript">
+
+			Student Name <input type = "text" name="student" size = "40">
+
+		</center>
+
+		<br>
+
+		<table>
+
+			<tr width="90%">
+			<th width="70%" align="left"><b><u>COURSE</b></u></th>
+			<th width="10%"><b><u>CREDITS</b></u></th>
+			<th width="10%"><b><u>GRADES</b></u></th>
+			<th width="10%"><b><u>QPs</b></u></th>
+			</tr>
+
+			<tr>
+			<td><input type = "text" size = "80" name = "course1"></td>
+			<td><input type = "text" size = "10" name = "credit1 value="0"></td>
+			<td><input type = "text" size = "10" name = "grade1"></td>
+			<td><input type = "text" size = "10" name = "QPA1" readonly></td>
+			</tr>
+
+			<tr>
+			<td><input type = "text" size = "80" name = "course2"></td>
+			<td><input type = "text" size = "10" name = "credit2" value="0"></td>
+			<td><input type = "text" size = "10" name = "grade2"></td>
+			<td><input type = "text" size = "10" name = "QPA2" readonly></td>
+			</tr>
+
+			<tr>
+			<td><input type = "text" size = "80" name = "course3"></td>
+			<td><input type = "text" size = "10" name = "credit3" value="0"></td>
+			<td><input type = "text" size = "10" name = "grade3"></td>
+			<td><input type = "text" size = "10" name = "QPA3" readonly></td>
+			</tr>
+
+		</table>
+
+		<br><br>
+
+		<input type = "button" value = "Compute QPA" name = "QPAButton">
+
+		Quality Point Average: <input type = "text" size = "10" name = "QPA" readonly>
+
+		</p>
+
+	</font>
+
+	</body>
+</html>
