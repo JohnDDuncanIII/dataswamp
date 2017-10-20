@@ -190,13 +190,13 @@ function weather() {
 
     /* this requests the file and executes a
        callback with the parsed result once it is available */
-    fetchJSONFile('http://forecast.weather.gov/MapClick.php?lat='+
+    fetchJSONFile('https://forecast.weather.gov/MapClick.php?lat='+
 		  LATITUDE+'&lon='+
 		  LONGITUDE+'&FcstType=json',
 		  function(data) {
 		      // fetches the XML file from weather.gov
 		      var x = new XMLHttpRequest();
-		      var urll = "http://forecast.weather.gov/MapClick.php?lat="+LATITUDE+"&lon="+LONGITUDE+"&FcstType=digitalDWML";
+		      var urll = "https://forecast.weather.gov/MapClick.php?lat="+LATITUDE+"&lon="+LONGITUDE+"&FcstType=digitalDWML";
 		      x.open("GET", urll, true);
 		      // execute once we get the data
 		      x.onreadystatechange = function () {
