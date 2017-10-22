@@ -20,7 +20,7 @@ session_save_path('/Accounts/turing/students/s17/duncjo01/session/'); session_st
       <div id="ichingcoins" style="background-image: url('images/iching/iching_background.gif')" title="i-ching"></div>
       <h1 style="margin-top: 5px;margin-bottom: 5px;">Guestbook</h1> <hr />
     </center>
-    <?php include 'scripts/guetsbook/index.php';?>
+    <?php include 'scripts/guestbook/index.php';?>
     <footer>
       <hr>
       <a href="about.html">about</a> <BR>
