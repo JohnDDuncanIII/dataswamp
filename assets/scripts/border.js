@@ -1,5 +1,5 @@
-var NUM_PATS= 238;
-var NUM_PATS_BW = 560;
+var NUM_PATS= 260;
+var NUM_PATS_BW = 575;
 var NUM_PATS_ANIM = 13;
 
 /*
