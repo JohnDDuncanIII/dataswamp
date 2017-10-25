@@ -13,15 +13,21 @@
     margin-left: auto;
     margin-right: auto;
     }
+    p {
+    text-align: left;
+    margin-left: 70px;
+    margin-right: 70px;
+    }
   </style>
 </head>
 <body style="display:block; text-align:center;">
-  <div class="toc" style="text-align: left; display: inline-block;">Table of contents [<span onclick="expandTree('wikitoc1')" class="mktreecmd">expand all</span>] [<span onclick="collapseTree('wikitoc1')" class="mktreecmd">collapse all</span>]<br>
+  <div class="toc" style="text-align: left; display: inline-block;"><b>Table of contents</b> [<span onclick="expandTree('wikitoc1')" class="mktreecmd">expand all</span>] [<span onclick="collapseTree('wikitoc1')" class="mktreecmd">collapse all</span>]<br>
     <ul class="mktree" id="wikitoc1">
       <li class="liOpen"><a href="#mit">LEAV/HVX</a>
 	<ul> <li><a href="#leav">LEAV</a></li> </ul>
 	<ul> <li><a href="#hvx">HVX</a></li> </ul>
       <li class="liOpen"><a href="#circles">Circles</a>
+      <li class="liOpen"><a href="#gettysburg">Gettysburg Monuments</a>
       <li class="liOpen"><a href="#forecast">Weather</a>
       <li class="liOpen"><a href="#messagefaces">MessageFaces</a>
       <li class="liOpen"><a href="#pokersquares">PokerSquares</a>
@@ -35,50 +41,67 @@
       <li class="liOpen"><a href="#xpfe">XPFE (theme)</a>
       <li class="liOpen"><a href="#skat">Skat (playing cards)</a>
       <li class="liOpen"><a href="#london">Fonts</a>
+      <li class="liOpen"><a href="#increments">Logical Increments Guide</a>
       <li class="liOpen"><a href=""></a>External
 	<ul> <li class="liOpen"><a href="wiki.html">Wiki</a> </ul>
 	<ul> <li class="liOpen"><a href="blog.html">Blog</a> </ul>
 	<ul> <li class="liOpen"><a href="forms.html">Forms</a> </ul>
 	<ul> <li class="liOpen"><a href="desktops.html">Desktops</a> </ul>
     </ul>
-    <small>unless otherwise noted, no frameworks were used in any of these projects</small>
   </div>
-  <hr>
+  <br><small>I have included full-size lossless images to make it easier to scroll through all of my work.</small><br>
+  <small>You may need to resize your browser accordingly to view the full width of some attached screenshots.</small>
+  <hr><hr>
   <h1><a name="mit" href="https://docs.google.com/presentation/d/1d6u7eK2fBJElrRpEn1KlkTfReKO_tHj5iCAGb6vgtmg/">HVX/LEAV</a></h1>
   <h3>Summer 2016 internship at MIT's Lincoln Laboratory</h3>
+  <p>As part of my summer work at MIT's Lincoln Laboratory (Summer '16), I created an <b>android application (LEAV-EM)</b> and a <b>javascript web module</b> for the LEAV and HVX programs, respectively.
+  <p>LEAV-EM alerts users in disaster affected areas (hurricanes/floods/tornadoes) to evacuate from their specific evacuation zone. LEAV-EM then routes users to the shelter that is closest to their current (or home) location and allows the user to directly interact with their state EMs.
+  <p>State Emergency Managers (EMs) have the ability to set the status of the evacuation zones in my HVX module.
+  <p>I designed, programmed, and developed the app. I met with the broader HVX team during our scrum meetings three times a week to present my progress.</p>
+
   <h2><a name="leav">LEAV</a></h2>
-  <h3>Android/Java/XML/Google Maps API</h3>
+  <h3>Android/Java/Javascript/geoJSON/XML/Google Maps API</h3>
   <img src="portfolio/mit/clear.png">
   <img src="portfolio/mit/evac.png">
   <img src="portfolio/mit/evac-operator.png">
   <img src="portfolio/mit/evac-directions.png">
   <img src="portfolio/mit/evac-alert.png">
+
   <h2><a name="hvx">HVX Module</a></h2>
-  <h3>JS/HTML5/CSS3/Open Layers/geoJSON/REST/AJAX</h3>
+  <h3>JS/HTML5/CSS3/Open Layers/geoJSON/REST/AJAX/EXT-JS</h3>
   <h3>my work: geoJSON zone overlay, LEAV panel, popupbox</h3>
   <img src="portfolio/mit/hvx-clear.png">
   <img src="portfolio/mit/hvx-evac2.png">
   <img src="portfolio/mit/hvx-evac5.png">
   <img src="portfolio/mit/hvx-evac-nj.png">
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="circles">Circles</a></h1>
-  <h3>Fall 2016 cs440 Capstone component (individual) - created to client (Wellspan Health ) specification</h3>
+  <h3>Fall 2016 cs440 Capstone component — created to client (Wellspan Health ) specification</h3>
   <h3>HTML5/JS/CSS3</h3>
   <!--<canvas id="canvas" width="600" height="480"></canvas>-->
   <div id="parentdiv"></div>
   <script src="portfolio/circle/circles.js"></script>
-  <hr>
+  <hr><hr>
+
+
+  <h1><a name="gettysburg" href="../sites/monuments/">Gettysburg Monuments Map</a></h1>
+  <p>Created a Gettysburg Battlefield companion application using Javascript and OpenLayers 3 to map points and data onto the Gettysburg battlefield. Published to the <a href="https://play.google.com/store/apps/details?id=edu.gettysburg.MonumentsMap">Google Play Store</a> as "Gettysburg Monuments Map" and featured on the Gettysburg College <a href="http://www.gettysburg.edu/news_events/press_release_detail.dot?id=6bb9e711-cbbd-4c0d-98c8-ca379ebc5321">Homepage</a>.</p>
+  <img src="portfolio/gettysburg/gburg.png">
+  <img src="portfolio/gettysburg/popup.png">
+  <hr><hr>
+
 
   <h1><a name="forecast" href="https://dataswamp.org/~john/">Weather</a> <a href="scripts/weather.js">Forecast</a></h1>
   <h3>JS/HTML5/CSS3/REST/picons</h3>
   <h4>Forecast information sourced from US National Weather Service <a href="http://forecast.weather.gov/MapClick.php?lat=39.1682&amp;lon=-77.1645&amp;FcstType=json">json</a>/<a href="http://forecast.weather.gov/MapClick.php?lat=39.1682&amp;lon=-77.1645&amp;FcstType=digitalDWML">xml</a> API (weather.gov)</h4>
-  <h4>Full forecast information available in tooltip on hover.</h4>
-  <h4>Use above link (to dataswamp.org server) and enable html5 geolocation in your browser</h4>
+  <h4>To test, use above link (to dataswamp.org server) and enable html5 geolocation in your browser</h4>
   <h4>To compare to existing NWS layout, <a href="http://forecast.weather.gov/MapClick.php?lat=39.1682&amp;lon=-77.1645">look</a> <a href="http://forecast.weather.gov/MapClick.php?lat=39.1682&amp;lon=-77.1645&amp;unit=0&amp;lg=english&amp;FcstType=graphical">here</a></h4>
   <img src="portfolio/weather/favicon.png">
   <img src="portfolio/weather/favicon_bw.png"><br>
   <img src="portfolio/weather/weather.png"><img src="portfolio/weather/weather_bw.png"><br>
+  <p>Full forecast information available in tooltip on hover.</p>
   <img src="portfolio/weather/tooltip.gif"><br>
   <img src="portfolio/weather/tooltip1.gif"><br>
   <img src="portfolio/weather/tooltip2.gif"><br>
@@ -89,11 +112,13 @@
   <img src="portfolio/weather/tooltip7.gif"><br>
   <img src="portfolio/weather/tooltip8.gif"><br>
   <img src="portfolio/weather/tooltip9.gif"><br>
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="messagefaces" href="../sites/messagefaces/">Message</a> <a href="https://github.com/JohnDDuncanIII/MessageFaces">Faces</a></h1>
   <h3>XUL/XPCOM/JS/HTML5/CSS3 add-on</h3>
   <h4>monitoring windows based on unix  <a href="http://kinzler.com/picons/ftp/demo/">programs</a> <i>picons newscheck-faces</i> and <i>xfaces</i></h4>
+  <p>Ported (to SeaMonkey), updated, and added many new features to an old Mozilla Suite extension named MessageFaces (originally created by Jens Banneman). Newer features include: full SeaMonkey/Mozilla Suite compatibility, multiple header photo support, gravatar support (w/ caching), fast X-Face decodes to png instead of bmp (borrowed from mnenhy; original X-Face spec <a href="http://users.cecs.anu.edu.au/~jaa/">here</a>), picon db support (both local and online databases), mailnews column support that visualizes sender faces, TB 3+ address book contact photo support, and monitoring capabilities similar to the unix programs <i>picons newscheck-faces</i> and <i>xfaces</i>.</p>
   <img src="portfolio/messagefaces/mailcheck-hover.png"><br>
   <img src="portfolio/messagefaces/newscheck-hover.png"><br>
   <img src="portfolio/messagefaces/me.gif"><br>
@@ -102,23 +127,30 @@
   <img src="portfolio/messagefaces/messagefaces.gif">
   <img src="portfolio/messagefaces/messagefaces1.gif">
   <img src="portfolio/messagefaces/messagefaces2.gif">
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="pokersquares" href="https://github.com/JohnDDuncanIII/pokersquares">PokerSquares</a></h1>
+  <h3>Android/Java/XML/Neural-Net</h3>
   <h3>Fall 2015-2017 ACM side project</h3>
+  <p>Designed and wrote an Android application to play the classic solitaire-based card game "Poker Squares" (utilizing a Native Abstract Reinforcement Learning (NARL) Artificial Intelligence player created by my adviser Dr. Todd W. Neller). Available for download from the <a href="https://play.google.com/store/apps/details?id=edu.gettysburg.pokersquares">Google Play Store</a>.</p>
   <img src="portfolio/pokersquares/0.png">
   <img src="portfolio/pokersquares/1.png">
   <img src="portfolio/pokersquares/2.png">
   <img src="portfolio/pokersquares/3.png">
   <img src="portfolio/pokersquares/4.png">
   <img src="portfolio/pokersquares/5.png">
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="redlightrace" href="https://github.com/JohnDDuncanIII/redlight">RedLightRace</a></h1>
+  <h3>Android/Java/XML/Neural-Net</h3>
   <h3>Fall 2013 semester long project (individual) for my freshman year cs112 course</h3>
+  <p>Designed and wrote an Android application called "Red Light Race" published to the <a href="https://play.google.com/store/apps/details?id=edu.gettysburg.redlight">Google Play Store</a> and utilizing a neural network approximately player created by Dr. Todd W. Neller and Marcin Malec (‘13) of Gettysburg College. Featured on the Gettysburg College <a href="http://www.gettysburg.edu/news_events/press_release_detail.dot?id=16f6ea27-401c-42b2-bf77-c5c8ab319ee1">Homepage</a> for my work.</p>
   <img src="portfolio/redlightrace/0.png">
   <img src="portfolio/redlightrace/1.png">
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="cursors">Cursors</a></h1>
   <h3>Bitmap cursors modeled after the Macintosh and Windows cursor designs of yesteryear</h3>
@@ -151,10 +183,12 @@
   <img src="styles/cursors/w-resize.png">
   <img src="styles/cursors/zoom-in.png">
   <img src="styles/cursors/zoom-out.png">
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="platinum" href="https://github.com/JohnDDuncanIII/Platinum">Platinum</a></h1>
-  <h3>Traffic Lights used in my macOS 10.6/10.8/10.11+ .car system theme. Modeled after the default OS 9 Platinum theme.</h3>
+  <h3>.car hacking/GIMP</h3>
+  <p>I created a "Platinum" Macintosh OS 9 theme clone for OS X 10.6, 10.10, and 10.11. Created original "traffic light" bitmaps modeled after the default OS 9 Platinum theme.</p>
   <!--<h4><i>2014-2016</i></h4>-->
   <!-- <img src="portfolio/platinum/normal/hover/test.png">
        <img src="portfolio/platinum/normal/hover/test_fullscreen.png"> -->
@@ -227,11 +261,18 @@
   <img src="portfolio/platinum/small/pressed/inactive/close_save.gif">
   <img src="portfolio/platinum/small/pressed/inactive/maximize.gif">
   <img src="portfolio/platinum/small/pressed/inactive/minimize.gif">
-  <hr>
+  <br>
+  <p>Traffic Lights in action:</p>
+  <img src="portfolio/platinum/about.png">
+  <img src="portfolio/platinum/ncsp.png">
+  <img src="portfolio/platinum/term.png">
+  <hr><hr>
+
 
   <h1><a name="picons" href="portfolio/picons/">Picons</a></h1>
   <h3>48x48 color icons for Steve Kinzler's <a name="domains" href="http://kinzler.com/picons/ftp/">picon archive</a>. Used in <a href="../sites/MessageFaces/">MessageFaces</a></h3>
   <!--<h4><i>2016</i></h4>-->
+  <p>As part of this project, I created many 48x48 picons for various companies and organizations that are now included in Steve Kinzler's picon database.</p>
   <img src="portfolio/picons/domains/com/linkedin/unknown/face.gif">
   <img src="portfolio/picons/domains/com/ebay/unknown/face.gif">
   <img src="portfolio/picons/domains/edu/mit/ll/unknown/face.gif">
@@ -354,7 +395,8 @@
   <img src="portfolio/picons/misc/MISC/owl3/unknown/face.gif">
   <img src="portfolio/picons/misc/MISC/turkey/unknown/face.gif">
   <br>
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="xpfe" href="https://github.com/JohnDDuncanIII/xpfe-classic">Mozilla XPFE</a></h1>
   <h3>Icons created for a Mozilla Suite clone</h3>
@@ -392,11 +434,13 @@
   <img src="portfolio/mozilla/xpfe/message-mail-attach-offl-reply.gif">
   <img src="portfolio/mozilla/xpfe/message-mail-fwd-offl-reply.gif">
   <img src="portfolio/mozilla/xpfe/message-mail-offl-reply.gif">
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="skat" href="../sites/cards/#skat_de">Skat Playing Cards</a></h1>
   <h3>Modeled after <a href="../sites/cards/assets/images/logo.gif">ISS skat</a> iconography.</h3>
   <h4><i>2015-2016</i></h4>
+  <p>Adapted many different public domain playing card sets into one centralized location for ease of use. Created custom skat playing card sets in normal and small sizes (with original iconography).</p>
   <p>Icons for Standard (kare) set:</p>
   <img src="portfolio/cards/skat_large/skat_clubs.png">
   <img src="portfolio/cards/skat_large/skat_diamonds.png">
@@ -410,17 +454,24 @@
   <img src="portfolio/cards/skat_small/card_skat_heart.png">
   <img src="portfolio/cards/skat_small/card_skat_leaf_new.png">
   <br>typeface: unter: <img src="portfolio/cards/skat_large/unter.png"> ober: <img src="portfolio/cards/skat_large/ober.png">
-  <hr>
+  <hr><hr>
+
 
   <h1><a name="london">London Glyphs</a></h1>
   <h3>Extra glyphs for the '<a href="portfolio/fonts/fun.gif">London</a>' font from the Classic Macintosh. Used in my <a href="https://github.com/JohnDDuncanIII/ClassicMacintoshFonts">Classic Macintosh Fonts</a> project.</h3>
+  <h3>.rsrc fork hacking</h3>
   <h4><i>2016</i></h4>
+  <p>I worked on a Classic Macintosh Typeface conversion project where I created data-fork (.dfont) and fontforge (.sfd) versions of every resource-fork typeface that Apple has shipped (including branding) dating back to the XEROX ALTO in 1979. Sources ranged from pre-release Macintosh versions based on the XEROX STAR operating system all the way up to pre-release versions of OS X (rhapsody).</p>
   <img src="portfolio/fonts/CIRCUMFLEX-ACCENT.gif">
   <img src="portfolio/fonts/GRAVE.gif">
   <img src="portfolio/fonts/GREATER-THAN-SIGN.gif">
   <img src="portfolio/fonts/LESS-THAN-SIGN.gif">
   <img src="portfolio/fonts/TILDE.gif">
-  <hr>
+  <hr><hr>
+
+  <h1><a name="increments">LogicalIncrements</a></h1>
+  <p>Between late ~2010-2011 I contributed to the monthly Logical Increments guide (what eventually became <a href="http://www.logicalincrements.com/">http://www.logicalincrements.com/</a></p>
+  <hr><hr>
 
   <!--<h1>upsettling movement</h1>
       <h4><i>January 2016</i></h4>
@@ -432,19 +483,36 @@
   <h1><a name="art">Art</a></h1>
   <p><a href="http://users.cecs.anu.edu.au/~jaa/">X-FACES</a></p>
   <img src="portfolio/faces.gif">
-  <hr>
+  <hr><hr>
+
+
   <h1><a href="wiki.html">Wiki</a></h1>
-  <hr>
+  <p>Wrote simple wiki in golang. Layout/featureset based off of WikiWikiWeb/Wikipedia.</p>
+  <hr><hr>
+
+
   <h1><a href="blog.html">Blog</a></h1>
   <h4>(currently static; will use dynamic golang handlers for comments soon)</h4>
-  <hr>
+  <p>Wrote simple cms system in golang. Layout/featureset based off of Noah Grey's Greymatter.</p>
+  <hr><hr>
+
+
   <h1><a href="forms.html">Forms</a></h1>
   <h4>(cs391 experiments in html5/js/design)</h4>
-  <hr>
+  <hr><hr>
+
+
   <h1><a href="desktops.html">Desktop Screenshots</a></h1>
   <h4>(mostly me messing around with a 'leet hacker' aesthetic in high school)</h4>
+  <hr><hr>
+
+
+  <h1><a href="https://github.com/JohnDDuncanIII/dataswamp">Homepage</a></h1>
+  <h3>HTML5/CSS3/LaTeX/Javascript/PHP/Go/Sed/Awk</h3>
+  <p>I suppose my homepage could be considered a major project. All html, css, (and most) js were written by me..</p>
+  <hr><hr>
+
   <footer>
-    <hr>
     <a href="about.html">about</a> <BR>
     You are visitor number <a href="https://stuff.mit.edu/doc/counter-howto.html"><img src="http://www.mit.edu/cgi/counter/jduncan" style="vertical-align:middle"></a> <BR>
     <i> <a href="mailto:duncanjdiii@gmail.com?Subject=I would like to speak to your manager">  © 2016 John D. Duncan, III <br> <img id="mail"  src="images/mail.gif"></a> <BR> </i>
