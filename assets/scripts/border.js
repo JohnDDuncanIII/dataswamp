@@ -1,5 +1,5 @@
-var NUM_PATS= 260;
-var NUM_PATS_BW = 575;
+var NUM_PATS= 267;
+var NUM_PATS_BW = 576;
 var NUM_PATS_ANIM = 13;
 
 /*
@@ -21,12 +21,12 @@ if (window.localStorage) {
     }
     if(localStorage.getItem("pat") == "bw") {
         var num = Math.floor(Math.random() * (NUM_PATS_BW)+1);
-	stylesheet.insertRule("html { background: transparent url(\"../images/patterns_bw/"+num+".gif\") repeat scroll 0% 0%; }", 0);
+	stylesheet.insertRule("html { background: transparent url(\"../images/patterns_bw/"+num+".png\") repeat scroll 0% 0%; }", 0);
         document.addEventListener('click', function(event) {
             if(event.target.tagName === "HTML"){
                 num = Math.floor(Math.random() * (NUM_PATS_BW)+1);
 		stylesheet.deleteRule(0);
-		stylesheet.insertRule("html { background: transparent url(\"../images/patterns_bw/"+num+".gif\") repeat scroll 0% 0%; }", 0);
+		stylesheet.insertRule("html { background: transparent url(\"../images/patterns_bw/"+num+".png\") repeat scroll 0% 0%; }", 0);
             }
         });
 	var mail = document.getElementById("mail");
@@ -41,12 +41,12 @@ if (window.localStorage) {
         }
     } else if (localStorage.getItem("pat") == "clr") {
         var num = Math.floor(Math.random() * (NUM_PATS)+1);
-	stylesheet.insertRule("html { background: transparent url(\"../images/patterns/"+num+".gif\") repeat scroll 0% 0%; }", 0);
+	stylesheet.insertRule("html { background: transparent url(\"../images/patterns/"+num+".png\") repeat scroll 0% 0%; }", 0);
         document.addEventListener('click', function(event) {
             if(event.target.tagName === "HTML"){
                 num = Math.floor(Math.random() * (NUM_PATS)+1);
 		stylesheet.deleteRule(0);
-		stylesheet.insertRule("html { background: transparent url(\"../images/patterns/"+num+".gif\") repeat scroll 0% 0%; }", 0);
+		stylesheet.insertRule("html { background: transparent url(\"../images/patterns/"+num+".png\") repeat scroll 0% 0%; }", 0);
             }
         });
     }
@@ -63,13 +63,13 @@ if (window.localStorage) {
     }
 } else {
     var num = Math.floor(Math.random() * (NUM_PATS)+1);
-    stylesheet.insertRule("html { background: transparent url(\"../images/patterns/"+num+".gif\") repeat scroll 0% 0%; }", 0);
+    stylesheet.insertRule("html { background: transparent url(\"../images/patterns/"+num+".png\") repeat scroll 0% 0%; }", 0);
 
     document.addEventListener('click', function(event) {
         if(event.target.tagName === "HTML"){
             num = Math.floor(Math.random() * (NUM_PATS_ANIM)+1);
 	    stylesheet.deleteRule(0);
-	    stylesheet.insertRule("html { background: transparent url(\"../images/patterns/"+num+".gif\") repeat scroll 0% 0%; }", 0);
+	    stylesheet.insertRule("html { background: transparent url(\"../images/patterns/"+num+".png\") repeat scroll 0% 0%; }", 0);
         }
     });
 }

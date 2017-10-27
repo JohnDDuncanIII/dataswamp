@@ -7,7 +7,7 @@ echo "</head>" >> index.html
 echo "<body>" >> index.html
 echo "<h1>Patterns</h1>" >> index.html
 
-for img in *.gif ; do
+for img in *.png ; do
      echo $img
      echo "<a href=\"$img\"><img src=\"$img\"></a>" >> index.html
 done
