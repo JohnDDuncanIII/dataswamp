@@ -1,4 +1,4 @@
-var NUM_PATS = 267;
+var NUM_PATS = 268;
 var NUM_PATS_BW = 576;
 var NUM_PATS_ANIM = 13;
 
