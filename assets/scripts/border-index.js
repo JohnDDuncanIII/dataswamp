@@ -1,5 +1,5 @@
-var NUM_PATS = 268;
-var NUM_PATS_BW = 576;
+var NUM_PATS = 256;
+var NUM_PATS_BW = 577;
 var NUM_PATS_ANIM = 13;
 
 var lev = document.getElementById("lever");
