@@ -229,10 +229,16 @@ function weather() {
 				      if(centerName == "M" || centerName =="" || centerName ==null || centerName == "NA") {
 					  toAdd.setAttribute('src', "assets/weather/MISC/question/face.gif");
 				      } else {
+					  var toReplace = centerName.charAt(i);
+					  if(centerName.charAt(i)=='/') {
+					      toReplace = "slash";
+					      var brr = document.createElement("br");
+					      nameBox.appendChild(brr);
+					  }
 					  if(bw) {
-					      toAdd.setAttribute('src', 'assets/weather/letters/'+centerName.charAt(i)+'_bw.gif');
+					      toAdd.setAttribute('src', 'assets/weather/letters/'+toReplace+'_bw.gif');
 					  } else {
-					      toAdd.setAttribute('src', 'assets/weather/letters/'+centerName.charAt(i)+'.gif');
+					      toAdd.setAttribute('src', 'assets/weather/letters/'+toReplace+'.gif');
 					  }
 				      }
 				      nameBox.appendChild(toAdd);
@@ -258,7 +264,7 @@ function weather() {
 			      nameBox.setAttribute('style',"display: inline-block;");
 			      tmpCounter = 0;
 			      for(var i = 0; i < curOb.length; i++) {
-				  if((tmpCounter >= 7 && curOb.charAt(i)==' ')	|| (curOb.charAt(i)==',')) {
+				  if((tmpCounter >= 7 && curOb.charAt(i)==' ') || (curOb.charAt(i)==',')) {
 				      var br = document.createElement("br");
 				      nameBox.appendChild(br);
 				      tmpCounter=0;
@@ -274,10 +280,17 @@ function weather() {
 				      if(centerName == "M" || centerName =="" || centerName ==null || centerName == "NA") {
 					  toAdd.setAttribute('src', "assets/weather/MISC/question/face.gif");
 				      } else {
+					  var toReplace = curOb.charAt(i);
+					  if(curOb.charAt(i)=='/') {
+					      toReplace = "slash";
+					      var brr = document.createElement("br");
+					      nameBox.appendChild(brr);
+					  }
+
 					  if(bw) {
-					      toAdd.setAttribute('src', 'assets/weather/letters/'+curOb.charAt(i)+'_bw.gif');
+					      toAdd.setAttribute('src', 'assets/weather/letters/'+toReplace+'_bw.gif');
 					  } else {
-					      toAdd.setAttribute('src', 'assets/weather/letters/'+curOb.charAt(i)+'.gif');
+					      toAdd.setAttribute('src', 'assets/weather/letters/'+toReplace+'.gif');
 					  }
 				      }
 				      nameBox.appendChild(toAdd);
