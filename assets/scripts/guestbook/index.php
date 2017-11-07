@@ -135,8 +135,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $error .= "<p class=\"message-error\">" . $messages['message_missing'] . "</p>";
     }
-    echo "POST $_POST['math']";
-    echo "SESSION $_SESSION['math']";
+
     // Check the math challenge answer to prevent spam robot.
     if( ! isset($_POST['math']) || empty($_POST['math']) || $_POST['math'] != $_SESSION['math']) {
     	$error .= "<p class=\"message-error\">" . $messages['math_invalid'] . "</p>";
