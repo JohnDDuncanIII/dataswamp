@@ -29,8 +29,8 @@ session_save_path('/Accounts/turing/students/s17/duncjo01/session/'); session_st
       <a href="http://vanilla-js.com/"> <img id="vanilla" src="images/banners/button.gif"></a>
       <br>
       <a href="https://www.anybrowser.org/campaign/index.html"> <img id="anyBrowser"></a>
+    </footer>
   </div>
   <script src="scripts/anybrowser.js"></script>
-  </footer>
 </body>
 
