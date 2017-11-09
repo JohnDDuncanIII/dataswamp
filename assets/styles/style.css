@@ -24,7 +24,6 @@ html {
 	image-rendering: optimize-contrast;
 	-ms-interpolation-mode: nearest-neighbor;
 	image-rendering: crisp-edges;
-	cursor: url(cursors/pointer.png), default;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -39,7 +38,6 @@ body {
 	padding-top: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
-	cursor: url(cursors/cursor.png), default;
 	text-align: left;
 }
 
@@ -57,17 +55,12 @@ body {
 	color: white;
 }
 
-img {
-	/*-webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;*/
-}
-
-a:link:active, a:link:active > img { cursor: url(cursors/pointer_active.png), pointer; }
-a:link, a:link > img { cursor: url(cursors/pointer.png), pointer; }
-img { cursor: url(cursors/cursor.png), default; }
-input, p, blockquote, h1, h2, h3, h4, h5, h6, td, dt, dd, li, date { cursor: url(cursors/text.png), text; }
+/*img {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}*/
 
 a:target {
 	border: 1px dotted black;
@@ -80,7 +73,7 @@ h1 {
 
 hr {
 	/*border:1px dotted black;*/
-	background-image: url('hr.gif');
+	background-image: url('img/hr.gif');
 	display:block;
 	border:0px;
 	height:2px;
@@ -114,31 +107,31 @@ cite {
 }
 
 ul {
-	list-style-image: url("bullets/bullet.gif");
+	list-style-image: url("img/bullets/bullet.gif");
 }
 
 ul ul {
-	list-style-image: url("bullets/genechip.gif");
+	list-style-image: url("img/bullets/genechip.gif");
 }
 
 ul ul ul{
-	list-style-image: url("bullets/gem.gif");
+	list-style-image: url("img/bullets/gem.gif");
 }
 
 ul ul ul ul {
-	list-style-image: url("bullets/bullet_s.gif");
+	list-style-image: url("img/bullets/bullet_s.gif");
 }
 
 ul ul ul ul ul {
-	list-style-image: url("bullets/bullet_ss.gif");
+	list-style-image: url("img/bullets/bullet_ss.gif");
 }
 
 ul ul ul ul ul ul {
-	list-style-image: url("bullets/bullet_sss.gif");
+	list-style-image: url("img/bullets/bullet_sss.gif");
 }
 
 ul ul ul ul ul ul ul {
-	list-style-image: url("bullets/bullet_ssss.gif");
+	list-style-image: url("img/bullets/bullet_ssss.gif");
 }
 
 ol {

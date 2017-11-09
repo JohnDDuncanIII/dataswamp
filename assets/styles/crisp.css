@@ -1,25 +1,16 @@
 html, ul, li, img {
-	image-rendering: optimizeSpeed;		/* STOP SMOOTHING, GIVE ME SPEED  */
+	image-rendering: optimizeSpeed;			/* STOP SMOOTHING, GIVE ME SPEED  */
 	image-rendering: -moz-crisp-edges;		/* Firefox			  */
 	image-rendering: -o-crisp-edges;		/* Opera			  */
-	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-	image-rendering: pixelated; /* Chrome */
+	image-rendering: -webkit-optimize-contrast; 	/* Chrome (and eventually Safari) */
+	image-rendering: pixelated; 			/* Chrome */
 	image-rendering: optimize-contrast;		/* CSS3 Proposed		  */
 	-ms-interpolation-mode: nearest-neighbor;	/* IE8+				  */
 	image-rendering: crisp-edges;
 }
-html { /* site-wide custom cursor */ cursor: url(../images/cursors/pointer.png), default; }
-body { /* site-wide custom cursor */ cursor: url(../images/cursors/cursor.png), default; }
-/*html:hover { cursor: url(../images/cursors/pointer.png), pointer; }*/
-a:link:active, a:link:active > img{ cursor: url(../images/cursors/pointer_active.png), pointer; }
-a:link, a:link > img{ /* only match links and links with images */ cursor: url(../images/cursors/pointer.png), pointer; }
-img { /* when an image is not a link, ensure it is a standard cursor*/ cursor: url(../images/cursors/cursor.png), default; }
-/* text I-bar cursor where necessary */
-input, p, blockquote, h1, h2, h3, h4, h5, h6, td, dt, dd, li, date { cursor: url(../images/cursors/text.png), text; }
-/*@font-face{
-    font-family: 'eWorldTight_18';
-    src: url('eWorldTight_18.ttf') format('truetype');
-    src: url('eWorldTight_18.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}*/
+/*html { cursor: url(cursors/pointer.png), default; }
+body { cursor: url(cursors/cursor.png), default; }
+a:link:active, a:link:active > img{ cursor: url(cursors/pointer_active.png), pointer; }
+a:link, a:link > img{ cursor: url(cursors/pointer.png), pointer; }
+img { cursor: url(cursors/cursor.png), default; }
+input, p, blockquote, h1, h2, h3, h4, h5, h6, td, dt, dd, li, date { cursor: url(cursors/text.png), text; }*/

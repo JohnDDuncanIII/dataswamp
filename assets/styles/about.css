@@ -1,7 +1,6 @@
-h1 { text-align: center; display:block !important; }
+h1 { text-align: center; display:block; }
 .head {
 	text-align: left; color: black;
-	/*background-image:  url(../images/about/hdrbg.png);*/
 	background-color: ghostwhite;
 	font-size: 11pt; padding: 0.2em 4.3em; margin: 1.5em 0;
 	text-transform: uppercase;

@@ -39,8 +39,8 @@ aside {
 .thumb {
 	border-style: solid;
 	border-width: 23px 24px;
-	-moz-border-image: url(thumb.png) 23 24 repeat;
-	-webkit-border-image: url(thumb.png) 23 24 repeat;
-	-o-border-image: url(thumb.png) 23 24 repeat;
-	border-image: url(thumb.png) 23 24 fill repeat;
+	-moz-border-image: url('img/thumb.gif') 23 24 repeat;
+	-webkit-border-image: url('img/thumb.gif') 23 24 repeat;
+	-o-border-image: url('img/thumb.gif') 23 24 repeat;
+	border-image: url('img/thumb.gif') 23 24 fill repeat;
 }

@@ -173,6 +173,24 @@ function weather() {
 	// if we have a saved geolocation in local storage, allow the user to wipe it
 	if((tLat != null) &&
 	   (tLong != null)) {
+			/*<div class="forms">
+			<input id="bakecookie" name="bakecookie" type="checkbox">
+			<label for="bakecookie">Save Info? <span></span></label>
+			<input value="post comment" type="submit">
+			</div>*/
+		var checkbox = document.createElement('input');
+		checkbox.setAttribute('type','checkbox');
+		checkbox.id = "bakecookie";
+		checkbox.name = "bakecookie";
+		var label = document.createElement('label');
+		label.htmlFor = "bakecookie";
+		label.className = "check";
+		label.innerHTML = "Enable Landscapes?"
+		var span = document.createElement('span');
+		label.insertBefore(span, label.firstChild);
+		weatherBox.appendChild(checkbox);
+		weatherBox.appendChild(label);
+
 		var buttonnode= document.createElement('input');
 		buttonnode.setAttribute('type','button');
 		buttonnode.setAttribute('name','geolocation');

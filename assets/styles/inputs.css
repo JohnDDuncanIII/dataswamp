@@ -1,0 +1,18 @@
+/* input fields */
+select, textarea, input[type="text"], input[type="date"], input[type="button"], input[type="submit"], button {
+    border: 1px double black;
+    margin-bottom: 3px;
+    display: table;
+    box-shadow: 2px 2px 0px -1px black;
+}
+
+select:hover, select:focus, textarea:hover, textarea:focus, input[type="text"]:hover, input[type="text"]:focus, input[type="date"]:hover, input[type="date"]:focus, input[type="button"]:hover, input[type="submit"]:hover, button:hover {
+    border-color: blue;
+}
+
+input[type="button"]:active, input[type="submit"]:active, button:active {
+    box-shadow: none;
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
