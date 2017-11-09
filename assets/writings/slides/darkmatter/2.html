@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>DARKMATTER - 2</title>
-    <link rel="icon" href="../../../../favicon.ico">
-    <link rel="stylesheet" href="../../../styles/style.css">
-    <link rel="stylesheet" href="../slides.css">
-    <script src="../../../scripts/border.js"></script>
-    <script>
-      document.onkeydown = checkKey;
-      function checkKey(e) {
-      e = e || window.event;
-      if (e.keyCode == '38') {}
-      else if (e.keyCode == '40') {}
-      else if (e.keyCode == '37') { document.location.href = "1.html"; }
-      else if (e.keyCode == '39') { document.location.href = "3.html"; }
-      }
-    </script>
-  </head>
-  <body class="written-content">
-    <a id="prev" href="1.html">prev</a>
-    <a id="next" href="3.html">next</a>
-    <center>
-      <h1><b>Greymatter</b></h1>
-      <h4></h4>
-    </center>
-    <article>
-      <ul> <img src="" align="left">     
-	<li> GM.cgi: the main powerhouse of the program and the largest file.
-	<li> GM-Authors.cgi: contains author information, which is now encrypted (as of version 1.21d)
-	<li> GM-Banlist.cgi: contains a list of banned IPs (usually comment spammers) which is editable through GM.cgi.
-	<li> GM-Comments.cgi: contains the subroutines not only for comment posting and viewing but also for searching entries.
-	<li> GM-Config.cgi: has information relating to user preferences and site information.
-	<li> GM-Counter.cgi: keeps track of the number of entries, archived entries (entries older than X number of days, specified by user, default 7), the "stay at top" entry which sits at the top of the main page, positive and negative karma votes, comments, opened entries, and closed entries (equivalent of deleted entries but can be re-opened at any time).
-	<li> GM-CPLog.cgi: contains raw HTML for the control panel log (optional feature, user specified).
-	<li> GM-Entrylist.cgi: is a list of all of the entries and information about each (time of post, author, and so on). * GM-Karma.cgi contains the subroutines for karma voting. * GM-Library.cgi contains the most used subroutines.
-	<li> GM-Templates.cgi: contains the user-specified templates for the site's HTML and the format of the entry.
-	<li> GM-Upload.cgi: is the script that enables users to upload files to their site through Greymatter to their archives directory.
+<meta charset="UTF-8">
+<title>DARKMATTER - 2</title>
+<link rel="icon" href="../../../../favicon.ico">
+<link rel="stylesheet" href="../../../styles/style.css">
+<link rel="stylesheet" href="../slides.css">
+<script src="../../../scripts/border.js"></script>
+<script>
+	document.onkeydown = checkKey;
+	function checkKey(e) {
+	e = e || window.event;
+	if (e.keyCode == '38') {}
+	else if (e.keyCode == '40') {}
+	else if (e.keyCode == '37') { document.location.href = "1.html"; }
+	else if (e.keyCode == '39') { document.location.href = "3.html"; }
+	}
+</script>
+<a id="prev" href="1.html">prev</a>
+<a id="next" href="3.html">next</a>
+<center>
+	<h1><b>Greymatter</b></h1>
+	<h4></h4>
+</center>
+<article>
+	<ul> <img src="" align="left">     
+		<li> GM.cgi: the main powerhouse of the program and the largest file.
+		<li> GM-Authors.cgi: contains author information, which is now encrypted (as of version 1.21d)
+		<li> GM-Banlist.cgi: contains a list of banned IPs (usually comment spammers) which is editable through GM.cgi.
+		<li> GM-Comments.cgi: contains the subroutines not only for comment posting and viewing but also for searching entries.
+		<li> GM-Config.cgi: has information relating to user preferences and site information.
+		<li> GM-Counter.cgi: keeps track of the number of entries, archived entries (entries older than X number of days, specified by user, default 7), the "stay at top" entry which sits at the top of the main page, positive and negative karma votes, comments, opened entries, and closed entries (equivalent of deleted entries but can be re-opened at any time).
+		<li> GM-CPLog.cgi: contains raw HTML for the control panel log (optional feature, user specified).
+		<li> GM-Entrylist.cgi: is a list of all of the entries and information about each (time of post, author, and so on). * GM-Karma.cgi contains the subroutines for karma voting. * GM-Library.cgi contains the most used subroutines.
+		<li> GM-Templates.cgi: contains the user-specified templates for the site's HTML and the format of the entry.
+		<li> GM-Upload.cgi: is the script that enables users to upload files to their site through Greymatter to their archives directory.
 
-      </ul>
-    </article>
-  </body>
-</html>
-
+	</ul>
+</article>

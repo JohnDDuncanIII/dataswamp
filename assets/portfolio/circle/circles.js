@@ -9,53 +9,53 @@ var totalOffset = offsetToParentCenter - offsetToChildCenter;
 var tempName = "";
 
 for (var i = 1; i <= NUM_CIRCLES; ++i){
-    var childdiv = document.createElement('div');
-    childdiv.className = 'div2 circleBase type3';
-    childdiv.style.position = 'absolute';
-    var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
-    var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
-    childdiv.style.top = (y + totalOffset).toString() + "px";
-    childdiv.style.left = (x + totalOffset).toString() + "px";
-    parentdiv.appendChild(childdiv);
-    DIV_ARRAY.push(childdiv);
-    childdiv.onclick = function() {
-	this.classList.add("type3click");
-	this.childNodes[0].innerHTML = 'data about user for ' + tempName;
-	if(tempName == "Social"){
-	    this.childNodes[0].innerHTML = tempName + " - Developing a sense of connection, belonging, and a well-developed support system.";
-	}
-	if(tempName == "Financial"){
-	     this.childNodes[0].innerHTML = tempName + " - Satisfaction with current and future financial situations.";
-	}
-	if(tempName == "Spiritual"){
-	    this.childNodes[0].innerHTML = tempName + " - Developing a sense of connection, belonging, and a well-developed support system.";
-	}
-	if(tempName == "Intellectual"){
-	     this.childNodes[0].innerHTML = tempName + " - Recognizing creative abilities and finding ways to expand knowledge and skills.";
-	}
-	if(tempName == "Physical"){
-	    this.childNodes[0].innerHTML = tempName + " - Recognizing the need for physical activity, healthy foods, and sleep.";
-	}
-	if(tempName == "Environmental"){
-	     this.childNodes[0].innerHTML = tempName + " - Good health by occupying pleasant, stimulating environments that support wellbeing.";
-	}
-	if(tempName == "Emotional"){
-	    this.childNodes[0].innerHTML = tempName + " - Coping effectively with life and creating satisfying relationships.";
-	}
-	if(tempName == "Occupational"){
-	     this.childNodes[0].innerHTML = tempName + " - Personal satisfaction and enrichment from one’s work.";
-	}
-	this.childNodes[0].classList.add("divTextClick");
-    };
+	var childdiv = document.createElement('div');
+	childdiv.className = 'div2 circleBase type3';
+	childdiv.style.position = 'absolute';
+	var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
+	var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
+	childdiv.style.top = (y + totalOffset).toString() + "px";
+	childdiv.style.left = (x + totalOffset).toString() + "px";
+	parentdiv.appendChild(childdiv);
+	DIV_ARRAY.push(childdiv);
+	childdiv.onclick = function() {
+		this.classList.add("type3click");
+		this.childNodes[0].innerHTML = 'data about user for ' + tempName;
+		if(tempName == "Social"){
+			this.childNodes[0].innerHTML = tempName + " - Developing a sense of connection, belonging, and a well-developed support system.";
+		}
+		if(tempName == "Financial"){
+			this.childNodes[0].innerHTML = tempName + " - Satisfaction with current and future financial situations.";
+		}
+		if(tempName == "Spiritual"){
+			this.childNodes[0].innerHTML = tempName + " - Developing a sense of connection, belonging, and a well-developed support system.";
+		}
+		if(tempName == "Intellectual"){
+			this.childNodes[0].innerHTML = tempName + " - Recognizing creative abilities and finding ways to expand knowledge and skills.";
+		}
+		if(tempName == "Physical"){
+			this.childNodes[0].innerHTML = tempName + " - Recognizing the need for physical activity, healthy foods, and sleep.";
+		}
+		if(tempName == "Environmental"){
+			this.childNodes[0].innerHTML = tempName + " - Good health by occupying pleasant, stimulating environments that support wellbeing.";
+		}
+		if(tempName == "Emotional"){
+			this.childNodes[0].innerHTML = tempName + " - Coping effectively with life and creating satisfying relationships.";
+		}
+		if(tempName == "Occupational"){
+			this.childNodes[0].innerHTML = tempName + " - Personal satisfaction and enrichment from one’s work.";
+		}
+		this.childNodes[0].classList.add("divTextClick");
+	};
 
-    childdiv.onmouseover = function() {
-	tempName = this.innerText;
-	this.childNodes[0].innerHTML = '25';
-    };
-    childdiv.onmouseout = function() {
-	this.classList.remove("type3click");
-	this.childNodes[0].classList.remove("divTextClick");
-	this.childNodes[0].innerHTML = tempName;};
+	childdiv.onmouseover = function() {
+		tempName = this.innerText;
+		this.childNodes[0].innerHTML = '25';
+	};
+	childdiv.onmouseout = function() {
+		this.classList.remove("type3click");
+		this.childNodes[0].classList.remove("divTextClick");
+		this.childNodes[0].innerHTML = tempName;};
 }
 DIV_ARRAY[0].className += " purple";
 var divText = document.createElement('div');

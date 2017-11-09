@@ -1,192 +1,192 @@
 * {
-  padding:0;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
 html {
-    text-align: center;
-    /*padding: 0;*/
-    padding-top: 15px;
+	text-align: center;
+	/*padding: 0;*/
+	padding-top: 15px;
 }
 
 body {
-  background-color:white;
-  *font:normal normal 11px/1.4 Tahoma,Verdana,Arial,Sans-Serif;
+	background-color:white;
+	*font:normal normal 11px/1.4 Tahoma,Verdana,Arial,Sans-Serif;
 }
 a {
-  text-decoration:none;
-  color: black;
+	text-decoration:none;
+	color: black;
 }
 time {
-    border-bottom: 1px dotted black;
+	border-bottom: 1px dotted black;
 }
 form {
-   /*max-width: 300px;*/
-    /*width: 50%;
+	/*max-width: 300px;*/
+	/*width: 50%;
     float: right;*/
-    margin-left: 35%;
+	margin-left: 35%;
 }
 a:focus,
 a:hover {text-decoration:underline}
 button,
 input,
 textarea {
-  display:inline-block;
-  *display:inline;
-  width:100%;
-  text-align:left;
-  margin:0 0 2px;
-  padding:4px;
-  font:inherit;
-  line-height:1;
-  background-color:#f8f8f8;
-  border:1px solid #000;
+	display:inline-block;
+	*display:inline;
+	width:100%;
+	text-align:left;
+	margin:0 0 2px;
+	padding:4px;
+	font:inherit;
+	line-height:1;
+	background-color:#f8f8f8;
+	border:1px solid #000;
 }
 input {display:block}
 textarea {
-  display:block;
-  resize:vertical;
-  line-height:inherit;
-  height:80px;
+	display:block;
+	resize:vertical;
+	line-height:inherit;
+	height:80px;
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-  margin:0;
-  padding:0;
-  border:none;
-  outline:none;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
 }
 button {
-  padding:5px 8px;
-  background-color:#eee;
-  border-color:#5a5a5a;
-  font-weight:bold;
-  cursor:pointer;
-  float:right;
+	padding:5px 8px;
+	background-color:#eee;
+	border-color:#5a5a5a;
+	font-weight:bold;
+	cursor:pointer;
+	float:right;
 }
 input:focus,
 textarea:focus {color:#333}
 button:focus,
 button:hover {
-  background-color:#e7e7e7;
-  border-color:#1a1a1a;
+	background-color:#e7e7e7;
+	border-color:#1a1a1a;
 }
 input[name="math"] {
-  display:inline-block;
-  display:*inline;
-  width:30px;
+	display:inline-block;
+	display:*inline;
+	width:30px;
 }
 #nospam {
-    margin-left: 0;
-    float: right;
-    text-align: right;
+	margin-left: 0;
+	float: right;
+	text-align: right;
 }
 .content {
-    padding-left: 35px !important;
-    padding-right: 35px !important;
+	padding-left: 35px !important;
+	padding-right: 35px !important;
 }
 #ichingcoins {
-    width: 55px;
-    height: 67px;
-    padding-top: 11px;
+	width: 55px;
+	height: 67px;
+	padding-top: 11px;
 }
 #ichingcoins img {
-    display: block;
-    margin-bottom: 3px;
+	display: block;
+	margin-bottom: 3px;
 }
 #guestbook-content {
-    *border-left: black dotted 1px;
-    *border-right: black dotted 1px;
-    background-color: white;
-    background-image: none;
-    text-align: left;
-    /*margin-top: -5px;*/
-    padding-top: 10px;
+	*border-left: black dotted 1px;
+	*border-right: black dotted 1px;
+	background-color: white;
+	background-image: none;
+	text-align: left;
+	/*margin-top: -5px;*/
+	padding-top: 10px;
 }
 .guestbook {
-  width:auto;
-  padding:10px;
-  min-width: 300px;
-  overflow: hidden;
-  position: relative;
-  margin-top: -10px;
-  *font:normal normal 11px/1.4 Tahoma,Verdana,Arial,Sans-Serif;
+	width:auto;
+	padding:10px;
+	min-width: 300px;
+	overflow: hidden;
+	position: relative;
+	margin-top: -10px;
+	*font:normal normal 11px/1.4 Tahoma,Verdana,Arial,Sans-Serif;
 }
 
 @media only screen and (min-width:525px) {
-    .guestbook {
-	  min-width: 450px;
-    }
+	.guestbook {
+		min-width: 450px;
+	}
 }
 
 @media only screen and (min-width:800px) {
-    .guestbook {
-	  min-width: 600px;
-    }
+	.guestbook {
+		min-width: 600px;
+	}
 }
 
 .guestbook form label {
-  display:block;
-  float:left;
-  width:50px;
-  text-align:right;
-  padding-top:3px;
+	display:block;
+	float:left;
+	width:50px;
+	text-align:right;
+	padding-top:3px;
 }
 .guestbook form div {margin-left:58px;}
 .guestbook hr {
-  /*eight:0;
+	/*eight:0;
   border:none;
   border-top:1px solid #999;*/
-  margin:10px 0 10px;
+	margin:10px 0 10px;
 }
 .guest-messages {
-  /*border:1px solid #000;
+	/*border:1px solid #000;
   height:300px;
   overflow:auto;
-  */
-    border: double black 3px;
+       */
+	border: double black 3px;
 }
 .guest-messages hr {
-    margin-top:0;
-    margin-bottom:0;
+	margin-top:0;
+	margin-bottom:0;
 }
 .guest-messages:first-child { }
 .guest-item {
-  /*border-top:1px dotted black;*/
-  padding:4px;
-  position:relative;
+	/*border-top:1px dotted black;*/
+	padding:4px;
+	position:relative;
 }
 .guest-item:first-of-type { border-top:none; }
 .guest-name {
-  font-weight:bold;
-  margin-left:2px;
-  margin-right: 5px;
+	font-weight:bold;
+	margin-left:2px;
+	margin-right: 5px;
 }
 .guest-timestamp {
-  float:right;
-  margin-right:2px;
-  font-size: small;
-  cursor: url(../images/cursors/text.png), text;
+	float:right;
+	margin-right:2px;
+	font-size: small;
+	cursor: url(../images/cursors/text.png), text;
 }
 .guest-message {
-  display:block;
-  clear:both;
-  margin-top:4px;
-  padding:4px 6px;
-  background-color:#f8f8f8;
-  cursor: url(../images/cursors/text.png), text;
+	display:block;
+	clear:both;
+	margin-top:4px;
+	padding:4px 6px;
+	background-color:#f8f8f8;
+	cursor: url(../images/cursors/text.png), text;
 }
 .guestbook-nav {
-  margin:5px 0;
-  text-align:center;
+	margin:5px 0;
+	text-align:center;
 }
 .message-error,
 .message-warning {
-  padding:5px 10px;
-  background-color:#FFDBD8;
-  border-top:1px solid #000;
-  margin:0;
+	padding:5px 10px;
+	background-color:#FFDBD8;
+	border-top:1px solid #000;
+	margin:0;
 }
 .message-warning {background-color:#DBFFD8}
 .message-error:first-child,
@@ -194,9 +194,9 @@ input[name="math"] {
 .message-error:last-of-type,
 .message-warning:last-of-type {border-bottom:1px solid black}
 .clear {
-  display:block;
-  clear:both;
+	display:block;
+	clear:both;
 }
 #footer {
-    float: right;
+	float: right;
 }

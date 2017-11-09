@@ -14,7 +14,7 @@ img[src$=".gif"], img[src$=".png"] {
 	width: 200px !important;
 	max-width: 200px !important;
 	padding-bottom: 2px;
-	*/
+       */
 	border: 2px solid #CFCFCF;
 	padding: 2px;
 }
@@ -25,7 +25,7 @@ img[src$=".gif"], img[src$=".png"] {
 	width: 200px !important;
 	max-width: 200px !important;
 	text-align: left;
-	*/
+       */
 	border: 2px solid #CFCFCF;
 	padding: 2px;
 }

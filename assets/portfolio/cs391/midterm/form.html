@@ -9,80 +9,80 @@
     3/20/2017 - Add localstorage and JSONobject functionality
   -->
 <head>
-    <title>Attributes Form</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+	<title>Attributes Form</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <h1>Personal Attributes Form</h1>
 <div style="text-align: center">
-    <select id="select"></select>
-    <br><br>
-    <input id="new" type="button" value="New">
-    <input id="remove" type="button" value="Remove">
+	<select id="select"></select>
+	<br><br>
+	<input id="new" type="button" value="New">
+	<input id="remove" type="button" value="Remove">
 </div>
 
 <div>
-    <span id="hide_name" class="raised" onclick="hide_div(this)">Hide</span>
-    <div id="name">
-	<label for="firstName">First Name</label>
-	<input type="text" size="30" id="firstName">
-	<br>
-	<label for="lastName">Last Name</label>
-	<input type="text" size="30" id="lastName">
-	<br>
+	<span id="hide_name" class="raised" onclick="hide_div(this)">Hide</span>
+	<div id="name">
+		<label for="firstName">First Name</label>
+		<input type="text" size="30" id="firstName">
+		<br>
+		<label for="lastName">Last Name</label>
+		<input type="text" size="30" id="lastName">
+		<br>
 
-	Sex:
-	<label class="myRadio">
-	    <input type="radio" name = "gender" id="male" value="male" checked>
-	    <span></span>
-	</label>
-	<label for="male">Male</label>
-	<label class="myRadio">
-	    <input type="radio" name = "gender" id="female" value="female">
-	    <span></span>
-	</label>
-	<label for="female">Female</label>
-	<label class="myRadio">
-	    <input type="radio" name = "gender" id="other" value="other">
-	    <span></span>
-	</label>
-	<label for="other">Other</label>
-	<br>
+		Sex:
+		<label class="myRadio">
+			<input type="radio" name = "gender" id="male" value="male" checked>
+			<span></span>
+		</label>
+		<label for="male">Male</label>
+		<label class="myRadio">
+			<input type="radio" name = "gender" id="female" value="female">
+			<span></span>
+		</label>
+		<label for="female">Female</label>
+		<label class="myRadio">
+			<input type="radio" name = "gender" id="other" value="other">
+			<span></span>
+		</label>
+		<label for="other">Other</label>
+		<br>
 
-	<label for="age">Age</label>
-	<input type="text" size="5" id="age">
-    </div>
+		<label for="age">Age</label>
+		<input type="text" size="5" id="age">
+	</div>
 </div>
 
 <div>
-    <span id="hide_attr" class="raised" onclick="hide_div(this)">Hide</span>
-    <div id="attr">
-	Attributes (I would say I am):<br>
-	<label for="c1"> Interesting </label>
-	<label class="myCheckbox">
-	    <input type="checkbox" name="c1" id="c1" value="Interesting">
-	    <span></span>
-	</label><br>
+	<span id="hide_attr" class="raised" onclick="hide_div(this)">Hide</span>
+	<div id="attr">
+		Attributes (I would say I am):<br>
+		<label for="c1"> Interesting </label>
+		<label class="myCheckbox">
+			<input type="checkbox" name="c1" id="c1" value="Interesting">
+			<span></span>
+		</label><br>
 
-	<label for="c2"> Intelligent </label>
-	<label class="myCheckbox">
-	    <input type="checkbox" name="c2" id="c2" value="Intelligent">
-	    <span></span>
-	</label><br>
+		<label for="c2"> Intelligent </label>
+		<label class="myCheckbox">
+			<input type="checkbox" name="c2" id="c2" value="Intelligent">
+			<span></span>
+		</label><br>
 
-	<label for="c3"> Handsome </label>
-	<label class="myCheckbox">
-	    <input type="checkbox" name="c3" id="c3" value="Handsome">
-	    <span></span>
-	</label><br>
+		<label for="c3"> Handsome </label>
+		<label class="myCheckbox">
+			<input type="checkbox" name="c3" id="c3" value="Handsome">
+			<span></span>
+		</label><br>
 
-	<label for="c4"> Unobjectionable </label>
-	<label class="myCheckbox">
-	    <input type="checkbox" name="c4" id="c4" value="Unobjectionable">
-	    <span></span>
-	</label>
-    </div>
+		<label for="c4"> Unobjectionable </label>
+		<label class="myCheckbox">
+			<input type="checkbox" name="c4" id="c4" value="Unobjectionable">
+			<span></span>
+		</label>
+	</div>
 </div>
 <br><br>
 <input type="button" name="save" value="Save" id="save" style="margin: 0 auto">

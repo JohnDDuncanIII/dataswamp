@@ -168,14 +168,14 @@ blink
 {
 	-webkit-animation: rumble linear 0.1s 0s infinite;
 	animation: rumble linear 0.1s 0s infinite;
-      display:inline-block;
+	display:inline-block;
 }
 
 .shudder 
 {
 	-webkit-animation: shudder linear 0.1s 0s infinite;
 	animation: shudder linear 0.1s 0s infinite;
-      display:inline-block;
+	display:inline-block;
 }
 
 /* Note: border-image not supported by IE10 - will fallback to dashed border */

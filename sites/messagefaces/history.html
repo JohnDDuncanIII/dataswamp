@@ -1,100 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>MessageFaces</title>
-    <meta name="keywords" content="mozilla, thunderbird, extension,
-      x-face, face header, gravatar, x-image-url">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="content">
-      <h1>MessageFaces</h1>
-      <p id="nav"> [ <a href="index.html">Home</a> | <a
-          href="createface.html">Creating a Face image</a> | <a
-          href="faq.html">Frequently Asked Questions</a> | <a
-          href="history.html">Release History</a> ] </p>
-      <h2>Release History</h2>
-      <dl>
-      </dl>
-      <dl>
-      </dl>
-      <dl>
-        <dt>1.2.5 (2016-04-25)</dt>
-        <dd>implement a dirty hack that will only apply the column to
-          the mailnews view when the preference is enabled (when
-          enabled, the column will become the correct height only once a
-          message is clicked. I do not know why this happens).<br>
-        </dd>
-        <dt>1.2.4 (2016-04-24)</dt>
-        <dd>add custom mailnews column.</dd>
-        <dd>cache gravatar images.</dd>
-        <dd>enable x-face styling through #fromBuddyIconXFace element
-          (for example, in the userChrome.css file).<br>
-        </dd>
-        <dt>1.2.3 (2016-04-09)</dt>
-        <dd>Added support for address book/contact photo faces in the
-          message header.</dd>
-        <dt>1.2.2 (2016-04-01)</dt>
-        <dd>Added support for displaying multiple picons at once (for
-          local lookups), if available.<br>
-          <br>
-          Can now display X-Image-URL, X-Face-URL, and Face-URL headers
-          in separate vboxes (alongside all other headers).<br>
-        </dd>
-        <dt>1.2.1 (2016-03-14)</dt>
-        <dd> Added local picon lookup support</dd>
-      </dl>
-      <dl>
-        <dt>1.2 (2016-03-08)</dt>
-        <dd> Added picon support</dd>
-        <dt>1.1.3 (2016-03-07)</dt>
-        <dd> Fixed an old msgHdrViewOverlay.js method call that had been
-          removed from the API (GetFirstSelectedMessage() is now
-          gFolderDisplay.selectedMessageUris[0];)<br>
-          <br>
-          Fixed a bug that would prevent the default preferences from
-          being read<br>
-          <br>
-          Fixed a bug that would assign the wrong variable preference
-          values (changed gPrefBranch calls to global mfPref.
-          gPrefBranch was never even initialized??)<br>
-          <br>
-          Fixed a bug that would cause the program to give up before
-          reading the entire header (this was especially bad for modern
-          web-servers like Google's gmail. (changed '(content.length
-          &gt; 512 * 8)' to (content.length &gt; 512 * 32)<br>
-          <br>
-          This add-on now works again.<br>
-        </dd>
-      </dl>
-      <dl>
-        <dt>1.1.2 (2007-05-14)</dt>
-        <dd> V1.1.2 fixes a bug introduced in version 1.1.1 which
-          continued to show the previous message's face image when the
-          selected message did not have one. </dd>
-        <dt>1.1.1 (2007-05-01)</dt>
-        <dd> With version 1.1.1, MessageFaces was made compatible with
-          Thunderbird 2. No other changes were made. </dd>
-        <dt>1.1 (2005-08-05)</dt>
-        <dd> Adds support for X-Face headers, <a
-            href="http://www.gravatar.com/">gravatar.com</a>, local Face
-          images and Face URLs. Adds Brazilian, Catalan, Hungarian and
-          Polish locales. </dd>
-        <dt>1.0 (2004-10-28)</dt>
-        <dd> Initial release, displays the Face header and allows the
-          user to set Face images for each identity. Includes English
-          (en-US) and German (de-DE) locales. Followed by bugfix
-          releases 1.0.1 and 1.0.2 </dd>
-      </dl>
-      <a href="http://validator.w3.org/check?uri=referer"> <img
-          src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML
-          4.01!" class="validate" height="31" width="88"> </a>
-      <p id="footer"> Last updated: 2016-04-25<br>
-        Author: Jens Bannmann (jens dot b at web dot de)<br>
-        Maintainer: John D. Duncan, III (duncanjdiii at gmail dot com)<br>
-      </p>
-    </div>
-    <br>
-  </body>
-</html>
+<meta charset="UTF-8">
+<title>MessageFaces</title>
+<meta name="keywords" content="mozilla, thunderbird, extension,
+			       x-face, face header, gravatar, x-image-url">
+<link rel="stylesheet" href="style.css">
+
+<div id="content">
+	<h1>MessageFaces</h1>
+	<p id="nav"> [ <a href="index.html">Home</a> |
+		<a href="createface.html">Creating a Face image</a> |
+		<a href="faq.html">Frequently Asked Questions</a> |
+		<a href="history.html">Release History</a> ] </p>
+	<h2>Release History</h2>
+	<dl>
+	</dl>
+	<dl>
+	</dl>
+	<dl>
+		<dt>1.2.5 (2016-04-25)</dt>
+		<dd>implement a dirty hack that will only apply the column to
+			the mailnews view when the preference is enabled (when
+			enabled, the column will become the correct height only once a
+			message is clicked. I do not know why this happens).<br>
+		</dd>
+		<dt>1.2.4 (2016-04-24)</dt>
+		<dd>add custom mailnews column.</dd>
+		<dd>cache gravatar images.</dd>
+		<dd>enable x-face styling through #fromBuddyIconXFace element
+			(for example, in the userChrome.css file).<br>
+		</dd>
+		<dt>1.2.3 (2016-04-09)</dt>
+		<dd>Added support for address book/contact photo faces in the
+			message header.</dd>
+		<dt>1.2.2 (2016-04-01)</dt>
+		<dd>Added support for displaying multiple picons at once (for
+			local lookups), if available.<br>
+			<br>
+			Can now display X-Image-URL, X-Face-URL, and Face-URL headers
+			in separate vboxes (alongside all other headers).<br>
+		</dd>
+		<dt>1.2.1 (2016-03-14)</dt>
+		<dd> Added local picon lookup support</dd>
+	</dl>
+	<dl>
+		<dt>1.2 (2016-03-08)</dt>
+		<dd> Added picon support</dd>
+		<dt>1.1.3 (2016-03-07)</dt>
+		<dd> Fixed an old msgHdrViewOverlay.js method call that had been
+			removed from the API (GetFirstSelectedMessage() is now
+			gFolderDisplay.selectedMessageUris[0];)<br>
+			<br>
+			Fixed a bug that would prevent the default preferences from
+			being read<br>
+			<br>
+			Fixed a bug that would assign the wrong variable preference
+			values (changed gPrefBranch calls to global mfPref.
+			gPrefBranch was never even initialized??)<br>
+			<br>
+			Fixed a bug that would cause the program to give up before
+			reading the entire header (this was especially bad for modern
+			web-servers like Google's gmail. (changed '(content.length
+			&gt; 512 * 8)' to (content.length &gt; 512 * 32)<br>
+			<br>
+			This add-on now works again.<br>
+		</dd>
+	</dl>
+	<dl>
+		<dt>1.1.2 (2007-05-14)</dt>
+		<dd> V1.1.2 fixes a bug introduced in version 1.1.1 which
+			continued to show the previous message's face image when the
+			selected message did not have one. </dd>
+		<dt>1.1.1 (2007-05-01)</dt>
+		<dd> With version 1.1.1, MessageFaces was made compatible with
+			Thunderbird 2. No other changes were made. </dd>
+		<dt>1.1 (2005-08-05)</dt>
+		<dd> Adds support for X-Face headers, <a href="http://www.gravatar.com/">gravatar.com</a>, local Face
+			images and Face URLs. Adds Brazilian, Catalan, Hungarian and
+			Polish locales. </dd>
+		<dt>1.0 (2004-10-28)</dt>
+		<dd> Initial release, displays the Face header and allows the
+			user to set Face images for each identity. Includes English
+			(en-US) and German (de-DE) locales. Followed by bugfix
+			releases 1.0.1 and 1.0.2 </dd>
+	</dl>
+	<a href="http://validator.w3.org/check?uri=referer"> <img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01!" class="validate" height="31" width="88"> </a>
+	<p id="footer"> Last updated: 2016-04-25<br>
+		Author: Jens Bannmann (jens dot b at web dot de)<br>
+		Maintainer: John D. Duncan, III (duncanjdiii at gmail dot com)<br>
+	</p>
+</div>
