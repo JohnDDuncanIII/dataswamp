@@ -1,0 +1,37 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Living Worlds in HTML5</title>
+<meta name="generator" content="TextMate http://macromates.com/">
+<meta name="author" content="Joseph Huckaby">
+<!-- Date: 2010-07-17 -->
+<!-- Date: 2017-11-09 (John Duncan) -->
+<link rel="stylesheet" type="text/css" href="style.css" >
+<script src="oop.js"></script>
+<script src="tools.js"></script>
+<script src="cookie.js"></script>
+<script src="palette.js"></script>
+<script src="bitmap.js"></script>
+<script src="scenes.js"></script>
+<script src="tween.js"></script>
+<script src="framecount.js"></script>
+<script src="mmain.js"></script>
+
+<div id="container">
+	<div id="d_header">
+		<div id="d_scene_selector"></div>
+		<div id="d_scene_btns">
+			<div class="button left" onClick="CC.jumpScene(-1)">&lt; Prev</div><div class="button right" onClick="CC.jumpScene(1)">Next &gt;</div>
+		</div>
+	</div>
+	<div id="d_loading"></div>
+	<canvas id="mycanvas" width="640" height="480"></canvas>
+</div>
+
+<div id="d_footer">
+	<span><a href="http://www.iangilman.com/software/seizetheday.php" target="_blank">Living Worlds in HTML5</a></span>
+	<span>Art by <a href="http://www.markferrari.com" target="_blank">Mark Ferrari</a></span>
+	<span>Code by <a href="https://twitter.com/jhuckaby" target="_blank">Joseph Huckaby</a></span>
+	<span>Modifications by <a href="https://twitter.com/johndduncan" target="_blank">John Duncan</a></span>
+</div>
+
+<script src="initialize.js"></script>
