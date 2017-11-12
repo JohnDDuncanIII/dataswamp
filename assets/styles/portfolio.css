@@ -1,5 +1,6 @@
-body { text-align:center; }
-
+body { all: inherit; text-align:center; }
+.container {
+}
 h1 {
 	margin-left: auto;
 	margin-right: auto;
@@ -12,22 +13,27 @@ h2 {
 }
 p { text-align: left; }
 hr { margin: 0; }
-.small {
-	margin: 0 auto;
-	width: 650px;
-}
 aside {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+blockquote {
+	max-width: 40em;
+}
 .box {
-	border: 3px double black;
 	display: table;
+	position: relative;
+	border: 3px double black;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 2.5em;
 	margin-top: 2.5em;
 	padding: 4px;
+	background-color: white;
+}
+
+.box:first-child{
+	margin-top:0;
 }
 .cbox {
 	border: 3px double black;

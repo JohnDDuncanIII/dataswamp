@@ -10,14 +10,14 @@ var worlds = `
 			<div class='button left' onClick='CC.jumpScene(-1)'>&lt; Prev</div><div class='button right' onClick='CC.jumpScene(1)'>Next &gt;</div>
 		</div>
 </div>
-		<div id='shortcuts'><div class='d_scene_shortcuts_l'><small>a: audio</small><br><small>b: blend</small></div> <div class='d_scene_shortcuts_r'><small>z: zoom</small><br><small>tab: pause</small></div></div>
+		<div id='shortcuts'><div class='d_scene_shortcuts_l'><small><b>a</b>: audio</small><br><small><b>b</b>: blend</small></div> <div class='d_scene_shortcuts_l'><small><b>z</b>: zoom</small><br><small><b>tab</b>: pause</small></div><div class='d_scene_shortcuts_l'><small>▲: earlier</small><br><small>▼: later</small></div><div class='d_scene_shortcuts_l'><small>◄: prev</small><br><small>►: next</small></div></div>
 	</div>
 	<div id='d_loading'></div>
 	<canvas id='mycanvas' width='640' height='480'></canvas>
 	<div id='d_footer'>
-		<span><a href='../../worlds/' target='_blank'>Living</a> <a href='http://www.effectgames.com/demos/worlds/'>Worlds</a> <a href='http://www.effectgames.com/demos/canvascycle/'>in</a> <a href='http://www.iangilman.com/software/seizetheday.php'>HTML5</a></span>
+		<span><a href='worlds/' target='_blank'>Living</a> <a href='http://www.effectgames.com/demos/worlds/'>Worlds</a> <a href='http://www.effectgames.com/demos/canvascycle/'>in</a> <a href='http://www.iangilman.com/software/seizetheday.php'>HTML5</a></span>
 		<span>Art by <a href='http://www.markferrari.com' target='_blank'>Mark Ferrari</a></span>
-		<span>Code by <a href='https://twitter.com/jhuckaby' target='_blank'>Joseph Huckaby</a></span>
+		<span>Code by <a href='https://twitter.com/jhuckaby' target='_blank'>Joseph</a> <a href='http://www.effectgames.com/effect/article-Old_School_Color_Cycling_with_HTML5.html'>Huckaby</a></span>
 		<span>Modifications by <a href='https://twitter.com/johndduncan' target='_blank'>John Duncan</a></span>
 	</div>
 `

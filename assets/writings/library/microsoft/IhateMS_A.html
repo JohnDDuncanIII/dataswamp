@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
 <title>Why I hate Microsoft</title>
 <meta charset="UTF-8">
 <meta name="generator" content="vi">
@@ -8,200 +6,198 @@
 <link rel="stylesheet" href="styles/general.css">
 <link rel="stylesheet" href="styles/content.css">
 <script>
-<!-- Hide
-// Force frameset
-if (parent.location.href == self.location.href) {
-  document.write("<br />The document you have accessed is a subframe.\n");
-  document.write("<a href=\"../../index.html\">Go here<\/a> for the main ");
-  document.write("website.\n<hr />\n");
-}
-//  Unhide -->
+	<!-- Hide
+	     // Force frameset
+	     if (parent.location.href == self.location.href) {
+	     document.write("<br />The document you have accessed is a subframe.\n");
+	     document.write("<a href=\"../../index.html\">Go here<\/a> for the main ");
+	     document.write("website.\n<hr />\n");
+	     }
+	     //  Unhide -->
 </script>
 <script>
-<!-- Hide
-// Load and unload submenu
-  function loadSubmenu() {
-    parent.rightsubmenu.location.href = 'MSsubmenu.html';
-  }
-  function unloadSubmenu() {
-    parent.rightsubmenu.location.href = '../../rightsubmenu.html';
-  }
-//  Unhide -->
+	<!-- Hide
+	     // Load and unload submenu
+	     function loadSubmenu() {
+	     parent.rightsubmenu.location.href = 'MSsubmenu.html';
+	     }
+	     function unloadSubmenu() {
+	     parent.rightsubmenu.location.href = '../../rightsubmenu.html';
+	     }
+	     //  Unhide -->
 </script>
 <base target="_blank" />
-</head>
 
 <body onload="loadSubmenu();" onunload="unloadSubmenu();">
 
-<img class="logo" src="MSimages/MSWD.jpg" alt="" width="110" height="80"  
-  border="0" align="left" />
+	<img class="logo" src="MSimages/MSWD.jpg" alt="" width="110" height="80"  
+	     border="0" align="left" />
 
-<h1>Why I hate Microsoft</h1>
-<h4>&quot;A personal, lengthy, but highly articulate outburst&quot;</h4>
+	<h1>Why I hate Microsoft</h1>
+	<h4>&quot;A personal, lengthy, but highly articulate outburst&quot;</h4>
 
-<!-- Fifth revised edition -->
+	<!-- Fifth revised edition -->
 
-<br clear="all" />
-<div align="right">
-<a href="IhateMS.html" target="_self">Table Of Contents</a> |
-<a href="IhateMS_8.html" target="_self">Previous chapter</a> |
-<a href="IhateMS_B.html" target="_self">Next chapter</a>
-</div>
-<hr />
+	<br clear="all" />
+	<div align="right">
+		<a href="IhateMS.html" target="_self">Table Of Contents</a> |
+		<a href="IhateMS_8.html" target="_self">Previous chapter</a> |
+		<a href="IhateMS_B.html" target="_self">Next chapter</a>
+	</div>
+	<hr />
 
-<h2>Appendix A: A brief overview of Windows' most
-  serious design flaws</h2>
+	<h2>Appendix A: A brief overview of Windows' most
+		serious design flaws</h2>
 
-<p>The Windows architecture has many design flaws that no amount of patching
-or updating can ever remedy. Readers of this paper have indicated the need
-for a brief summary.<br />
-The following list is by no means comprehensive, but only summarizes the most
-serious structural shortcomings that cripple the Windows operating system.</p>
-
-
-<h3>Limited memory protection and memory management.</h3>
-<p>This problem exists primarily in versions prior to Windows 2000. When an
-application contains bugs or otherwise runs wild, it may write to memory
-locations outside its own memory space, thereby crashing the entire system.
-Attempts to allocate more memory than is available often generates an
-exception, causing the application to crash instead of allowing it to recover
-gracefully. Similarly, out-of-boundary reads are also possible, which
-potentially compromises security.</p>
-
-<h3>Insufficient process management.</h3>
-<p>The OS relies heavily upon the application to release allocated resources.
-If an application hogs resources or fails to release them for some reason,
-either while running or upon termination, the OS often cannot reclaim those
-resources. Nor does the OS offer an administrator full control over processes
-and resources.</p>
-
-<h3>No adequate separation between user-level and kernel-level code.</h3>
-<p>An application may install DLLs or drivers. This introduces essentially
-uncertified, third-party code to the system, that may run at kernel-level,
-i.e. completely unprotected. Applications may also introduce modifications
-into the registry without any protection or verification whatsoever, which
-may cause other applications or even the OS to crash. This seriously
-compromises the reliability of the entire system. In fact Windows is the
-only major operating system in the market that may break whenever a user
-installs an application (essentially a user-level operation). In Windows
-2000 and later a simple driver signature system has finally been
-implemented, but in practice this is not sufficient to guarantee
-stability.</p>
-
-<h3>No adequate separation of different kernel-level code types.</h3>
-<p>Drivers, for example, should contain driver code. They should offer the OS
-an API to interface with the underlying hardware. In Windows however a
-video driver may also contain virtual desktop code and other nonsense. Not
-only does the presence of user interface code in a hardware driver
-illustrate the messy nature of the Windows code's organisation, but it
-also leads to ridiculous issues such as system tray icons disappearing due
-to a bug in the video card's driver. (Nvidia comes to mind.) In a
-well-structured OS this would never happen.</p>
-
-<h3>Lack of meaningful error messages.</h3>
-<p>Whenever an error message is displayed, it rarely tells you exactly what
-the problem is. Nor does it give you enough details (e.g. an error or
-condition number) that would enable a support technician to trace the cause
-of a problem.</p>
-
-<h3>No maintenance mode.</h3>
-<p>When one or more of the 10,000+ files that make up the OS become corrupted,
-there is no maintenance mode that allows you to bring up the OS in a
-controlled state, doing repairs along the way. 'Safe mode' merely swaps
-configurations but offers little additional control. The OS either runs or
-crashes. The Windows 2000/XP Repair Console (an external utility on the
-Windows CD that may be run from the setup routine) does not allow you to run
-the OS in a maintenance mode, it merely allows you to access the file system
-of a broken Windows installation. Even finding out which files have been
-corrupted is often impossible.</p>
-
-<h3>No code sharing.</h3>
-<p>Only DLL code can be shared, which makes up only a tiny fraction of the
-entire OS and application code.</p>
-
-<h3>No version control whatsoever on DLL code.</h3>
-<p>The OS cannot distinguish one DLL from another one with the same name, even
-though they may contain entirely different code. Installers can, but generally
-don't bother with it (beyond warning the user that version x is about to be
-replaced with version y). The OS however will happily load whatever code
-is present in the DLL file it happens to find first.</p>
-
-<h3>A very rudimentary and weak security model.</h3>
-<p>Microsoft products have the worst security rating (and track record) in the
-industry. Their developers seem to have been completely unaware of even basic
-security issues.</p>
-
-<h3>Rudimentary multi-user support.</h3>
-<p>Being the offspring of a stand-alone, single-user desktop OS, Windows can
-only be implemented in a LAN (or any other environment where users share
-computing facilities) by means of cumbersome workarounds and kludges.
-Multi-user applications (e.g. Citrix, Windows Terminal Server) are even more
-problematic.</p>
-
-<h3>OS code, application code and user data cannot be maintained
-  separately from the OS and from each other.</h3>
-<p>The OS is actually designed to prevent this. Applications need to be
-&quot;installed&quot; i.e. integrated into the OS, a procedure that adds to
-or even overwrites part the OS fileset, may overwrite other application files
-or (registry) settings, and usually requires an OS reboot. The installation
-of one application may break another application.</p>
-<!-- For example, installing Netscape 6 on Windows 2000 will break -->
-<!-- Forte Agent and SecureCRT  due to registry modifications.     -->
-
-<h3>Windows does not follow global protocol standards correctly.</h3>
-<p>It even deliberately ignores them in favor of proprietary
-implementations.</p>
-
-<h3>Windows' API is only partially documented.</h3>
-<p>Much of the operating system and the API remain essentially a black box to
-third-party developers. This causes problems during application development
-that often cannot be traced. Developers are forced to use workarounds, and may
-even be tempted to circumvent or ignore the API altogether. This, and the
-fact that nobody outside Microsoft really knows what goes on in the
-underlying code, leads to application software that won't run correctly
-(if at all) on updated or new versions of Windows.</p>
-
-<h3>Windows' code is a collection of bad programming practices.</h3>
-<p>It contains a huge amount of sloppy code and kludgy design, which results
-in an extremely glitchy and buggy end product. (A good example of sloppy
-programming is buffer access, which is routinely left unchecked in release
-versions of all Microsoft products. As a result of this amateur approach,
-Microsoft products are riddled with buffer overrun vulnerabilities. Of
-course buffer overruns don't only occur in Microsoft products but are also
-found in other software on other platforms. But the difference is in the
-numbers.) Bloated code has made Windows' efficiency the lowest in the
-market, requiring more resources and yielding less performance than any
-other OS in existence.</p>
+	<p>The Windows architecture has many design flaws that no amount of patching
+		or updating can ever remedy. Readers of this paper have indicated the need
+		for a brief summary.<br />
+		The following list is by no means comprehensive, but only summarizes the most
+		serious structural shortcomings that cripple the Windows operating system.</p>
 
 
-<hr />
-<div align="right">
-<a href="IhateMS.html" target="_self">Table Of Contents</a> |
-<a href="IhateMS_8.html" target="_self">Previous chapter</a> |
-<a href="IhateMS_B.html" target="_self">Next chapter</a>
-</div>
+	<h3>Limited memory protection and memory management.</h3>
+	<p>This problem exists primarily in versions prior to Windows 2000. When an
+		application contains bugs or otherwise runs wild, it may write to memory
+		locations outside its own memory space, thereby crashing the entire system.
+		Attempts to allocate more memory than is available often generates an
+		exception, causing the application to crash instead of allowing it to recover
+		gracefully. Similarly, out-of-boundary reads are also possible, which
+		potentially compromises security.</p>
+
+	<h3>Insufficient process management.</h3>
+	<p>The OS relies heavily upon the application to release allocated resources.
+		If an application hogs resources or fails to release them for some reason,
+		either while running or upon termination, the OS often cannot reclaim those
+		resources. Nor does the OS offer an administrator full control over processes
+		and resources.</p>
+
+	<h3>No adequate separation between user-level and kernel-level code.</h3>
+	<p>An application may install DLLs or drivers. This introduces essentially
+		uncertified, third-party code to the system, that may run at kernel-level,
+		i.e. completely unprotected. Applications may also introduce modifications
+		into the registry without any protection or verification whatsoever, which
+		may cause other applications or even the OS to crash. This seriously
+		compromises the reliability of the entire system. In fact Windows is the
+		only major operating system in the market that may break whenever a user
+		installs an application (essentially a user-level operation). In Windows
+		2000 and later a simple driver signature system has finally been
+		implemented, but in practice this is not sufficient to guarantee
+		stability.</p>
+
+	<h3>No adequate separation of different kernel-level code types.</h3>
+	<p>Drivers, for example, should contain driver code. They should offer the OS
+		an API to interface with the underlying hardware. In Windows however a
+		video driver may also contain virtual desktop code and other nonsense. Not
+		only does the presence of user interface code in a hardware driver
+		illustrate the messy nature of the Windows code's organisation, but it
+		also leads to ridiculous issues such as system tray icons disappearing due
+		to a bug in the video card's driver. (Nvidia comes to mind.) In a
+		well-structured OS this would never happen.</p>
+
+	<h3>Lack of meaningful error messages.</h3>
+	<p>Whenever an error message is displayed, it rarely tells you exactly what
+		the problem is. Nor does it give you enough details (e.g. an error or
+		condition number) that would enable a support technician to trace the cause
+		of a problem.</p>
+
+	<h3>No maintenance mode.</h3>
+	<p>When one or more of the 10,000+ files that make up the OS become corrupted,
+		there is no maintenance mode that allows you to bring up the OS in a
+		controlled state, doing repairs along the way. 'Safe mode' merely swaps
+		configurations but offers little additional control. The OS either runs or
+		crashes. The Windows 2000/XP Repair Console (an external utility on the
+		Windows CD that may be run from the setup routine) does not allow you to run
+		the OS in a maintenance mode, it merely allows you to access the file system
+		of a broken Windows installation. Even finding out which files have been
+		corrupted is often impossible.</p>
+
+	<h3>No code sharing.</h3>
+	<p>Only DLL code can be shared, which makes up only a tiny fraction of the
+		entire OS and application code.</p>
+
+	<h3>No version control whatsoever on DLL code.</h3>
+	<p>The OS cannot distinguish one DLL from another one with the same name, even
+		though they may contain entirely different code. Installers can, but generally
+		don't bother with it (beyond warning the user that version x is about to be
+		replaced with version y). The OS however will happily load whatever code
+		is present in the DLL file it happens to find first.</p>
+
+	<h3>A very rudimentary and weak security model.</h3>
+	<p>Microsoft products have the worst security rating (and track record) in the
+		industry. Their developers seem to have been completely unaware of even basic
+		security issues.</p>
+
+	<h3>Rudimentary multi-user support.</h3>
+	<p>Being the offspring of a stand-alone, single-user desktop OS, Windows can
+		only be implemented in a LAN (or any other environment where users share
+		computing facilities) by means of cumbersome workarounds and kludges.
+		Multi-user applications (e.g. Citrix, Windows Terminal Server) are even more
+		problematic.</p>
+
+	<h3>OS code, application code and user data cannot be maintained
+		separately from the OS and from each other.</h3>
+	<p>The OS is actually designed to prevent this. Applications need to be
+		&quot;installed&quot; i.e. integrated into the OS, a procedure that adds to
+		or even overwrites part the OS fileset, may overwrite other application files
+		or (registry) settings, and usually requires an OS reboot. The installation
+		of one application may break another application.</p>
+	<!-- For example, installing Netscape 6 on Windows 2000 will break -->
+	<!-- Forte Agent and SecureCRT  due to registry modifications.     -->
+
+	<h3>Windows does not follow global protocol standards correctly.</h3>
+	<p>It even deliberately ignores them in favor of proprietary
+		implementations.</p>
+
+	<h3>Windows' API is only partially documented.</h3>
+	<p>Much of the operating system and the API remain essentially a black box to
+		third-party developers. This causes problems during application development
+		that often cannot be traced. Developers are forced to use workarounds, and may
+		even be tempted to circumvent or ignore the API altogether. This, and the
+		fact that nobody outside Microsoft really knows what goes on in the
+		underlying code, leads to application software that won't run correctly
+		(if at all) on updated or new versions of Windows.</p>
+
+	<h3>Windows' code is a collection of bad programming practices.</h3>
+	<p>It contains a huge amount of sloppy code and kludgy design, which results
+		in an extremely glitchy and buggy end product. (A good example of sloppy
+		programming is buffer access, which is routinely left unchecked in release
+		versions of all Microsoft products. As a result of this amateur approach,
+		Microsoft products are riddled with buffer overrun vulnerabilities. Of
+		course buffer overruns don't only occur in Microsoft products but are also
+		found in other software on other platforms. But the difference is in the
+		numbers.) Bloated code has made Windows' efficiency the lowest in the
+		market, requiring more resources and yielding less performance than any
+		other OS in existence.</p>
 
 
-<p align="right"><small>Comments? <a href="../../contact.php"
-  target="_self">E-mail me!</a></small></p>
+	<hr />
+	<div align="right">
+		<a href="IhateMS.html" target="_self">Table Of Contents</a> |
+		<a href="IhateMS_8.html" target="_self">Previous chapter</a> |
+		<a href="IhateMS_B.html" target="_self">Next chapter</a>
+	</div>
 
-<!-- Footer -->
 
-<p align="right"><small>
-<script language="javascript" type="text/javascript">
-<!-- Hide
-// Javascript history backlink
-  document.write("<a href=\"javascript:history.back(1)\" target=\"_self\">\n");
-  document.write("Back<\/a> | \n");
-// Unhide -->
-</script>
-<a href="../../index.html" target="_top">Home</a>
-</small></p>
+	<p align="right"><small>Comments? <a href="../../contact.php"
+					     target="_self">E-mail me!</a></small></p>
 
-<div class="small" style="text-align: center">
-  Contents copyright &#169; 1997-2007 F.W. van Wensveen - all rights
-  reserved.<br />
-</div><br />
+	<!-- Footer -->
+
+	<p align="right"><small>
+			<script language="javascript" type="text/javascript">
+				<!-- Hide
+				     // Javascript history backlink
+				     document.write("<a href=\"javascript:history.back(1)\" target=\"_self\">\n");
+				     document.write("Back<\/a> | \n");
+				     // Unhide -->
+			</script>
+			<a href="../../index.html" target="_top">Home</a>
+	</small></p>
+
+	<div class="small" style="text-align: center">
+		Contents copyright &#169; 1997-2007 F.W. van Wensveen - all rights
+		reserved.<br />
+	</div><br />
 
 </body>
-</html>

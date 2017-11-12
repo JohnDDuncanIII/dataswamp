@@ -129,10 +129,24 @@ var CanvasCycle = {
 							}
 						}
 						break;
+					case 37: // left arrow
+						CC.sceneIdx = CC.sceneIdx-1;
+						if (CC.sceneIdx >= scenes.length) CC.sceneIdx = 0;
+						else if (CC.sceneIdx < 0) CC.sceneIdx = scenes.length - 1;
+						$('fe_scene').selectedIndex = CC.sceneIdx;
+						CC.switchScene( $('fe_scene') );
+						break;
 					case 38: // up arrow
 						CC.timeOffset -= 60;
 						if (CC.timeOffset < 0) CC.timeOffset += 86400;
 						CC.updateTimelineDisplay();
+						break;
+					case 39: // right arrow
+						CC.sceneIdx = CC.sceneIdx+1;
+						if (CC.sceneIdx >= scenes.length) CC.sceneIdx = 0;
+						else if (CC.sceneIdx < 0) CC.sceneIdx = scenes.length - 1;
+						$('fe_scene').selectedIndex = CC.sceneIdx;
+						CC.switchScene( $('fe_scene') );
 						break;
 					case 40: // down arrow
 						CC.timeOffset += 60;
@@ -301,8 +315,6 @@ var CanvasCycle = {
 		this.showLoading();
 
 		var scene = scenes[idx];
-		
-
 
 		var url = "worlds/images/" + scene.name + '.json';
 		var scr = document.createElement('SCRIPT');
