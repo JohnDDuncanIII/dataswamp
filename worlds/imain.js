@@ -181,10 +181,11 @@ var CanvasCycle = {
 				for(var i = this.sceneIdx; i < scenes.length; i++) {
 					if(i == scenes.length-1) {
 						i = 0;
-					} else if (i == this.sceneIdx) {
+					} else if (i == this.sceneIdx-1) {
 						break;
 					}
-					if(scenes[this.sceneIdx].name.includes("RAIN")) {
+					console.log(scenes[this.sceneIdx].name);
+					if(scenes[i].name.includes("RAIN")) {
 						scene = scenes[i];
 						this.sceneIdx = i;
 						break;
@@ -198,10 +199,10 @@ var CanvasCycle = {
 				for(var i = this.sceneIdx; i < scenes.length; i++) {
 					if(i == scenes.length-1) {
 						i = 0;
-					} else if (i == this.sceneIdx) {
+					} else if (i == this.sceneIdx-1) {
 						break;
 					}
-					if(scenes[this.sceneIdx].name.includes("SNOW")) {
+					if(scenes[i].name.includes("SNOW")) {
 						scene = scenes[i];
 						this.sceneIdx = i;
 						break;
