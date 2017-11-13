@@ -160,7 +160,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 // [3]
 $_SESSION['guest_name'] = isset($_POST['name']) ? $_POST['name'] : "";
-$_SESSION['guest_url'] = isset($_POST['url']) ? $_POST['url'] : "http://";
+$_SESSION['guest_url'] = isset($_POST['url']) ? $_POST['url'] : "";
 $_SESSION['guest_message'] = isset($_POST['message']) && $error != "" ? htmlentities($_POST['message'], ENT_QUOTES, 'UTF-8') : "";
 
 // ----------------------------------------------------------------------------------------
