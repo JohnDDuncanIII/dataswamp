@@ -7,6 +7,7 @@ body {
 	border: 1px solid black;
 	font-family:Arial,Verdana,Helvetica,Serif
 }
+
 @media only screen and (min-width:700px) {
 	body {
 		margin-left: 7%;
@@ -38,7 +39,7 @@ hr {
 }
 
 ul {
-	list-style-image: url("../images/about/bullet.gif");
+	list-style-image: url("../img/bullets/bullet.gif");
 }
 
 h1 {

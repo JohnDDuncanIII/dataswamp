@@ -1,6 +1,4 @@
 	<div class="guestbook" id="guestbook">
-	    <hr style=";position: absolute; height: 100%; right:0px; top:0px;" width="1">
-	    <hr style=";position: absolute; height: 100%; left:0px; top:0px;" width="1">
 	    <div class="guest-messages" id="guest-messages">
 
 <?php
@@ -297,7 +295,7 @@ if( ! empty($data)) {
         <label>Name</label>
         <div><input type="text" name="name" value="<?php echo isset($_SESSION['guest_name']) ? $_SESSION['guest_name'] : ''; ?>"></div>
         <label>URL</label>
-        <div><input type="url" name="url" value="<?php echo isset($_SESSION['guest_url']) ? $_SESSION['guest_url'] : 'http://'; ?>"></div>
+        <div><input type="url" name="url" value="<?php echo isset($_SESSION['guest_url']) ? $_SESSION['guest_url'] : ''; ?>"></div>
         <label>Message</label>
         <div><textarea name="message"><?php echo isset($_SESSION['guest_message']) ? $_SESSION['guest_message'] : ''; ?></textarea></div>
         <hr>
