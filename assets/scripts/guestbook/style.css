@@ -14,6 +14,12 @@ body {
 	background-color:white;
 	*font:normal normal 11px/1.4 Tahoma,Verdana,Arial,Sans-Serif;
 }
+
+h1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 a {
 	text-decoration:none;
 	color: black;
@@ -90,10 +96,14 @@ input[name="math"] {
 	width: 55px;
 	height: 67px;
 	padding-top: 11px;
+	display: block;
+	margin: auto;
 }
 #ichingcoins img {
 	display: block;
 	margin-bottom: 3px;
+	margin-left: auto;
+	margin-right: auto;
 }
 #guestbook-content {
 	*border-left: black dotted 1px;
