@@ -9,7 +9,7 @@
 A=document.getElementById
 B=document.all;
 C=document.layers;
-T1=new Array("trail1.gif",32,32,"trail2.gif",24,24,"trail3.gif",20,20,"trail4.gif",16,16)
+T1=new Array("assets/styles/trails/trail1.gif",32,32,"assets/styles/trails/trail2.gif",24,24,"assets/styles/trails/trail3.gif",20,20,"assets/styles/trails/trail4.gif",16,16)
 
 var offsetx=15 //x offset of trail from mouse pointer
 var offsety=10 //y offset of trail from mouse pointer
