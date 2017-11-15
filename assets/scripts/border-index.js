@@ -37,16 +37,16 @@ function blw() {
 	seal.src = seal.src.substring(0, seal.src.lastIndexOf('.'))+"_bw.png"
 	images.classList.add('content-bw-image');
 	www.src="assets/images/index/www_std.gif";
-	messagefaces.onmouseover=function() {this.src='assets/images/header/mbox_bw.gif'}
-	messagefaces.onclick= function() {this.src='assets/images/header/mbox-hover_bw.gif'; return this.href;}
-	browsers.onmouseover= function() {this.src='assets/images/header/netscape-hover_bw.gif';}
-	browsers.onmouseout=function() {this.src='assets/images/header/netscape_bw.gif';}
-	clipart.onmouseover= function() {this.src='assets/images/header/clip-hover_bw.gif';}
-	clipart.onmouseout=function() {this.src='assets/images/header/clip_bw.gif';}
-	writings.onmouseover= function() {this.src='assets/images/header/writings-hover_bw.gif';}
-	writings.onmouseout=function() {this.src='assets/images/header/writings_bw.gif';}
-	guestbook.onmouseover= function() {this.src='assets/images/header/guestbook-hover_bw.gif';}
-	guestbook.onmouseout=function() {this.src='assets/images/header/guestbook_bw.gif';}
+	messagefaces.onmouseover=function() {this.src='assets/images/index/header/mbox_bw.gif'}
+	messagefaces.onclick= function() {this.src='assets/images/index/header/mbox-hover_bw.gif'; return this.href;}
+	browsers.onmouseover= function() {this.src='assets/images/index/header/netscape-hover_bw.gif';}
+	browsers.onmouseout=function() {this.src='assets/images/index/header/netscape_bw.gif';}
+	clipart.onmouseover= function() {this.src='assets/images/index/header/clip-hover_bw.gif';}
+	clipart.onmouseout=function() {this.src='assets/images/index/header/clip_bw.gif';}
+	writings.onmouseover= function() {this.src='assets/images/index/header/writings-hover_bw.gif';}
+	writings.onmouseout=function() {this.src='assets/images/index/header/writings_bw.gif';}
+	guestbook.onmouseover= function() {this.src='assets/images/index/header/guestbook-hover_bw.gif';}
+	guestbook.onmouseout=function() {this.src='assets/images/index/header/guestbook_bw.gif';}
 
 	for(var i = 0; i < headerVals.length; i++) {
 		headerVals[i].src = headerVals[i].src.substring(0, headerVals[i].src.lastIndexOf('.'))+"_bw.gif";
@@ -58,16 +58,16 @@ function clr() {
 	seal.src = seal.src.substring(0, seal.src.lastIndexOf('_bw.png'))+".png";
 	images.classList.remove('content-bw-image');
 	www.src="assets/images/index/www_color.gif";
-	messagefaces.onmouseover=function() {this.src='assets/images/header/mbox.gif'}
-	messagefaces.onclick= function() {this.src='assets/images/header/mbox-hover.gif'; return this.href;}
-	browsers.onmouseover= function() {this.src='assets/images/header/netscape-hover.gif';}
-	browsers.onmouseout=function() {this.src='assets/images/header/netscape.gif';}
-	clipart.onmouseover= function() {this.src='assets/images/header/clip-hover.gif';}
-	clipart.onmouseout=function() {this.src='assets/images/header/clip.gif';}
-	writings.onmouseover= function() {this.src='assets/images/header/writings-hover.gif';}
-	writings.onmouseout=function() {this.src='assets/images/header/writings.gif';}
-	guestbook.onmouseover= function() {this.src='assets/images/header/guestbook-hover.gif';}
-	guestbook.onmouseout=function() {this.src='assets/images/header/guestbook.gif';}
+	messagefaces.onmouseover=function() {this.src='assets/images/index/header/mbox.gif'}
+	messagefaces.onclick= function() {this.src='assets/images/index/header/mbox-hover.gif'; return this.href;}
+	browsers.onmouseover= function() {this.src='assets/images/index/header/netscape-hover.gif';}
+	browsers.onmouseout=function() {this.src='assets/images/index/header/netscape.gif';}
+	clipart.onmouseover= function() {this.src='assets/images/index/header/clip-hover.gif';}
+	clipart.onmouseout=function() {this.src='assets/images/index/header/clip.gif';}
+	writings.onmouseover= function() {this.src='assets/images/index/header/writings-hover.gif';}
+	writings.onmouseout=function() {this.src='assets/images/index/header/writings.gif';}
+	guestbook.onmouseover= function() {this.src='assets/images/index/header/guestbook-hover.gif';}
+	guestbook.onmouseout=function() {this.src='assets/images/index/header/guestbook.gif';}
 
 	for(var i = 0; i < headerVals.length; i++) {
 		headerVals[i].src = headerVals[i].src.substring(0, headerVals[i].src.lastIndexOf('_bw.gif'))+".gif";

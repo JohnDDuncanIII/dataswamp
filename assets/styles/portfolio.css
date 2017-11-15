@@ -1,4 +1,4 @@
-body { all: inherit; text-align:center; padding: 0; }
+body { all: inherit; text-align:center; padding: 0; pointer-events: none;}
 
 h1 {
 	margin-left: auto;
@@ -29,6 +29,8 @@ blockquote {
 	margin-top: 2.5em;
 	padding: 4px;
 	background-color: white;
+	cursor: default;
+	pointer-events: initial;
 }
 
 .box:first-child{

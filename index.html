@@ -35,8 +35,11 @@ ___ _  /_  __ \_  __ \_  __ \     __  / / /  / / /_  __ \  ___/  __ `/_  __ \|/_
 <link rel="me" href="https://addons.mozilla.org/en-US/firefox/collections/JohnDuncan/">
 <link rel="me" href="https://pastebin.com/u/hu6">
 
-<img src="assets/images/index/site.png" alt="John D. Duncan III's Website">
-<a href="#"><img id="lever" src="assets/images/index/lever_down.gif" style="vertical-align: top; margin-left:1em;" alt="Lever"></a><br>
+<div style="position: relative;">
+	<img src="assets/images/index/site.png" alt="John D. Duncan III's Website">
+	<a href="#"><img id="lever" src="assets/images/index/lever_down.gif" style="vertical-align: top; z-index: 1;" alt="Lever"></a>
+	<img id="web" src="assets/images/index/web.gif" style="position: absolute; right: -4px; top: -4px; pointer-events: none;" alt="Web">
+</div>
 <hr style="margin: 0;">
 <div>
 	<div id="header-box" class="header-box">
@@ -364,6 +367,7 @@ ___ _  /_  __ \_  __ \_  __ \     __  / / /  / / /_  __ \  ___/  __ `/_  __ \|/_
 			<a href="https://web.archive.org/web/20160410105416/http://users.cecs.anu.edu.au/~jaa/">http://users.cecs.anu.edu.au/~jaa/</a><br>
 			<a href="http://web.archive.org/web/20091026215355/http://www.geocities.com/Area51/Corridor/6115/">http://www.geocities.com/Area51/Corridor/6115/</a><br>
 			<a href="http://web.archive.org/web/20120302052505/http://iconolog.org/">http://iconolog.org</a><br>
+			<a href="http://www.afactor.net/iconoweb.html">http://www.afactor.net/iconoweb.html</a><br>
 			<a href="https://acme.com/jef/">https://acme.com/jef/</a><br>
 			<a href="http://www.tmdconsulting.com/main.html">http://www.tmdconsulting.com/main.html</a><br>
 			<a href="http://fcmorton.com/">http://fcmorton.com</a><br>
@@ -386,6 +390,15 @@ ___ _  /_  __ \_  __ \_  __ \     __  / / /  / / /_  __ \  ___/  __ `/_  __ \|/_
 			<a href="http://www.randelshofer.ch/animations">http://www.randelshofer.ch/animations/</a><br>
 			<a href="http://amiga.lychesis.net/special/ColorCycling.html">http://amiga.lychesis.net/special/ColorCycling.html</a><br>
 			<a href="http://www.antialias.se/">http://www.antialias.se</a><br>
+			<a href="http://pcmusic.info/">http://pcmusic.info</a><br>
+			<a href="http://hannahdiamond.com/">http://hannahdiamond.com</a><br>
+			<a href="http://diamondwright.info/">http://diamondwright.info</a><br>
+			<a href="http://crom-magazine.com/">http://crom-magazine.com</a><br>
+			<a href="http://tmthyl.uk/">http://tmthyl.uk</a><br>
+			<a href="http://cybertwee.net/">http://cybertwee.net</a><br>
+			<a href="http://violetforest.com/">http://violetforest.com</a><br>
+			<a href="http://javascript-fx.com/mouse_trail/index.html">http://javascript-fx.com/mouse_trail/index.html</a><br>
+			<a href="http://www.bell.com/">http://www.bell.com</a><br>
 			<!--http://www.zorotl.com/
 			    http://www.insidethex.co.uk/-->
 		</p>
@@ -396,8 +409,8 @@ ___ _  /_  __ \_  __ \_  __ \     __  / / /  / / /_  __ \  ___/  __ `/_  __ \|/_
 <div class="content" id="weatherBox"></div>
 <footer id="footer">
 	<hr>
-	<a href="http://www.gettysburg.edu/"> <img id="seal" src="assets/images/about/seal_tiny.png" title="alma mater" style="position: absolute; right: 5px; bottom: 5px;" alt=""> </a>
-	<img id="illuminated" src="assets/images/index/john.gif" style="position: absolute; left: 5px; bottom: 5px;" alt="">
+	<a href="http://www.gettysburg.edu/"> <img id="seal" src="assets/images/about/seal_tiny.png" title="alma mater" style="position: absolute; right: 0px; bottom: 0px;" alt=""> </a>
+	<img id="illuminated" src="assets/images/index/john.gif" style="position: absolute; left: 0px; bottom: 0px;" alt="">
 	<a href="assets/about.html">about</a> <br>
 	You are visitor number <a href="https://stuff.mit.edu/doc/counter-howto.html"><img src="https://stuff.mit.edu/cgi/counter/jduncan" style="vertical-align:middle" alt=""></a> <br>
 	<a href="mailto:duncanjdiii@gmail.com?Subject=I%20would%20like%20to%20speak%20to%20your%20manager">	 <i>© 2016 John D. Duncan, III </i><br><img id="mail" src="assets/images/mail.gif" alt=""></a><br>
@@ -407,3 +420,4 @@ ___ _  /_  __ \_  __ \_  __ \     __  / / /  / / /_  __ \  ___/  __ `/_  __ \|/_
 </footer>
 <script src="assets/scripts/border-index.js"></script>
 <script src="assets/scripts/weather.js"></script>
+<script src="assets/scripts/trails.js"></script>
