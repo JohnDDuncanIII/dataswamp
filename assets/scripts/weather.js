@@ -203,6 +203,9 @@ function weather() {
 	var toAdd = document.createElement("hr");
 	weatherBox.appendChild(toAdd);
 
+	console.log(LATITUDE);
+	console.log(LONGITUDE);
+
 	/* this requests the file and executes a
 	   callback with the parsed result once it is available */
 	fetchJSONFile('https://forecast.weather.gov/MapClick.php?lat='+LATITUDE+'&lon='+LONGITUDE+'&FcstType=json', function(data) {
@@ -1280,20 +1283,35 @@ if((tLat != null) &&
 				window.localStorage.setItem("longitude", LONGITUDE);
 				weather();
 				setInterval(weather, 3600000);
-			}/*,
-			   function (error) { // if not, just load the weather w/ default lat & long
-			   if (error.code == error.PERMISSION_DENIED) {
-			   geocoder.geocode( { 'address': address}, function(results, status) {
-			   if (status == google.maps.GeocoderStatus.OK) {
-			   LATITUDE = results[0].geometry.location.lat();
-			   LONGITUDE = results[0].geometry.location.lng();
-			   weather();
-			   setInterval(weather, 1800000);
-			   }
-			   });
-			   }
-			   }*/);
+			}, function(error) {
+				LATITUDE = 33.1356;
+				LONGITUDE = -107.248;
+				window.localStorage.setItem("latitude", LATITUDE);
+				window.localStorage.setItem("longitude", LONGITUDE);
+				weather();
+				setInterval(weather, 3600000);
+			}
+
+			/*,
+			  function (error) { // if not, just load the weather w/ default lat & long
+			  if (error.code == error.PERMISSION_DENIED) {
+			  geocoder.geocode( { 'address': address}, function(results, status) {
+			  if (status == google.maps.GeocoderStatus.OK) {
+			  LATITUDE = results[0].geometry.location.lat();
+			  LONGITUDE = results[0].geometry.location.lng();
+			  weather();
+			  setInterval(weather, 1800000);
+			  }
+			  });
+			  }
+			  }*/);
 	} else {
+		LATITUDE = 33.1356;
+		LONGITUDE = -107.248;
+		window.localStorage.setItem("latitude", LATITUDE);
+		window.localStorage.setItem("longitude", LONGITUDE);
+		weather();
+		setInterval(weather, 3600000);
 		/*geocoder.geocode( { 'address': address}, function(results, status) {
 		  if (status == google.maps.GeocoderStatus.OK) {
 		  LATITUDE = results[0].geometry.location.lat();

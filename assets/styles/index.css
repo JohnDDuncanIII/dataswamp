@@ -27,8 +27,8 @@
 
 #weatherBox {
 	background-color: white;
-
 	border-style: solid; border-width: 2px; -moz-border-image: url(img/border.gif) 2 space; -webkit-border-image: url(img/border.gif) 2 space; -o-border-image: url(img/border.gif) 2 space; border-image: url(img/border.gif) 2 space;
+	width: 265px;
 }
 
 .image-weather-block {
