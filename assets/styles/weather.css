@@ -1,0 +1,169 @@
+#weatherBox {
+	background-color: white;
+	border-style: solid; border-width: 2px; -moz-border-image: url(img/border.gif) 2 space; -webkit-border-image: url(img/border.gif) 2 space; -o-border-image: url(img/border.gif) 2 space; border-image: url(img/border.gif) 2 space;
+	width: 265px;
+	padding: 8px;
+}
+
+.image-weather-block {
+	text-align: center;
+	vertical-align: top;
+	display: block;
+	margin-right:2px;
+}
+.image-weather-table {
+	text-align: center;
+	vertical-align: top;
+	display: table-cell;
+	margin-right:2px;
+	margin-bottom:2px;
+}
+.image-weather-letter {
+	text-align: center;
+	margin-right:2px;
+	margin-bottom:2px;
+}
+.graph {
+	position: relative;
+	height: 50px;
+	border: 1px solid #aeaeae;
+	background-color: #fbfbfb;
+	border-bottom: none;
+	background-image: url(data:image/gif;base64,R0lGODlhAQAKAKECAO3t7f///zRTXTRTXSH5BAEKAAIALAAAAAABAAoAAAIEhB2ZBQA7);
+}
+
+.baseline {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.baselineLeft {
+	left: 0;
+	right: auto;
+}
+
+.bar {
+	position: relative;
+	display: inline-block;
+	width: 5px;
+	vertical-align: bottom;
+	z-index: 0;
+}
+.bar-precip {
+	background-color: blue;
+	border-top: 1px solid #0000aa;
+}
+.bar-precip-snow {
+	background-color: dodgerblue;
+	border-top: 1px solid skyblue;
+}
+.bar-precip-freezing {
+	background-color: black;
+	border-top: 1px solid #2a2a2a;
+}
+.bar-precip-bw {
+	background-color: white !important;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAMAAABh9kWNAAAADFBMVEUAAAAAAAAAAAD///81VxGEAAAAAnRSTlMA/MKYcw8AAAAQSURBVAjXY2BgYGJgYASTAAAqAAZOaveNAAAAAElFTkSuQmCC) repeat;
+	outline: black solid 1px;
+	border-top: none !important;
+}
+.bar-temp-bw, .bar-dewpoint-bw {
+	background-color: white !important;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAADklEQVQI12Ng+M8ABv8BCQEB//G4bcoAAAAASUVORK5CYII=) repeat;
+	outline: black solid 1px;
+	border-top: none !important;
+}
+.bar-humid-bw {
+	background-color: white !important;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAMAAABh9kWNAAAACVBMVEUAAAAAAAD///+D3c/SAAAAAXRSTlMAQObYZgAAAA5JREFUCNdjYGQAAggBAAAeAAQUtVXfAAAAAElFTkSuQmCC) repeat;
+	outline: black solid 1px;
+	border-top: none !important;
+}
+.bar-cloud-bw, .bar-windgust-bw {
+	background-color: white !important;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAD0lEQVQImWNgwAL+Y4gAABIVAQDGiCc/AAAAAElFTkSuQmCC) repeat;
+	outline: black solid 1px;
+}
+.bar-temp {
+	margin-right: 1px;
+	background-color: red;
+	border-top: 1px solid #aa0000;
+}
+.bar-humidity {
+	background-color: magenta;
+	border-top: 1px solid #AA00AA;
+}
+.bar-cloud {
+	margin-right: 1px;
+	background-color: white;
+	outline: 1px dotted white;
+	width: 3px;
+	border-left:1px solid #000;
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+}
+.bar-windchill {
+	background-color: darkred;
+	border-top: 1px solid #550000;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 3px;
+}
+.bar-dewpoint {
+	background-color: lime;
+	border-top: 1px solid green;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.bar-windgust {
+	width: 3px;
+	background-color: yellow;
+	border-top: 1px solid LemonChiffon;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.bar:hover {
+	outline: 1px dotted black;
+	z-index:1;
+}
+.text {
+	width: 263px;
+	border: 1px solid #aeaeae;
+	text-align:right;
+	line-height: 0;
+}
+.textLeft {
+	text-align:left;
+}
+
+.bar-text {
+	display: inline-block;
+	width: 10px;
+	margin-right: 1px;
+	text-align: center;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.bar-text-vertical {
+	height: 50px;
+	width: 15px;
+	display: inline-block;
+	vertical-align:top;
+}
+.bar-text-vert {
+	width: 15px;
+	height: 5px;
+}
+.bar-text-image {
+	display:table-row;
+}
+.bar-temp:last-child, .bar-text:last-child, .bar-humidity:last-child, .bar-cloud:last-child{
+	margin-right:0px;
+}
+.bar-hidden {
+	visibility: hidden;
+	margin-left: -5px;
+}

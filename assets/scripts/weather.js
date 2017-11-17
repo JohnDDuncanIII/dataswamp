@@ -64,7 +64,7 @@ function computeImage(forecast) {
 	if(fc.includes("clear") || fc.includes("fair")) { image+= "sunny"; }
 	if(fc.includes("hot")) { image+= "hot"; }
 	if(fc.includes("cloud") || fc.includes("overcast")) { image+= "cloudy"; }
-	//if(fc.includes("breez") || fc.includes("wind") || fc.includes("blust")) { image+= "windy"; }
+	if(fc.includes("breez") || fc.includes("wind") || fc.includes("blust")) { image+= "windy"; }
 	if(fc.includes("smoke")) { image = "smokey"; }
 	if(fc == "sunny") { image = "sunny"; }
 	if(fc == "" || fc == "na" || fc.includes("unknown") || fc.includes("obscured")) { image = true; }
@@ -199,12 +199,6 @@ function weather() {
 	var mapBox = document.getElementById("mapBox");
 
 	reload(weatherBox, mapBox);
-
-	var toAdd = document.createElement("hr");
-	weatherBox.appendChild(toAdd);
-
-	console.log(LATITUDE);
-	console.log(LONGITUDE);
 
 	/* this requests the file and executes a
 	   callback with the parsed result once it is available */
@@ -692,6 +686,10 @@ function weather() {
 }
 // standard function to add general information for the rest of the week (next six days)
 function helper(curTemp, precip, forecast, showDate, text, winds, windd) {
+	console.log(forecast);
+	if(forecast.toLowerCase().includes("breez")) {
+		return;
+	}
 	var weatherPath = 0;
 	var tableBox = document.createElement("div");
 	tableBox.className = "image-weather-table";

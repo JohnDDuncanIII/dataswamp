@@ -1,4 +1,4 @@
-html, ul, li, img {
+* {
 	image-rendering: optimizeSpeed;			/* STOP SMOOTHING, GIVE ME SPEED  */
 	image-rendering: -moz-crisp-edges;		/* Firefox			  */
 	image-rendering: -o-crisp-edges;		/* Opera			  */
@@ -8,9 +8,3 @@ html, ul, li, img {
 	-ms-interpolation-mode: nearest-neighbor;	/* IE8+				  */
 	image-rendering: crisp-edges;
 }
-/*html { cursor: url(cursors/pointer.png), default; }
-body { cursor: url(cursors/cursor.png), default; }
-a:link:active, a:link:active > img{ cursor: url(cursors/pointer_active.png), pointer; }
-a:link, a:link > img{ cursor: url(cursors/pointer.png), pointer; }
-img { cursor: url(cursors/cursor.png), default; }
-input, p, blockquote, h1, h2, h3, h4, h5, h6, td, dt, dd, li, date { cursor: url(cursors/text.png), text; }*/

@@ -1,9 +1,4 @@
 body { all: inherit; text-align:center; padding: 0; pointer-events: none;}
-
-h1 {
-	margin-left: auto;
-	margin-right: auto;
-}
 h2 {
 	display: table;
 	margin-left: auto;
@@ -11,7 +6,6 @@ h2 {
 	border-bottom: 1px dotted black;
 }
 p { text-align: left; }
-hr { margin: 0; }
 aside {
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -19,7 +13,7 @@ aside {
 blockquote {
 	max-width: 40em;
 }
-.box {
+.container {
 	display: table;
 	position: relative;
 	border: 3px double black;
@@ -32,11 +26,10 @@ blockquote {
 	cursor: default;
 	pointer-events: initial;
 }
-
 .box:first-child{
 	margin-top:0;
 }
-.cbox {
+.container-deeper {
 	border: 3px double black;
 	display: table;
 	margin-left: auto;

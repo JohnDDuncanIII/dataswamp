@@ -16,22 +16,14 @@
 
 html {
 	background-attachment: fixed;
-	image-rendering: optimizeSpeed;
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: -webkit-optimize-contrast;
-	image-rendering: pixelated;
-	image-rendering: optimize-contrast;
-	-ms-interpolation-mode: nearest-neighbor;
-	image-rendering: crisp-edges;
-	margin: 0 auto;
+	margin: auto;
 	text-align: center;
-	cursor: url(cursors/crosshair-o.gif) 17 17, pointer;
+	cursor: url(cursors/crosshair.gif) 17 17, pointer;
 }
 body {
 	display: inline-block;
 	background-color: white;
-	border: 5px solid black;
+	border: 5px double black;
 	padding-top: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -39,9 +31,13 @@ body {
 	cursor: default;
 }
 
-.content {
+article {
 	padding-left: 50px;
 	padding-right: 50px;
+}
+
+.center {
+	text-align: center;
 }
 
 ::selection { /* WebKit/Blink Browsers */
@@ -66,6 +62,7 @@ a:target {
 
 h1 {
 	display:table;
+	margin: .67em auto;
 	border-bottom: 1px dotted black;
 }
 
@@ -75,6 +72,7 @@ hr {
 	display:block;
 	border:0px;
 	height:2px;
+	margin: 0;
 
 }
 
@@ -87,7 +85,7 @@ table, th, td {
 	border: 1px solid black;
 }
 table {
-	margin: 0 auto;
+	margin: auto;
 }
 
 pre, code {
@@ -147,8 +145,5 @@ ol ol ol {
 footer {
 	position: relative;
 	text-align: center;
-	bottom: 5px;
-	width:100%;
-	z-index:0;
 	padding-bottom: 5px;
 }
