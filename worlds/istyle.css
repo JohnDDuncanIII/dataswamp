@@ -1,6 +1,7 @@
 div.clear { clear: both; }
 
 #container, .container {
+	display: block;
 	background-color: white;
 	position: relative;
 	border: 3px double black;

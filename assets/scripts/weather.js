@@ -432,10 +432,6 @@ function weather() {
 						var toAdd = document.createElement("hr");
 						weatherBox.appendChild(toAdd);
 
-						var toAdd = document.createElement("div");
-						toAdd.innerHTML = '(this space left blank)';
-						toAdd.setAttribute("style", 'visibility: hidden;');
-						weatherBox.appendChild(toAdd);
 						counter++;
 						if(counter==weekday.length) { counter =0;}
 						n = weekday[counter];
@@ -447,11 +443,6 @@ function weather() {
 					if( (j == 0 && (!afternoon||!today)) ||
 					    (j==1 && (afternoon||today))) {
 						var toAdd = document.createElement("hr");
-						weatherBox.appendChild(toAdd);
-
-						var toAdd = document.createElement("div");
-						toAdd.innerHTML = '(this space left blank)';
-						toAdd.setAttribute("style", 'visibility: hidden;');
 						weatherBox.appendChild(toAdd);
 					}
 
@@ -488,10 +479,13 @@ function weather() {
 						}
 					}
 				}
+
 				var toAdd = document.createElement("hr");
 				weatherBox.appendChild(toAdd);
-				var lv = document.getElementById("lever");
+				var toAdd = document.createElement("hr");
+				weatherBox.appendChild(toAdd);
 
+				var lv = document.getElementById("lever");
 				function lvr() {
 					var getFavicon = function(){
 						var favicon = undefined;

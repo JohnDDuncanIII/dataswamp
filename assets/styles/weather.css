@@ -1,28 +1,30 @@
 #weatherBox {
-	background-color: white;
-	border-style: solid; border-width: 2px; -moz-border-image: url(img/border.gif) 2 space; -webkit-border-image: url(img/border.gif) 2 space; -o-border-image: url(img/border.gif) 2 space; border-image: url(img/border.gif) 2 space;
 	width: 265px;
+	background-color: white;
+	border: 3px double black;
+	/*border-style: solid; border-width: 2px; -moz-border-image: url(img/border.gif) 2 space; -webkit-border-image: url(img/border.gif) 2 space; -o-border-image: url(img/border.gif) 2 space; border-image: url(img/border.gif) 2 space;*/
 	padding: 8px;
 }
 
 .image-weather-block {
-	text-align: center;
-	vertical-align: top;
 	display: block;
+	text-align: center;
 	margin-right:2px;
+	vertical-align: top;
 }
 .image-weather-table {
-	text-align: center;
-	vertical-align: top;
 	display: table-cell;
+	text-align: center;
 	margin-right:2px;
 	margin-bottom:2px;
+	vertical-align: top;
 }
 .image-weather-letter {
 	text-align: center;
 	margin-right:2px;
 	margin-bottom:2px;
 }
+
 .graph {
 	position: relative;
 	height: 50px;
@@ -40,6 +42,17 @@
 .baselineLeft {
 	left: 0;
 	right: auto;
+}
+
+.text {
+	width: 263px;
+	border: 1px solid #aeaeae;
+	margin-bottom: 10px;
+	text-align:right;
+	line-height: 0;
+}
+.textLeft {
+	text-align:left;
 }
 
 .bar {
@@ -128,17 +141,6 @@
 .bar:hover {
 	outline: 1px dotted black;
 	z-index:1;
-}
-.text {
-	width: 263px;
-	border: 1px solid #aeaeae;
-	margin-bottom: 10px;
-	text-align:right;
-	line-height: 0;
-
-}
-.textLeft {
-	text-align:left;
 }
 
 .bar-text {

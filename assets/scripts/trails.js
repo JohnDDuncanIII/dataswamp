@@ -23,12 +23,12 @@ bottomedge=B? document.documentElement.scrollTop+document.documentElement.client
 
 
 for (i=0;i<nos;i++){
-	createContainer("CUR"+i,i*10,i*10,i*3+1,i*3+2,"","<img src='"+T1[i*3]+"' width="+T1[(i*3+1)]+" height="+T1[(i*3+2)]+" border=0>")
+	createContainer("CUR"+i,i*10,i*10,i*3+1,i*3+2,"","<img src='"+T1[i*3]+"' width="+T1[(i*3+1)]+"px height="+T1[(i*3+2)]+"px border=0>")
 }
 
 function createContainer(N,Xp,Yp,W,H,At,HT,Op,St){
 	with (document){
-		write((!A && !B) ? "<layer id='"+N+"' left="+Xp+" top="+Yp+" width="+W+" height="+H : "<div id='"+N+"'"+" style='position:absolute;left:"+Xp+"; top:"+Yp+"; width:"+W+"; height:"+H+"; ");
+		write((!A && !B) ? "<layer id='"+N+"' left="+Xp+"px top="+Yp+"px width="+W+"px height="+H+"px" : "<div id='"+N+"'"+" style='position:absolute;left:"+Xp+"px; top:"+Yp+"px; width:"+W+"px; height:"+H+"px; ");
 
 		if(St){
 			if (C)

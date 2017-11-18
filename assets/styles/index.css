@@ -13,13 +13,11 @@
 }
 
 .image:hover {
-	/*background-color:rgba(245, 215, 215, 0.6);*/
 	border: 1px dashed black;
 	border-image: url('img/ants.gif') 1 repeat;
 	background: url('img/sparkle.gif') repeat;
 }
 .image:active {
-	/*background-color:rgba(161, 192, 163, 0.6);*/
 	border: 1px dashed red;
 	border-image: url('img/red-ants.gif') 1 repeat;
 }
@@ -53,6 +51,11 @@
 .content-bw-image>* {
 	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
 	filter: grayscale(100%);
+}
+
+.eff {
+	display:inline-block;
+	vertical-align:top
 }
 
 .header-box a:hover, .header-box a:visited,
