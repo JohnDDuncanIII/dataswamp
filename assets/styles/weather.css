@@ -132,8 +132,10 @@
 .text {
 	width: 263px;
 	border: 1px solid #aeaeae;
+	margin-bottom: 10px;
 	text-align:right;
 	line-height: 0;
+
 }
 .textLeft {
 	text-align:left;

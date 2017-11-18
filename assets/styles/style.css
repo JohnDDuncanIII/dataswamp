@@ -76,6 +76,10 @@ hr {
 
 }
 
+#text {
+	cursor: text;
+}
+
 blockquote {
 	border: 1px solid; margin: auto; padding: 1em; background: lime;
 	max-width: 32em;
