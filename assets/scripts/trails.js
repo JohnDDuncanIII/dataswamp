@@ -84,7 +84,6 @@ function moveContainer(N,DX,DY){
 }
 
 function cycle(){
-	console.log("cycle");
 	// do not busy wait
 	if((getXpos("CUR"+(nos-1)) == prevxpos) && (getYpos("CUR"+(nos-1)) == prevypos)) {
 		clearInterval(interval);
