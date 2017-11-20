@@ -177,7 +177,7 @@ input[name="math"] {
 	float:right;
 	margin-right:2px;
 	font-size: small;
-	cursor: url(../images/cursors/text.png), text;
+	cursor: text;
 }
 .guest-message {
 	display:block;
@@ -185,7 +185,7 @@ input[name="math"] {
 	margin-top:4px;
 	padding:4px 6px;
 	background-color:#f8f8f8;
-	cursor: url(../images/cursors/text.png), text;
+	cursor: text;
 }
 .guestbook-nav {
 	margin:5px 0;

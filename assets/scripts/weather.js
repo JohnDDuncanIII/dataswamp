@@ -378,24 +378,19 @@ function weather() {
 					j++;
 				}
 
-				// add the vertical legend
-				/*var text_vert = document.createElement('div');
-				  text_vert.className = 'text bar-text-vertical';
-				  for(var i = 100; i >= 10; i=i-10){
-				  var bar_text = document.createElement('div');
-				  bar_text.className = 'bar-text-vert';
-				  var strN = i.toString();
-				  for(var c = 0; c < strN.length; c++){
-				  var hour = document.createElement('img');
-				  hour.src="assets/weather/nums_cure/"+ strN[c]+".gif";
-				  bar_text.appendChild(hour);
-				  text_vert.appendChild(bar_text);
-				  }
-				  }
-				  var br = document.createElement('br');
-				  weatherBox.appendChild(br);
-				  weatherBox.appendChild(text_vert);
-				*/
+				if(data.time.startPeriodName[0]=="Overnight") {
+					var time = doc.getElementsByTagName("time-layout");
+					var startTimeT = time[0].childNodes[2].firstChild.nodeValue;
+					startTime = startTimeT.substring(startTimeT.indexOf('T')+1, startTimeT.indexOf(':'));
+					if(startTime != 23){
+						count = 2;
+						position = 0;
+						counter--;
+					} else {
+					//	tmrw = false;
+					}
+					//helper(tempArray[j], precipArray[j], forecastArray[j], false, text[j]);
+				}
 				tmrw = true;
 				// special circumstances
 				if(data.time.startPeriodName[0]=="Tonight" ||
@@ -413,19 +408,7 @@ function weather() {
 					j++;
 				}
 
-				// reset the count and position if there is overnight information (so as to not double the current forecast w/ today's
-				if(data.time.startPeriodName[0]=="Overnight") {
-					var time = doc.getElementsByTagName("time-layout");
-					var startTimeT = time[0].childNodes[2].firstChild.nodeValue;
-					startTime = startTimeT.substring(startTimeT.indexOf('T')+1, startTimeT.indexOf(':'));
-					if(startTime != 23){
-						count = 2;
-						position = 0;
-						counter--;
-					} else {
-						//tmrw = false;
-					}
-				}
+
 
 				for(j; j < tempArray.length; j++) {
 					if(j==1 && tonight || (j==2 && tonight) && (afternoon || today)) {
@@ -578,8 +561,7 @@ function weather() {
 				}
 
 				var wbox = document.getElementById("weatherBox")
-				wbox.style.width=wbox.offsetWidth;
-				wbox.width=wbox.offsetWidth;
+
 
 				// landscape
 				var meta = [];
