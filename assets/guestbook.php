@@ -17,7 +17,7 @@
 	<div id="guestbook-content" style="overflow: hidden;position: relative;">
 		<!-- <img src="images/jolifond.gif"> -->
 		<div id="ichingcoins" style="background-image: url('images/iching/iching_background.gif')" title="i-ching"></div>
-		<h1>Guestbook</h1> <hr>
+		<h1>Guestbook</h1>
 		<?php include 'scripts/guestbook/index.php';?>
 		<footer>
 			<hr>

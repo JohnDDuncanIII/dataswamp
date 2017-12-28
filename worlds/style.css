@@ -60,11 +60,29 @@ div.clear { clear: both; }
 	color: #888;
 }
 
-#d_scene_selector, #d_scene_btns, #d_options_control, #d_timeline {
+#d_scene_selector, #d_scene_btns, #d_options_control, #d_timeline, #shortcuts {
 	display: inline-block;
 	vertical-align: top;
 }
 
+#shortcuts {
+	position: absolute;
+	right: 4px;
+}
+
+.d_scene_shortcuts_l {
+	vertical-align: top;
+	line-height: 9px;
+	display: inline-block;
+	text-align: left;
+}
+
+.d_scene_shortcuts_r {
+	vertical-align: top;
+	line-height: 9px;
+	display: inline-block;
+	text-align: right;
+}
 
 #btn_options_toggle { position: relative; }
 

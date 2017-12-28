@@ -317,7 +317,7 @@ var CanvasCycle = {
 
 		var scene = scenes[idx];
 
-		var url = "worlds/images/" + scene.name + '.json';
+		var url = "worlds/images/palette/" + scene.name + '.json';
 		var scr = document.createElement('SCRIPT');
 		scr.type = 'text/javascript';
 		scr.src = url;

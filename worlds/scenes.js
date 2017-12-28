@@ -36,6 +36,7 @@ var scenes = [
 		scpt: 'MARCLRSCPT',
 		name: 'VW3BASIC',
 		title: 'March - Monolith Plains - Clear',
+		sound: 'V02'
 	},
 	{
 		monthIdx: 3,

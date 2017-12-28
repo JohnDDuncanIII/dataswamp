@@ -2,7 +2,6 @@
 // BlendShift Technology conceived, designed and coded by Joseph Huckaby
 // Copyright (c) 2001-2002, 2010 Joseph Huckaby.
 // Released under the LGPL v3.0: http://www.opensource.org/licenses/lgpl-3.0.html
-
 FrameCount.visible = false;
 
 var CanvasCycle = {
@@ -162,18 +161,29 @@ var CanvasCycle = {
 							}
 						}
 						break;
+					case 37: // left arrow
+						CC.sceneIdx = CC.sceneIdx-1;
+						if (CC.sceneIdx >= scenes.length) CC.sceneIdx = 0;
+						else if (CC.sceneIdx < 0) CC.sceneIdx = scenes.length - 1;
+						$('fe_scene').selectedIndex = CC.sceneIdx;
+						CC.switchScene( $('fe_scene') );
+						break;
 					case 38: // up arrow
 						CC.timeOffset -= 60;
 						if (CC.timeOffset < 0) CC.timeOffset += 86400;
 						CC.updateTimelineDisplay();
 						break;
+					case 39: // right arrow
+						CC.sceneIdx = CC.sceneIdx+1;
+						if (CC.sceneIdx >= scenes.length) CC.sceneIdx = 0;
+						else if (CC.sceneIdx < 0) CC.sceneIdx = scenes.length - 1;
+						$('fe_scene').selectedIndex = CC.sceneIdx;
+						CC.switchScene( $('fe_scene') );
+						break;
 					case 40: // down arrow
 						CC.timeOffset += 60;
 						if (CC.timeOffset >= 86400) CC.timeOffset -= 86400;
 						CC.updateTimelineDisplay();
-						break;
-					case 80: // P
-						CC.toggleOptions();
 						break;
 					case 65: // A
 						prefs.sound = !prefs.sound;
@@ -275,7 +285,7 @@ var CanvasCycle = {
 		var scene = scenes[idx];
 
 		//var url = 'scene.php?file='+scene.name+'&month='+scene.month+'&script='+scene.scpt+'&callback=CanvasCycle.initScene';
-		var url = "images/" + scene.name + '.json';
+		var url = "images/palette/" + scene.name + '.json';
 		var scr = document.createElement('SCRIPT');
 		scr.type = 'text/javascript';
 		scr.src = url;

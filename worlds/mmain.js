@@ -2,7 +2,6 @@
 // BlendShift Technology conceived, designed and coded by Joseph Huckaby
 // Copyright (c) 2001-2002, 2010 Joseph Huckaby.
 // Released under the LGPL v3.0: http://www.opensource.org/licenses/lgpl-3.0.html
-
 FrameCount.visible = false;
 
 var CanvasCycle = {
@@ -232,7 +231,7 @@ var CanvasCycle = {
 
 		var scene = scenes[idx];
 
-		var url = "images/" + scene.name + '.json';
+		var url = "images/palette/" + scene.name + '.json';
 		var scr = document.createElement('SCRIPT');
 		scr.type = 'text/javascript';
 		scr.src = url;
