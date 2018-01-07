@@ -207,7 +207,7 @@ var CanvasCycle = {
 		this.stop();
 		this.showLoading();
 
-		var url = 'images/cycle/'+name+".php";
+		var url = 'images/cycle/'+name+".json";
 		var scr = document.createElement('SCRIPT');
 		scr.type = 'text/javascript';
 		scr.src = url;
