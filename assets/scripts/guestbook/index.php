@@ -133,7 +133,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $error .= "<p class=\"message-error\">" . $messages['message_missing'] . "</p>";
     }
-    #echo $_POST['math'] . " " . $_SESSION['math'];                        
+    #echo $_POST['math'] . " " . $_SESSION['math'];
     // Check the math challenge answer to prevent spam robot.
     if( ! isset($_POST['math']) || empty($_POST['math']) || $_POST['math'] != $_SESSION['math']) {
     	$error .= "<p class=\"message-error\">" . $messages['math_invalid'] . "</p>";
@@ -300,7 +300,7 @@ if( ! empty($data)) {
         <label>Message</label>
         <div><textarea name="message"><?php echo isset($_SESSION['guest_message']) ? $_SESSION['guest_message'] : ''; ?></textarea></div>
         <hr>
-        <div id="nospam"><?php echo $math; ?> = <input type="text" name="math" autocomplete="off"> 
+        <div id="nospam"><!--<?php echo $math; ?> = --><input type="text" name="math" autocomplete="off">
 	<br><button type="submit">Send Message</button></div>
         <span class="clear"></span>
       </form>
