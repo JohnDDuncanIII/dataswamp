@@ -29,20 +29,6 @@ if (!String.prototype.includes) { // indexof polyfill
 	};
 }
 
-var worldsData = `
-<link rel='stylesheet' type='text/css' href='worlds/istyle.css'>
-<script type='text/javascript' src='worlds/oop.js'></script>
-<script type='text/javascript' src='worlds/tools.js'></script>
-<script type='text/javascript' src='worlds/cookie.js'></script>
-<script type='text/javascript' src='worlds/palette.js'></script>
-<script type='text/javascript' src='worlds/bitmap.js'></script>
-<script type='text/javascript' src='worlds/scenes.js'></script>
-<script type='text/javascript' src='worlds/tween.js'></script>
-<script type='text/javascript' src='worlds/framecount.js'></script>
-<script type='text/javascript' src='worlds/imain.js'></script>
-<script src='worlds/initialize.js'></script>
-`
-
 function computeImage(forecast) {
 	var image = '';
 	var fc = forecast.toString().toLowerCase();
@@ -50,16 +36,16 @@ function computeImage(forecast) {
 	if(fc.includes("partly") || fc.includes("decreasing") || fc.includes("a few")) { image+= "partly"; }
 	if(fc.includes("heavy") || fc.includes("severe")) { image+= "heavy"; }
 	if(fc.includes("wintry mix")) { image+= "sleety"; }
-	if(fc.includes("drizzle") || fc.includes("sprinkles")) { image+= "drizzly"; }
-	if(fc.includes("rain") || fc.includes("showers") && !fc.includes("snow")) {
+	if(fc.includes("storm")) {
+		image+= "stormy";
+	} else if(fc.includes("rain") || fc.includes("showers") && !fc.includes("snow")) {
 		if(fc.includes("lt") || fc.includes("scattered showers")) {
 			image += "drizzly";
 		} else { image+= "rainy"; }
-	}
+	} else if(fc.includes("drizzle") || fc.includes("sprinkles")) { image+= "drizzly"; }
 	if(fc.includes("snow") || fc.includes("flurries")) { image+= "snowy"; }
 	if(fc.includes("frost")) { image+= "frosty"; }
 	if(fc.includes("fog") || fc.includes("mist")) { image+= "foggy"; }
-	if(fc.includes("storm")) { image+= "stormy"; }
 	if(fc.includes("sunny")) { image+= "sunny"; }
 	if(fc.includes("clear") || fc.includes("fair")) { image+= "sunny"; }
 	if(fc.includes("hot")) { image+= "hot"; }
@@ -161,10 +147,12 @@ function fetchJSONFile(path, callback) {
 }
 
 function reload(weatherBox, mapBox) {
-	mapBox.src = mapBox.src;
-	mapBox.onmouseover = mapBox.onmouseover;
-	mapBox.onmouseout = mapBox.onmouseout;
-	mapBox.onclick = mapBox.onclick;
+	if(mapBox) {
+		mapBox.src = mapBox.src;
+		mapBox.onmouseover = mapBox.onmouseover;
+		mapBox.onmouseout = mapBox.onmouseout;
+		mapBox.onclick = mapBox.onclick;
+	}
 
 	count = 2;
 	position = 0;
@@ -213,19 +201,36 @@ function weather() {
 			if (x.readyState == 4 && x.status == 200) {
 				doc = x.responseXML;
 
-				var checkbox = document.createElement('input');
-				checkbox.setAttribute('type','checkbox');
-				checkbox.id = "bakecookie";
-				checkbox.name = "bakecookie";
+				var container = document.getElementById("container");
+				if(container) {
+					var weatherCheckbox = document.createElement('input');
+					weatherCheckbox.setAttribute('type','checkbox');
+					weatherCheckbox.id = "weatherMap";
+					weatherCheckbox.name = "weatherMap";
 
-				var label = document.createElement('label');
-				label.htmlFor = "bakecookie";
-				label.className = "check";
-				label.innerHTML = "Enable Landscapes?"
-				var span = document.createElement('span');
-				label.insertBefore(span, label.firstChild);
-				weatherBox.appendChild(checkbox);
-				weatherBox.appendChild(label);
+					var label = document.createElement('label');
+					label.htmlFor = "weatherMap";
+					label.className = "check";
+					label.innerHTML = "Enable Weather Map?"
+					var span = document.createElement('span');
+					label.insertBefore(span, label.firstChild);
+					weatherBox.appendChild(weatherCheckbox);
+					weatherBox.appendChild(label);
+
+					var landscapeCheckbox = document.createElement('input');
+					landscapeCheckbox.setAttribute('type','checkbox');
+					landscapeCheckbox.id = "landscapes";
+					landscapeCheckbox.name = "landscapes";
+
+					var label = document.createElement('label');
+					label.htmlFor = "landscapes";
+					label.className = "check";
+					label.innerHTML = "Enable Landscapes?"
+					var span = document.createElement('span');
+					label.insertBefore(span, label.firstChild);
+					weatherBox.appendChild(landscapeCheckbox);
+					weatherBox.appendChild(label);
+				}
 
 				// geoloc
 				// if we have a saved geolocation in local storage, allow the user to wipe it
@@ -556,7 +561,7 @@ function weather() {
 						}
 					}
 				}
-				if(!lvrInit) {
+				if(lv && !lvrInit) {
 					lv.addEventListener('click', lvr, false);
 					lvrInit = true;
 				}
@@ -622,9 +627,8 @@ function weather() {
 				  meta.push(scr);*/
 
 				var hasAddedLandscapes = false;
-				if(window.localStorage) {
-					var container = document.getElementById("container");
-					checkbox.checked = localStorage.getItem('landscapesEnabled') == "true";
+				if(container && window.localStorage) {
+					landscapeCheckbox.checked = localStorage.getItem('landscapesEnabled') == "true";
 
 					if(localStorage.getItem('landscapesEnabled') == "true") {
 						for (i = 0; i < meta.length; i++) {
@@ -637,24 +641,24 @@ function weather() {
 					} else {
 						container.style.display = "none";
 					}
-				}
-				checkbox.onclick = function() {
-					if(window.localStorage) {
-						localStorage.setItem('landscapesEnabled', checkbox.checked);
+					landscapeCheckbox.onclick = function() {
+						if(window.localStorage) {
+							localStorage.setItem('landscapesEnabled', landscapeCheckbox.checked);
 
-						if(localStorage.getItem('landscapesEnabled') == "true") {
-							if(!hasAddedLandscapes) {
-								for (i = 0; i < meta.length; i++) {
-									document.body.appendChild(meta[i]);
-									//document.body.insertBefore(meta[i], document.body.lastChildElement);
+							if(localStorage.getItem('landscapesEnabled') == "true") {
+								if(!hasAddedLandscapes) {
+									for (i = 0; i < meta.length; i++) {
+										document.body.appendChild(meta[i]);
+										//document.body.insertBefore(meta[i], document.body.lastChildElement);
+									}
+									container.innerHTML = worlds;
+									document.addEventListener("CC",function() {CC.init(currentForecast);},false);
+									hasAddedLandscapes = true;
 								}
-								container.innerHTML = worlds;
-								document.addEventListener("CC",function() {CC.init(currentForecast);},false);
-								hasAddedLandscapes = true;
+								container.style.display = "table";
+							} else {
+								container.style.display = "none";
 							}
-							container.style.display = "table";
-						} else {
-							container.style.display = "none";
 						}
 					}
 				}

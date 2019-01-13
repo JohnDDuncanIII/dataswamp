@@ -11,6 +11,10 @@ div.clear { clear: both; }
 	color: black;
 }
 
+.container img {
+	display: block;
+}
+
 #container a {
 	color: #888;
 	text-decoration: none;
