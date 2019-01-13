@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<title>Guestbook</title>
 	<link rel="icon" href="../favicon.ico">
+	<link rel="stylesheet" href="styles/crisp.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="scripts/guestbook/style.css">
 	<script src="scripts/border.js"></script>

@@ -27,9 +27,10 @@ blockquote {
 	margin-right: auto;
 	margin-bottom: 2.5em;
 	margin-top: 2.5em;
-	padding: 4px;
+	padding: 6px;
 	background-color: white;
 	pointer-events: initial;
+	box-shadow: 4px 4px;
 }
 .box:first-child{
 	margin-top:0;
