@@ -9,15 +9,26 @@ var browsers = document.getElementById("browsers");
 var clipart = document.getElementById("clipart");
 var writings = document.getElementById("writings");
 var guestbook = document.getElementById("guestbook");
-var headerVals = [document.getElementById("cards"),
-                  document.getElementById("books"), document.getElementById("faces"),
-                  document.getElementById("portfolio"), document.getElementById("weather"),
-                  document.getElementById("berlinblue"), browsers, clipart, writings,
-                  document.getElementById("soundcloud"), document.getElementById("bugzilla"),
-                  document.getElementById("facebook"), document.getElementById("twitter"),
-                  document.getElementById("youtube"), document.getElementById("guestbook"),
-		  document.getElementById("linkedin"), document.getElementById("instagram"),
-		  document.getElementById("spotify"), document.getElementById("mozillazine")];
+var headerVals = [
+	document.getElementById("cards"),
+	document.getElementById("faces"),
+	document.getElementById("portfolio"),
+	document.getElementById("weather"),
+	document.getElementById("berlinblue"),
+	browsers,
+	clipart,
+	writings,
+	document.getElementById("soundcloud"),
+	document.getElementById("bugzilla"),
+	document.getElementById("facebook"),
+	document.getElementById("twitter"),
+	document.getElementById("youtube"),
+	document.getElementById("guestbook"),
+	document.getElementById("linkedin"),
+	document.getElementById("instagram"),
+	document.getElementById("spotify"),
+	document.getElementById("mozillazine"),
+];
 var images = document.getElementById("images");
 //var footer = document.getElementById("footer");
 var mail = document.getElementById("mail");
